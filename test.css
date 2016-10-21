@@ -1,4 +1,6 @@
 .test {
-	display: none;
-	box-shadow: 1px 2px 5px;
+    display: none;
+    -webkit-box-shadow: 1px 2px 5px;
+    -moz-box-shadow: 1px 2px 5px;
+    box-shadow: 1px 2px 5px;
 }
