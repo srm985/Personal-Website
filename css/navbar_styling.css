@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.touch_device_mode {
+    pointer-events: none;
+}
+
+.navbar_open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(61, 65, 77, 0.7);
+    z-index: 200;
+}
+
+.navbar,
+.navbar a {
+    background-color: #3D414D;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a:hover {
+    background-color: #3D414D !important;
+}
+
+.navbar li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background-color: transparent;
+    transition: width 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar li:hover:after {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar li,
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.active_link {
+    /*PLACEHOLDER*/
+}
+
+.active_link:before {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar-header {
+    float: left;
+    margin: 0 auto;
+}
+
+#hamburger_menu {
+    background-color: #3D414D;
+}
+
+#hamburger_menu span {
+    background-color: #FFFFFF;
+}
+
+.navbar .container-fluid {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 auto 0 0;
+}
+
+.navbar {
+    transition: top 0.2s ease-in-out;
+}
+
+.hidden_nav {
+    top: -60px;
+}
+
+
+/*Used to remove underlining on hamburger menu.*/
+
+@media only screen and (max-width: 767px) {
+    .navbar li:hover:after {
+        width: 0;
+        background-color: #111111;
+    }
+    .active_link:before {
+        height: 0;
+    }
+    .navbar ul {
+        margin-top: 3px;
+    }
+}
