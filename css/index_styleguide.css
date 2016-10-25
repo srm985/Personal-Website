@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#section_1 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+.header_button {
+    height: 50px;
+    border: solid 1px #FFFFFF;
+    border-radius: 1px;
+    background-color: transparent;
+    padding-right: 2%;
+    padding-left: 2%;
+    transition: all 0.1s ease-in-out;
+}
+.header_button:hover {
+	box-shadow: 0 4px 5px rgba(61, 65, 77, 0.25)
+}
+
+#header_button_wrapper {
+    margin-top: 5%;
+}
+
+#header_button_1 {
+    margin-right: 2%;
+}
+
+#header_button_2 {
+    margin-left: 2%;
+}
+
+#section_1 h1 {
+    font-weight: 900;
+}
+
+#section_1 h2 {
+    font-weight: 300;
+}
+
+#section_2 {
+    color: #3D414D;
+    background-color: #EFECE7;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 479px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {}
+
+
+/* Very Large Devices, Very Wide Screens */
+
+@media only screen and (min-width: 1600px) {}

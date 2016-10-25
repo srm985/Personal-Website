@@ -38,10 +38,12 @@
     </script>
 
     <!--Link local CSS sheets.-->
-    <link rel="stylesheet" href="css/navbar_styling.css">
-    <link rel="stylesheet" href="css/styleguide-index.css">
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/index_styleguide.css">
     <!--Link local JS sheets.-->
     <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
 
     <!--Page Description-->
     <title></title>
@@ -85,11 +87,22 @@
 
     <div class="blackout_background"></div>
 
-    <section class="container-fluid section_wrapper" id="section_1">
-        <h1>Test 1</h1>
+    <section class="container-fluid" id="section_1">
+        <div class="container">
+            <div class="row base" id="header_content">
+                <h1 align="center ">Sean MCQUAY</h1>
+                <h2 align="center ">Engineer / Programmer</h2>
+                <div id="header_button_wrapper" align="center">
+                    <button class="header_button" id="header_button_1"><p>Résumé</p></button>
+                    <button class="header_button" id="header_button_2"><p>Contact</p></button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="container-fluid section_wrapper" id="section_2">
-        <h1>Test 2</h1>
+    <section class="container-fluid section_wrapper " id="section_2">
+        <h1 align="center ">Test H1</h1>
+        <h2 align="center ">Test H2</h2>
+        <p align="center ">Test P</p>
     </section>
 </body>
 
