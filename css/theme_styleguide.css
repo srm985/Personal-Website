@@ -17,6 +17,14 @@ body {
     padding-bottom: 8%;
 }
 
+.underline {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 15px;
+    display: inline-block;
+    border-bottom: 4px solid #4EDEC2;
+}
+
 
 /*Custom,iPhoneRetina*/
 
