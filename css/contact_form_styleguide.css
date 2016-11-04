@@ -33,6 +33,7 @@
 }
 
 .input_space:invalid {
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -51,9 +52,12 @@
     padding: 0;
     color: #FFFFFF;
     background-color: #4EDEC2;
-    -o-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
-    box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
+    -o-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
+    -webkit-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
+    box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
+    -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    -webkit-transition: background-position 0.75s ease-in-out;
     transition: background-position 0.75s ease-in-out;
 }
 
@@ -64,8 +68,9 @@
 .submit_button_hover_attr {}
 
 .submit_button_hover_attr:hover {
-    -o-box-shadow: 0 6px 10px rgba(33, 33, 33, 0.35) !important;
-    box-shadow: 0 6px 10px rgba(33, 33, 33, 0.35) !important;
+    -o-box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
+    -webkit-box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
+    box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
 }
 
 #submit_button .disabled {
@@ -73,6 +78,7 @@
     background-color: #FFFFFF;
     border: solid 1px #3D414D;
     -o-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -93,6 +99,7 @@
 .send_error {
     background-color: #FF7878 !important;
     -o-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
@@ -105,6 +112,7 @@
     z-index: -1;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
 }
 
@@ -133,36 +141,24 @@
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #757575;
+    color: rgba(61, 65, 77, 0.5);
     background-color: #FFFFFF;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #757575;
+    color: rgba(61, 65, 77, 0.5);
     background-color: #FFFFFF;
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
-    color: #757575;
+    color: rgba(61, 65, 77, 0.5);
     background-color: #FFFFFF;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
-    color: #757575;
+    color: rgba(61, 65, 77, 0.5);
     background-color: #FFFFFF;
-}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    #contact_form_block label,
-    #contact_form_block input,
-    #contact_form_block textarea {
-        font-size: 16px;
-        line-height: 18px;
-    }
 }

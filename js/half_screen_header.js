@@ -2,18 +2,22 @@ $(document).ready(function() {
     function setHeight() {
         windowHeight = $(window).height();
         contentHeight = $('#header_content').height();
-        containerWidth = $('.container').width();
         navHeight = 50;
         padding = 75;
 
-        if (((windowHeight / 2) - navHeight) <= (contentHeight + (padding * 2))) {
-            document.getElementById("section_1").setAttribute("style", "height:" + (contentHeight + navHeight + (padding * 2)).toString() + "px");
-            document.getElementById("header_content").setAttribute("style", "margin-top:" + (navHeight + padding).toString() + "px");
-
+        if (((windowHeight / 2) - navHeight) > (contentHeight + (padding * 2))) {
+            document.getElementById("section_1").style.height = String(windowHeight / 2) + "px";
+            if ($("#header_image").length) {
+                document.getElementById("header_image").style.height = String(windowHeight / 2) + "px";
+            };
+            document.getElementById("header_content").style.marginTop = String(((((windowHeight / 2) - navHeight) - contentHeight) / 2) + navHeight) + "px";
         } else {
-            document.getElementById("section_1").setAttribute("style", "height:" + (windowHeight / 2).toString() + "px");
-            document.getElementById("header_content").setAttribute("style", "margin-top:" + ((((windowHeight / 2) - contentHeight - navHeight) / 2) + navHeight).toString() + "px");
-        }
+            document.getElementById("section_1").style.height = String(contentHeight + navHeight + (padding * 2)) + "px";
+            if ($("#header_image").length) {
+                document.getElementById("header_image").style.height = String(contentHeight + navHeight + (padding * 2)) + "px";
+            };
+            document.getElementById("header_content").style.marginTop = String(padding + navHeight) + "px";
+        };
     };
     setHeight();
 

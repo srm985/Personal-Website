@@ -1,8 +1,8 @@
 <?php
 
-$EmailFrom = "pocinfo@luminant.com";
-$EmailTo = "sean.mcquay@luminant.com";
-$Subject = "POC - Additional Email Request";
+$EmailFrom = "info@seanmcquay.com";
+$EmailTo = "srmcquay@gmail.com";
+$Subject = "Personal Website Contact";
 $Name = Trim(stripslashes($_POST['name'])); 
 $Company = Trim(stripslashes($_POST['company'])); 
 $Email = Trim(stripslashes($_POST['email']));

@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.image_size_inherit {
+    height: 100%;
+}
+
+#section_1 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+    background-image: url(../images/quadcopter/quadcopter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section_2 {
+    color: #3D414D;
+    background-color: #EFECE7;
+}
+
+#section_3 {
+    color: #EFECE7;
+    background-color: #3D414D;
+}
+
+#section_4 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+#image_1 {
+    height: 100%;
+    background-image: url(../images/quadcopter/quadcopter_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image_2 {
+    height: 100%;
+    background-image: url(../images/quadcopter/quadcopter_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section_5 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+#section_6 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+#image_3 {
+    height: 100%;
+    background-image: url(../images/quadcopter/quadcopter_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image_4 {
+    height: 100%;
+    background-image: url(../images/quadcopter/quadcopter_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section_7 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 479px) {
+    .image_height {
+        height: 200px;
+    }
+    .image_size_inherit {
+        padding: 0;
+    }
+    .mobile_image_margin {
+        margin-top: 4%;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .image_height {
+        height: 300px;
+    }
+    .image_size_inherit {
+        padding: 0;
+    }
+    .mobile_image_margin {
+        margin-top: 4%;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .image_height {
+        height: 300px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .image_height {
+        height: 400px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .image_height {
+        height: 400px;
+    }
+}
+
+
+/* Very Large Devices, Very Wide Screens */
+
+@media only screen and (min-width: 1600px) {
+    .image_height {
+        height: 400px;
+    }
+}

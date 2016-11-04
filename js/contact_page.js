@@ -1,12 +1,12 @@
 $(document).ready(function() {
     function setContactBackground() {
         windowHeight = $(window).height();
-        windowWidth = $(window).width();
-        contactSectionHeight = $('#break_2 .container').height();
-        contactFormHeight = $('#contact_form').height();
-        contactFormWidth = $('#contact_form').width();
-        containerWidth = $('.container').width();
-        document.getElementById("contact_form_photo_wrapper").setAttribute("style", "height:" + (contactSectionHeight).toString() + "px");
+        contactFormHeight = $('#contact_form_wrapper').height();
+        if ((contactFormHeight + 150) <= windowHeight) {
+            document.getElementById("section_1").setAttribute("style", "height:" + (windowHeight).toString() + "px");
+        } else {
+            document.getElementById("section_1").setAttribute("style", "padding-bottom: 50px");
+        }
     };
     setContactBackground();
 
