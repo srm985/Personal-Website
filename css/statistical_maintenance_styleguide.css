@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#results_graph_1 {
+    width: 100%;
+    height: 100%;
+}
+
+#results_graph_2 {
+    width: 100%;
+    height: 100%;
+}
+
+.image_size_inherit {
+    height: 100%;
+}
+
+#section_1 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+    background-image: url(../images/statistical_maintenance/statistical_maintenance-compressor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section_2 {
+    color: #3D414D;
+    background-color: #EFECE7;
+}
+
+#section_3 {
+    color: #EFECE7;
+    background-color: #3D414D;
+}
+
+#section_4 {
+    color: #FFFFFF;
+    background-color: #EFECE7;
+}
+
+#section_5 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+#section_6 {
+    color: #FFFFFF;
+    background-color: #EFECE7;
+}
+
+#image_3 {
+    height: 100%;
+    background-image: url(../images/statistical_maintenance/deviation-compressor.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#image_4 {
+    height: 100%;
+    background-image: url(../images/statistical_maintenance/duration-compressor.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#section_7 {
+    color: #FFFFFF;
+    background-color: #4EDEC2;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 479px) {
+    .image_height {
+        height: 175px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .image_height {
+        height: 300px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .image_height {
+        height: 240px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .image_height {
+        height: 300px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .image_height {
+        height: 375px;
+    }
+}
+
+
+/* Very Large Devices, Very Wide Screens */
+
+@media only screen and (min-width: 1600px) {
+    .image_height {
+        height: 375px;
+    }
+}

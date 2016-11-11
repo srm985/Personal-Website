@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Helvetica";
 }
 
 .section_wrapper {
@@ -31,6 +31,7 @@ body {
 }
 
 .image_styling {
+    -webkit-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.7);
     box-shadow: 0 4px 5px rgba(61, 65, 77, 0.7);
 }
 
@@ -41,38 +42,45 @@ footer {
     padding: 25px;
 }
 
-footer a,
-footer a:hover,
-footer a:active,
-footer a:visited {
+footer p {
+    font-weight: 300;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
 .social_media_icon {
     height: 35px;
     width: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px 0 20px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: inline-block;
+    -webkit-transition: all 0.2 ease-in-out;
     transition: all 0.2 ease-in-out;
 }
 
 .social_media_icon:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 #linkedin {
-    background-image: url(../images/social_media_icons/linkedin.png);
+    background-image: url(../images/social_media_icons/linkedin-compressor.png);
 }
 
 #stackoverflow {
-    background-image: url(../images/social_media_icons/stackoverflow.png);
+    background-image: url(../images/social_media_icons/stackoverflow-compressor.png);
 }
 
 #github {
-    background-image: url(../images/social_media_icons/github.png);
+    background-image: url(../images/social_media_icons/github-compressor.png);
 }
 
 
@@ -98,24 +106,45 @@ footer a:visited {
     border-left: 3px solid #EFECE7;
 }
 
-.standard_button {
+.right_side_bar_green {
+    padding-right: 10px;
+    border-right: 3px solid #4EDEC2;
+}
+
+.right_side_bar_red {
+    padding-right: 10px;
+    border-right: 3px solid #FF7878;
+}
+
+.right_side_bar_black {
+    padding-right: 10px;
+    border-right: 3px solid #3D414D;
+}
+
+.right_side_bar_tan {
+    padding-right: 10px;
+    border-right: 3px solid #EFECE7;
+}
+
+.link_button {
     height: 50px;
+    width: 100%;
+    display: inline-block;
     border: solid 1px #FFFFFF;
     border-radius: 1px;
     background-color: transparent;
     padding-top: 5px;
-    padding-right: 2%;
-    padding-left: 2%;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-.standard_button:hover {
-    /*-webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);*/
+.link_button:hover {
     background-color: #FFFFFF;
     color: #4EDEC2;
+}
+
+.link_button p {
+    margin-top: 1px;
 }
 
 .full_screen {
@@ -146,6 +175,9 @@ footer a:visited {
 /*Custom,iPhoneRetina*/
 
 @media only screen and (max-width: 479px) {
+    .container {
+        width: 300px;
+    }
     h1 {
         font-size: 28px;
         font-weight: 900;
@@ -166,7 +198,11 @@ footer a:visited {
     textarea,
     button {
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 500;
+    }
+    .section_wrapper {
+        padding-top: 30px;
+        padding-bottom: 50px;
     }
     .split_overlay_left {
         position: relative;
@@ -187,12 +223,22 @@ footer a:visited {
     .split_screen_right {
         width: 100%;
     }
+    .link_button p {
+        margin-top: 7px;
+    }
+    .social_media_icon {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 
 /*ExtraSmallDevices,Phones*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 480px;
+    }
     h1 {
         font-size: 46px;
         font-weight: 900;
@@ -213,7 +259,7 @@ footer a:visited {
     textarea,
     button {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 500;
     }
     .split_overlay_left {
         position: relative;
@@ -233,6 +279,9 @@ footer a:visited {
     }
     .split_screen_right {
         width: 100%;
+    }
+    .link_button p {
+        margin-top: 6px;
     }
 }
 
@@ -259,7 +308,7 @@ footer a:visited {
     textarea,
     button {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 500;
     }
 }
 
@@ -286,7 +335,7 @@ footer a:visited {
     textarea,
     button {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 500;
     }
 }
 
@@ -313,7 +362,7 @@ footer a:visited {
     textarea,
     button {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 500;
     }
 }
 
@@ -340,6 +389,6 @@ footer a:visited {
     textarea,
     button {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 500;
     }
 }

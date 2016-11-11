@@ -45,32 +45,32 @@
 }
 
 #submit_button {
-    height: 43px;
+    height: 50px;
     width: 100%;
-    border: none;
+    border: solid 2px #4EDEC2;
     margin-top: 3em;
     padding: 0;
-    color: #FFFFFF;
-    background-color: #4EDEC2;
-    -o-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
-    -webkit-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
-    box-shadow: 0 4px 5px rgba(61, 65, 77, 0.5);
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    color: #4EDEC2;
+    background-color: transparent;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     -webkit-transition: background-position 0.75s ease-in-out;
     transition: background-position 0.75s ease-in-out;
 }
 
-#submit_button:focus {
+#submit_button:focus,
+input {
     outline: none;
 }
 
-.submit_button_hover_attr {}
+.submit_button_hover_attr {
+    -webkit-transition: all 0.1s ease-in-out !important;
+    transition: all 0.1s ease-in-out !important;
+}
 
 .submit_button_hover_attr:hover {
-    -o-box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
-    -webkit-box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
-    box-shadow: 0 6px 10px rgba(61, 65, 77, 0.35) !important;
+    background-color: #4EDEC2 !important;
+    color: #EFECE7 !important;
 }
 
 #submit_button .disabled {
@@ -83,21 +83,27 @@
 }
 
 .message_sending {
-    background-image: url(../images/contact_form_icons/sending.png);
+    background-image: url(../images/contact_form_icons/sending-compressor.png);
+    border: none !important;
+    background-color: #4EDEC2 !important;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: 115% 50%;
 }
 
 .send_confirm {
-    background-image: url(../images/contact_form_icons/sent.png);
+    background-image: url(../images/contact_form_icons/sent-compressor.png);
+    border: none !important;
+    background-color: #4EDEC2 !important;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .send_error {
+    color: #3D414D !important;
     background-color: #FF7878 !important;
+    border: none !important;
     -o-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -117,26 +123,26 @@
 }
 
 .contact_icon_animation {
-    -webkit-transform: translate(-2em, 0);
-    -ms-transform: translate(-2em, 0);
-    transform: translate(-2em, 0);
+    -webkit-transform: translate(-2.5em, 0);
+    -ms-transform: translate(-2.5em, 0);
+    transform: translate(-2.5em, 0);
     z-index: 1;
 }
 
 #name_icon {
-    background-image: url(../images/contact_form_icons/name.png);
+    background-image: url(../images/contact_form_icons/name-compressor.png);
 }
 
 #company_icon {
-    background-image: url(../images/contact_form_icons/company.png);
+    background-image: url(../images/contact_form_icons/company-compressor.png);
 }
 
 #email_icon {
-    background-image: url(../images/contact_form_icons/email.png);
+    background-image: url(../images/contact_form_icons/email-compressor.png);
 }
 
 #description_icon {
-    background-image: url(../images/contact_form_icons/description.png);
+    background-image: url(../images/contact_form_icons/description-compressor.png);
 }
 
 ::-webkit-input-placeholder {
@@ -161,4 +167,8 @@
     /* Firefox 18- */
     color: rgba(61, 65, 77, 0.5);
     background-color: #FFFFFF;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
 }

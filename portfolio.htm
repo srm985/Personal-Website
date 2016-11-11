@@ -52,26 +52,26 @@
     ga('send', 'pageview');
     </script>
     <!--Link local CSS sheets.-->
-    <link rel="stylesheet" href="css/theme_styleguide.css">
-    <link rel="stylesheet" href="css/navbar_styleguide.css">
-    <link rel="stylesheet" href="css/portfolio_styleguide.css">
+    <link rel="stylesheet" href="css/theme_styleguide.min.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.min.css">
+    <link rel="stylesheet" href="css/portfolio_styleguide.min.css">
     <!--Link local JS sheets.-->
-    <script defer type="text/javascript" src="js/navbar.js"></script>
-    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
-    <script defer type="text/javascript" src="js/portfolio_page.js"></script>
+    <script defer type="text/javascript" src="js/navbar.min.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.min.js"></script>
+    <script defer type="text/javascript" src="js/portfolio_page.min.js"></script>
     <!--Page Description-->
     <title>Sean McQuay | Portfolio</title>
-    <link rel="icon" href="images/icon.png">
-    <meta name="description" content="" />
+    <link rel="icon" href="images/icon-compressor.png">
+    <meta name="description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
     <meta name="keywords" content="" />
     <meta http-equiv="author" content="Sean McQuay" />
     <meta http-equiv="pragma" content="no-cache" />
     <!--Open Graph Markup-->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="http://www.seanmcquay.com/portfolio.htm" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
+    <meta property="og:image" content="http://www.seanmcquay.com/images/header-compressor.jpg" />
 </head>
 
 <body>
@@ -102,7 +102,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
                             <h2>Portfolio</h2>
-                            <p>A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics.</p>
+                            <p align="justify">A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics.</p>
                         </div>
                     </div>
                 </div>
@@ -111,66 +111,80 @@
     </section>
     <section>
         <div class="container-fluid base" id="section_2">
-            <div class="container-fluid project_wrapper_full" id="project_1">
-                <div class="project_title_full_left">
-                    <h3>Statistical Analysis</h3>
+            <a href="statistical_analysis.htm">
+                <div class="container-fluid project_wrapper_full" id="project_1">
+                    <div class="project_title_full project_title_full_left">
+                        <h3>Statistical Analysis</h3>
+                    </div>
+                    <div class="project_content_full_right left_side_bar_green hidden-sm hidden-xs">
+                        <p>Project dedicated to generating alarm set points for mechanical equipment through the statistical analysis and modeling of historical operational profiles. The realization of this project resulted in a reduction in new client onboarding times from over a month, to less than an hour.</p>
+                    </div>
                 </div>
-                <div class="project_content_full_right left_side_bar_green hidden-xs">
-                    <p>Project dedicated to generating alarm set points for mechanical equipment through the statistical analysis and modeling of historical operational profiles. Reduced new client onboarding times from over a month, to less than an hour.</p>
+            </a>
+            <a href="poc_website.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_2">
+                    <div class="project_title_half">
+                        <h3>POC Website Redesign</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_tan">
+                        <p>A completely revised version of Luminant's POC website.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-fluid project_wrapper_half split_screen_left" id="project_2">
-                <div class="project_title_half">
-                    <h3>POC Website Refresh</h3>
+            </a>
+            <a href="autonomous_drone.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_3">
+                    <div class="project_title_half">
+                        <h3>Autonomous Drone</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_red">
+                        <p>Drone built and programmed to be capable of autonomous flight, obstacle avoidance, and wireless charging through a purpose-built inductive charger.</p>
+                    </div>
                 </div>
-                <div class="project_content_half left_side_bar_tan">
-                    <p>A completely revised version of Luminant's POC website.</p>
+            </a>
+            <a href="statistical_maintenance.htm">
+                <div class="container-fluid project_wrapper_full" id="project_4">
+                    <div class="project_title_full project_title_full_right">
+                        <h3>Statistical Maintenance</h3>
+                    </div>
+                    <div class="project_content_full_left right_side_bar_black hidden-sm hidden-xs">
+                        <p>A data analysis project and subsequent script generation targetting a drastic reduction in man-hours spent maintaining statistically derived alarms for mechanical equipment.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-fluid project_wrapper_half split_screen_right" id="project_3">
-                <div class="project_title_half">
-                    <h3>Autonomous Drone</h3>
+            </a>
+            <a href="bearing_wipe.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_5">
+                    <div class="project_title_half">
+                        <h3>Bearing Wipe Detection</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_green">
+                        <p>Simple OSIsoft PE Equation script to identify real-time, potential bearing wipes on large machinery - removing the lengthy manual review process.</p>
+                    </div>
                 </div>
-                <div class="project_content_half left_side_bar_red">
-                    <p>Drone built and programmed to be capable of autonomous flight, obstacle avoidance, and wireless charging through a purpose-built inductive charger.</p>
+            </a>
+            <a href="graphic_design.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_6">
+                    <div class="project_title_half">
+                        <h3>Graphic Design</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_black">
+                        <p>A small lookbook for some of the graphic content I have generated.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container-fluid project_wrapper_full" id="project_4">
-                <div class="project_title_full_right">
-                    <h3>Statistical Maintenance</h3>
+            </a>
+            <a href="bit_error.htm">
+                <div class="container-fluid project_wrapper_full" id="project_7">
+                    <div class="project_title_full project_title_full_left">
+                        <h3>Bit Error Correction</h3>
+                    </div>
+                    <div class="project_content_full_right left_side_bar_red hidden-sm hidden-xs">
+                        <p>By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission.</p>
+                    </div>
                 </div>
-                <div class="project_content_full_left left_side_bar_black hidden-xs">
-                    <p>A data analysis project and subsequent script generation targetting a drastic reduction in man-hours spent maintaining statistically derived alarms for mechanical equipment.</p>
-                </div>
-            </div>
-            <div class="container-fluid project_wrapper_half split_screen_left" id="project_5">
-                <div class="project_title_half">
-                    <h3>Bearing Wipe Detection</h3>
-                </div>
-                <div class="project_content_half left_side_bar_green">
-                    <p>Simple OSIsoft PE Equation script to identify real-time, potential bearing wipes on large machinery - removing the lengthy manual review process.</p>
-                </div>
-            </div>
-            <div class="container-fluid project_wrapper_half split_screen_right" id="project_6">
-                <div class="project_title_half">
-                    <h3>Graphic Design</h3>
-                </div>
-                <div class="project_content_half left_side_bar_black">
-                    <p>A small lookbook for some of the graphic content I have generated.</p>
-                </div>
-            </div>
-            <div class="container-fluid project_wrapper_full" id="project_7">
-                <div class="project_title_full_left">
-                    <h3>Bit Error Correction</h3>
-                </div>
-                <div class="project_content_full_right left_side_bar_red hidden-xs">
-                    <p>By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission.</p>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
     <footer>
-        <p>This website powered by HTML5, CSS3, JS, and Bootstrap V3.</p>
+        <p>This website powered by HTML5, CSS3, JS, Bootstrap, and clever coding.</p>
         <div>
             <a href="https://www.linkedin.com/in/seanmcquay">
                 <div class="social_media_icon" id="linkedin">

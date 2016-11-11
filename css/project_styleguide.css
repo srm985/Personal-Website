@@ -9,7 +9,7 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/quadcopter/quadcopter.jpg);
+    background-image: url(../images/quadcopter/quadcopter-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,14 +31,14 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_1.jpg);
+    background-image: url(../images/quadcopter/quadcopter_1-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #image_2 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_2.jpg);
+    background-image: url(../images/quadcopter/quadcopter_2-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -55,14 +55,14 @@
 
 #image_3 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_3.jpg);
+    background-image: url(../images/quadcopter/quadcopter_3-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #image_4 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_4.jpg);
+    background-image: url(../images/quadcopter/quadcopter_4-compressor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
