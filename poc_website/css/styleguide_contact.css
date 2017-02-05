@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+
+.touch_device_mode {
+	pointer-events: none;
+}
+body {
+	font-family: lato, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+p, a, label, input, textarea {
+	word-wrap: break-word;
+	font: 14px;
+	line-height: 18px;
+	font-weight: 500;
+}
+h1 {
+	word-wrap: break-word;
+	font: 21px;
+	line-height: 24px;
+	font-weight: 900;
+}
+h2 {
+	word-wrap: break-word;
+	font: 15px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.base {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.sizing_container {
+	margin-top: 10% !important;
+	margin-bottom: 20% !important;
+}
+.underline {
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 15px;
+	display: inline-block;
+	border-bottom: 4px solid #0291D3;
+}
+#break_1 {
+	background-color: #FFFFFF;
+	color: #757575;
+}
+#break_2 {
+	background-color: #D1DEE5;
+	color: #212121;
+}
+#break_3 {
+	background-color: #FFFFFF;
+	color: #757575;
+}
+#break_3b {
+	background-color: #D1DEE5;
+	color: #212121;
+}
+#break_4 {
+	background-color: #607D8B;
+	color: #212121;
+}
+#break_5 {
+	background-color: #D1DEE5;
+	color: #FFFFFF;
+}
+
+/**************************************************************************************************/
+/**************************************Navbar - Section Break**************************************/
+/**************************************************************************************************/
+
+
+/**************************************************************************************************/
+/**************************************Header - Section Break**************************************/
+/**************************************************************************************************/
+#break_1 {
+	width: 100%;
+	background-size: cover;
+	color: #FFFFFF;
+}
+#header_content {
+}
+#header_block {
+	margin-top: 5%;
+}
+#header_block p {
+	/*text-align: justify;*/
+}
+/******************************************************************************************************/
+/**************************************Contact Us - Section Break**************************************/
+/******************************************************************************************************/
+#break_2 {
+	position: relative;
+}
+#break_2 h2 {
+	font-size: 30px;
+	line-height: 37px;
+	margin-bottom: 50px;
+	color: #0291D3;
+	text-align: left;
+}
+#contact_form {
+	width: 100%;
+	left: 0;
+	margin-top: 50px;
+}
+#contact_form_photo_wrapper {
+	position: absolute;	
+	width: 50%;
+	top: 0;
+	left: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/********************************************************************************************************/
+/**************************************Who We Serve - Section Break**************************************/
+/********************************************************************************************************/
+
+
+/**********************************************************************************************************/
+/**************************************Our Leadership - Section Break**************************************/
+/**********************************************************************************************************/
+
+
+/******************************************************************************************************/
+/**************************************Contact Us - Section Break**************************************/
+/******************************************************************************************************/
+
+
+/**************************************************************************************************/
+/**************************************Footer - Section Break**************************************/
+/**************************************************************************************************/
+#break_5 {
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+#break_5 p,
+#break_5 a {
+	color: #212121;
+	font-size: 0.75em;
+}
+#break_5 span {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*************************************************************************************************************/
+/**************************************Modify attributes at breakpoints.**************************************/
+/*************************************************************************************************************/
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 14px;
+	}
+	.container {
+		width: 320px;
+	}
+	h1 {
+		font-size: 21px;
+		line-height: 24px;
+	}
+	h2 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	p, a, label, input, textarea {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#contact_form_block {
+		/*margin-top: 20%;*/
+	}
+	#contact_form_photo_wrapper {
+		/*background-image: url(../images/contact.jpg);*/
+	}
+	#googleMap {
+		height: 325px;
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+	.container {
+		/*width: 320px;*/
+		width: 480px !important;
+	}
+	h1 {
+		font-size: 21px;
+		line-height: 24px;
+	}
+	h2 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	p, a, label, input, textarea {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#contact_form_block {
+		/*margin-top: 20%;*/
+	}
+	#contact_form_photo_wrapper {
+		/*background-image: url(../images/contact.jpg);*/
+	}
+	#googleMap {
+		height: 325px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 24px;
+		line-height: 27.43px;
+	}
+	h2 {
+		font-size: 17.14px;
+		line-height: 20.57px;
+	}
+	p, a, label, input, textarea {
+		font-size: 16px;
+		line-height: 20.57px;
+	}
+	#contact_form_block {
+		/*margin-top: 10%;*/
+	}
+	#contact_form_photo_wrapper {
+		/*background-image: url(../images/contact_2.jpg);*/
+	}
+	#googleMap {
+		height: 350px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	body {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 27px;
+		line-height: 30.86px;
+	}
+	h2 {
+		font-size: 19.29px;
+		line-height: 23.15px;
+	}
+	p, a, label, input, textarea {
+		font-size: 18px;
+		line-height: 23.14px;
+	}
+	#contact_form_block {
+		/*margin-top: 10%;*/
+	}
+	#contact_form_photo_wrapper {
+		background-image: url(../images/contact_1.jpg);
+	}
+	#googleMap {
+		height: 350px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	body {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 30px;
+		line-height: 34.29px;
+	}
+	h2 {
+		font-size: 21.43px;
+		line-height: 25.72px;
+	}
+	p, a, label, input, textarea {
+		font-size: 20px;
+		line-height: 25.71px;
+	}
+	#contact_form_base {
+		width: 3px !important;
+	}
+	#contact_form_photo_wrapper {
+		background-image: url(../images/contact_1.jpg);
+	}
+	#googleMap {
+		height: 400px;
+	}	
+}
+/* Very Large Devices, Very Wide Screens */
+@media only screen and (min-width : 1600px) {
+	#contact_form_photo_wrapper {
+		background-image: url(../images/contact_2.jpg);
+	}
+}
+/* iMac 27" */
+@media only screen and (min-width : 2560px) {
+	#contact_form_photo_wrapper {
+		background-image: url(../images/contact_3.jpg);
+	}
+}
+
+/* Fix IE Errors... */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#break_1 {
+		
+	}
+}

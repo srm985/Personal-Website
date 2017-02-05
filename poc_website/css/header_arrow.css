@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header_arrow {
+	height: 2.5em;
+	width: 2.7em;
+	position: absolute;
+	margin: 0 auto;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 100%;
+	background-image: url(../images/inverse%20color%20icons/Expand%20Arrow-96.png);
+	background-size: 100% 100%;
+ 	-webkit-animation: header_arrow 5s infinite;
+ 	-moz-animation: header_arrow 5s infinite;
+ 	-o-animation: header_arrow 5s infinite;
+ 	animation: header_arrow 5s infinite;
+ 	-webkit-transition: opacity 0.2s ease-in-out;
+ 	-moz-transition: opacity 0.2s ease-in-out;
+ 	-o-transition: opacity 0.2s ease-in-out;
+ 	transition: opacity 0.2s ease-in-out;
+}
+.header_arrow.removed {
+	opacity: 0;
+}
+@-webkit-keyframes header_arrow {
+ 	0%, 15%, 25%, 35%, 100% {-webkit-transform: translateY(0);} 
+ 	10% {-webkit-transform: translateY(-10px);}
+ 	20% {-webkit-transform: translateY(-7px);}
+ 	30% {-webkit-transform: translateY(-3px);}
+}
+ 
+@-moz-keyframes header_arrow {
+ 	0%, 15%, 25%, 35%, 100% {-moz-transform: translateY(0);}
+ 	10% {-moz-transform: translateY(-10px);}
+ 	30% {-moz-transform: translateY(-7px);}
+ 	30% {-moz-transform: translateY(-3px);}
+}
+ 
+@-o-keyframes header_arrow {
+ 	0%, 15%, 25%, 35%, 100% {-o-transform: translateY(0);}
+ 	10% {-o-transform: translateY(-10px);}
+ 	20% {-o-transform: translateY(-7px);}
+ 	30% {-o-transform: translateY(-3px);}
+}
+@keyframes header_arrow {
+ 	0%, 15%, 25%, 35%, 100% {transform: translateY(0);}
+ 	10% {transform: translateY(-10px);}
+ 	20% {transform: translateY(-7px);}
+ 	30% {transform: translateY(-3px);}
+}
