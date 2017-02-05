@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.modal-backdrop {
+	opacity: 0.85 !important;
+}
+.modal {
+	margin-top: 10%;
+}
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+.media_container {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+.media_container {
+	width: 100%;
+}

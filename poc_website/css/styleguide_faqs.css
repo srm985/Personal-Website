@@ -1,0 +1,471 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: lato, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+p, a, label, input, textarea {
+	word-wrap: break-word;
+	font: 14px;
+	line-height: 18px;
+	font-weight: 500;
+}
+h1 {
+	word-wrap: break-word;
+	font: 21px;
+	line-height: 24px;
+	font-weight: 900;
+}
+h2 {
+	word-wrap: break-word;
+	font: 15px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.base {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.sizing_container {
+	margin-top: 10% !important;
+	margin-bottom: 20% !important;
+}
+.underline {
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 15px;
+	display: inline-block;
+	border-bottom: 4px solid #0291D3;
+}
+#break_1 {
+	background-color: #FFFFFF;
+	color: #757575;
+}
+#break_2 {
+	background-color: #D1DEE5;
+	color: #212121;
+}
+#break_3 {
+	background-color: #FFFFFF;
+	color: #757575;
+}
+#break_3b {
+	background-color: #D1DEE5;
+	color: #212121;
+}
+#break_4 {
+	background-color: #607D8B;
+	color: #FFFFFF;
+}
+#break_5 {
+	background-color: #D1DEE5;
+	color: #FFFFFF;
+}
+
+/**************************************************************************************************/
+/**************************************Navbar - Section Break**************************************/
+/**************************************************************************************************/
+
+
+/**************************************************************************************************/
+/**************************************Header - Section Break**************************************/
+/**************************************************************************************************/
+#break_1 {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/photo_dark.jpg);
+	background-size: cover;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #212121;
+}
+#header_content {
+}
+#header_block {
+	margin-top: 5%;
+}
+#header_block p {
+	/*text-align: justify;*/
+}
+
+/************************************************************************************************/
+/**************************************FAQs - Section Break**************************************/
+/************************************************************************************************/
+#break_2 h1 {
+	margin-bottom: 5%;
+}
+#break_2 a {
+	color: #212121;
+	text-align: justify;
+	text-decoration: none;
+}
+#break_2 p {
+	color: #757575 !important;
+	text-align: justify;
+}
+.panel-group,
+.panel,
+.panel-default,
+.panel-heading,
+.panel-body {
+	border-radius: 0 !important;
+	border: none;
+}
+.panel-title h2 {
+	margin-left: 1.75em;
+}
+.panel-heading {
+	position: relative;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.2);
+	-moz-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.2);
+	-o-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.2);
+	box-shadow: 0 4px 5px rgba(33, 33, 33, 0.2);
+}
+.panel-body p {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.cta_arrow {
+	position: absolute;
+	top: 13px;
+	left: 12px;
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/ICONS/Expand%20Arrow-96.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.cta_arrow.rotation {
+	-webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+/********************************************************************************************************/
+/**************************************Who We Serve - Section Break**************************************/
+/********************************************************************************************************/
+
+
+/**********************************************************************************************************/
+/**************************************Our Leadership - Section Break**************************************/
+/**********************************************************************************************************/
+
+
+/******************************************************************************************************/
+/**************************************Contact Us - Section Break**************************************/
+/******************************************************************************************************/
+#contact_us_content_block {
+	margin-top: 10%;
+}
+#contact_us_content {
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+}
+#contact_us_content p {
+	margin: 0;
+	padding: 0;
+}
+#contact_form_block {
+	margin-top: 10%;
+}
+#googleMap {
+	height: 325px;	/*Mobile Default*/
+	width: 100%;
+	margin-top: 10%;
+}
+#address_block {
+
+}
+
+/**************************************************************************************************/
+/**************************************Footer - Section Break**************************************/
+/**************************************************************************************************/
+#break_5 {
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+#break_5 p,
+#break_5 a {
+	color: #212121;
+	font-size: 0.75em;
+}
+
+#break_5 span {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*************************************************************************************************************/
+/**************************************Modify attributes at breakpoints.**************************************/
+/*************************************************************************************************************/
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 479px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_3.jpg);
+	}
+	body {
+		font-size: 14px;
+	}
+	.container {
+		width: 320px;
+	}
+	h1 {
+		font-size: 21px;
+		line-height: 24px;
+	}
+	h2 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	p, a, label, input, textarea {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#header_tile {
+		height: 278px;
+	}
+	#services_content p {
+		margin-top: 32px;
+	}
+	.services_tile {
+		height: 130px;
+		padding: 10px 15px 15px 15px;
+	}
+	.industry_icon {
+		height: 86px;
+		margin-bottom: 32px;
+		background-size: 51px 51px;
+		padding-top: 68px;
+	}
+	.leaders_photo {
+		height: 130px;
+		width: 130px;
+	}
+	#contact_form_block {
+		margin-top: 20%;
+	}
+	#googleMap {
+		height: 325px;
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_1.jpg);
+	}
+	body {
+		font-size: 14px;
+	}
+	.container {
+		/*width: 320px;*/
+		width: 480px !important;
+	}
+	h1 {
+		font-size: 21px;
+		line-height: 24px;
+	}
+	h2 {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	p, a, label, input, textarea {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#header_tile {
+		height: 278px;
+	}
+	#services_content p {
+		margin-top: 76px;
+	}
+	.services_tile {
+		height: 130px;
+		padding: 10px 15px 15px 15px;
+	}
+	.industry_icon {
+		height: 86px;
+		margin-bottom: 32px;
+		background-size: 51px 51px;
+		padding-top: 68px;
+	}
+	.leaders_photo {
+		height: 130px;
+		width: 130px;
+	}
+	#contact_form_block {
+		margin-top: 20%;
+	}
+	#googleMap {
+		height: 325px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_1.jpg);
+	}
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 24px;
+		line-height: 27.43px;
+	}
+	h2 {
+		font-size: 17.14px;
+		line-height: 20.57px;
+	}
+	p, a, label, input, textarea {
+		font-size: 16px;
+		line-height: 20.57px;
+	}
+	#header_tile {
+		height: 460px;
+	}
+	#services_content p {
+		margin-top: 76px;
+	}
+	.services_tile {
+		height: 130px;
+		padding: 10px 15px 15px 15px;
+	}
+	.industry_icon {
+		height: 114px;
+		margin-bottom: 72px;
+		background-size: 67px 67px;
+		padding-top: 93px;
+	}
+	.leaders_photo {
+		height: 150px;
+		width: 150px;
+	}
+	#contact_form_block {
+		margin-top: 10%;
+	}
+	#googleMap {
+		height: 350px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_1.jpg);
+	}
+	body {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 27px;
+		line-height: 30.86px;
+	}
+	h2 {
+		font-size: 19.29px;
+		line-height: 23.15px;
+	}
+	p, a, label, input, textarea {
+		font-size: 18px;
+		line-height: 23.14px;
+	}
+	#header_tile {
+		height: 488px;
+	}
+	#services_content p {
+		margin-top: 96px;
+	}
+	.services_tile {
+		height: 130px;
+		padding: 10px 15px 15px 15px;
+	}
+	.industry_icon {
+		height: 124px
+		margin-bottom: 97px;
+		background-size: 75px 75px;
+		padding-top: 101px;
+	}
+	.leaders_photo {
+		height: 180px;
+		width: 180px;
+	}
+	#contact_form_block {
+		margin-top: 10%;
+	}
+	#googleMap {
+		height: 350px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_1.jpg);
+	}
+	body {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 30px;
+		line-height: 34.29px;
+	}
+	h2 {
+		font-size: 21.43px;
+		line-height: 25.72px;
+	}
+	p, a, label, input, textarea {
+		font-size: 20px;
+		line-height: 25.71px;
+	}
+	#header_tile {
+		height: 488px;
+	}
+	#services_content p {
+		margin-top: 96px;
+	}
+	.services_tile {
+		height: 160px;
+		padding: 10px 15px 15px 15px;
+	}
+	.industry_icon {
+		height: 137px;
+		margin-bottom: 117px;
+		background-size: 80px 80px;
+		padding-top: 111px;
+	}
+	.leaders_photo {
+		height: 200px;
+		width: 200px;
+	}
+	#contact_form_block {
+		margin-top: 10%;
+	}
+	#googleMap {
+		height: 400px;
+	}	
+}
+/* Very Large Devices, Very Wide Screens */
+@media only screen and (min-width : 1600px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_4.jpg);
+	}
+}
+/* iMac 27" */
+@media only screen and (min-width : 2560px) {
+	#break_1 {
+		background-image: url(../images/photo_dark_4.jpg);
+	}
+}
+
+/* Fix IE Errors... */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#break_1 {
+		
+	}
+}
