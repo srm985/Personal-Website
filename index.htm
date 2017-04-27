@@ -15,7 +15,7 @@
     <!--Initialize webpage sizing.-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Grab BS3 and support.-->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script defer src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Asynchronously load our fonts.-->
@@ -71,28 +71,18 @@
     <meta property="og:title" content="Sean McQuay" />
     <meta property="og:description" content="Electrical Engineer / Developer" />
     <meta property="og:image" content="www.seanmcquay.com/images/profile-compressor.png" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('nav').load('header.htm');
+        $('footer').load('footer.htm');
+    });
+    </script>
 </head>
 
 <body>
     <div class="fouc_blocker"></div>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#myNavbar" id="hamburger_menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                <ul class="nav navbar-nav" id="navbar-right">
-                    <li><a href="index.htm">HOME</a></li>
-                    <li><a href="portfolio.htm">PORTFOLIO</a></li>
-                    <li><a href="contact.htm">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-fixed-top"></nav>
     <div class="blackout_background"></div>
     <section>
         <div class="container-fluid base" id="section_1">
@@ -138,7 +128,7 @@
                     <div class="col-md-7 col-xs-10 col-xs-offset-1">
                         <p class="left_side_bar_green" id="bio_text">I have a passion for all things data! I strive to consume and analyze everything around me in the pursuit of driving swift and accurate decisions and uncovering the unknown. Only once you have all the data can you truly understand what it was you were looking for. I love to diversify my knowledge by understanding as many fields of study as possible. This is critical to fully understanding the world around us.
                             <br>
-                            <br>I currently function as a front-end developer – designing and wrapping skins around Java applications hosted within our content management system, Liferay. I leverage HTML, CSS, JavaScript/jQuery along with frameworks such as Flexbox and Bootstrap and tools such as Photoshop, Illustrator, and Sketch to materialize great projects. What makes me great isn't the languages I know or the tools I use, but my attention to details that matter. My goal, as always, is to develop an elegant solution with which to provide the user a coherent, information-rich experience – ensuring a beautifully-designed and pleasant-to-navigate application which serves to bolster conversion rates and retain the current user base. I am passionate about providing great user experiences and seek inspiration from every source around me and strive to try to implement something new every day.
+                            <br>I currently function as a UI engineer / front-end developer – designing and wrapping skins around Java applications hosted within our content management system, Liferay. I leverage HTML, CSS, JavaScript / jQuery along with frameworks such as Flexbox and Bootstrap and tools such as Photoshop, Illustrator, Sketch, and Axure to materialize great projects. My typical day is filled not only with designing and implementing new features, but also assessing and providing an actionable path of improvement opportunities for those features currently deployed. What makes me great isn't the languages I know or the tools I use, but my attention to details that matter. My goal, as always, is to develop an elegant solution with which to provide the user a coherent, information-rich experience – ensuring a beautifully-designed and pleasant-to-navigate application which serves to bolster conversion rates and retain the current user base. I am passionate about providing great user experiences and seek inspiration from every source around me and strive to try to implement something new every day.
                             <br>
                             <br>I was previously employed by Luminant where I provided the role of data analyst - leading a reformation in how our team approached big data, providing valuable insight into business operations, developing statistical models to assess mechanical equipment health and predict operational difficulties, and solving our everyday challenges with the aid of VBA, Ruby, and R. Findings derived from this analytical review were then combined with my unique knowledge to provide comprehensible context. I then directly presented this “actionable intelligence” to Luminant’s internal stakeholders or external clients.</p>
                     </div>
@@ -269,23 +259,7 @@
             </div>
         </div>
     </section>
-    <footer>
-        <p>This website powered by HTML5, CSS3, JS, Bootstrap, and clever coding.</p>
-        <div>
-            <a target="_blank" href="https://www.linkedin.com/in/seanmcquay">
-                <div class="social_media_icon" id="linkedin">
-                </div>
-            </a>
-            <a target="_blank" href="http://stackoverflow.com/users/story/6438217">
-                <div class="social_media_icon" id="stackoverflow">
-                </div>
-            </a>
-            <a target="_blank" href="https://github.com/srm985">
-                <div class="social_media_icon" id="github">
-                </div>
-            </a>
-        </div>
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
