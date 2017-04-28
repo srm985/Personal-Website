@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website Repository",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srm985/Personal-Website.git"
+  },
+  "author": "Sean McQuay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srm985/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/srm985/Personal-Website#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-minify-html": "^2.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
