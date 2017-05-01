@@ -60,7 +60,6 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         if ($(window).outerWidth() > 767) {
-            console.log('here');
             $('#myNavbar').collapse('hide');
             $('.blackout_background').removeClass('navbar_open');
             showNav = true;
