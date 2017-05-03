@@ -9,7 +9,7 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/poc_website/poc-compressor.jpg);
+    background-image: url(../images/poc_website/poc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,14 +31,14 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/poc_website/poc_old_screen-compressor.png);
+    background-image: url(../images/poc_website/poc_old_screen.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #image_2 {
     height: 100%;
-    background-image: url(../images/poc_website/poc_new_screen-compressor.png);
+    background-image: url(../images/poc_website/poc_new_screen.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -55,14 +55,14 @@
 
 #image_3 {
     height: 100%;
-    background-image: url(../images/poc_website/contact_old-compressor.png);
+    background-image: url(../images/poc_website/contact_old.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #image_4 {
     height: 100%;
-    background-image: url(../images/poc_website/contact_new-compressor.png);
+    background-image: url(../images/poc_website/contact_new.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

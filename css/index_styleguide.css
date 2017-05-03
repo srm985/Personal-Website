@@ -13,7 +13,7 @@ ul {
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/header-compressor.jpg);
+    background-image: url(../images/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ ul {
     height: 200px;
     width: 200px;
     margin-top: 30px;
-    background-image: url(../images/profile-compressor.png);
+    background-image: url(../images/profile.png);
     background-size: cover;
     background-repeat: no-repeat;
 }

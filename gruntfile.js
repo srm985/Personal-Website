@@ -75,5 +75,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'imagemin']);
+    grunt.registerTask('default', ['minifyHtml', 'cssmin', 'uglify']);
+    grunt.registerTask('compress-images', 'imagemin');
+    grunt.registerTask('run-all', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'imagemin']);
 };

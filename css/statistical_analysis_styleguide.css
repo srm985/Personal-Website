@@ -9,7 +9,7 @@
 #section_1 {
     color: #3D414D;
     background-color: #4EDEC2;
-    background-image: url(../images/statistical_analysis/statistical_analysis-compressor.jpg);
+    background-image: url(../images/statistical_analysis/statistical_analysis.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/statistical_analysis/statistical_analysis_code-compressor.png);
+    background-image: url(../images/statistical_analysis/statistical_analysis_code.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
