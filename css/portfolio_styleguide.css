@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -13,49 +13,49 @@
 }
 
 .project_wrapper_full {
-    padding: 40px;
     position: relative;
     height: 300px;
+    padding: 40px;
 }
 
 .project_title_full_left {
-    width: 40%;
     float: left;
+    width: 40%;
     margin-top: -2%;
 }
 
 .project_content_full_right {
+    display: inline-block;
     width: 60%;
     text-align: justify;
-    display: inline-block;
 }
 
 .project_title_full_right {
+    display: inline-block;
     width: 40%;
     margin-top: -2%;
     text-align: right;
-    display: inline-block;
 }
 
 .project_content_full_left {
+    float: left;
     width: 60%;
     text-align: justify;
-    float: left;
 }
 
 .project_wrapper_half {
-    padding: 40px;
-    height: 300px;
     position: relative;
+    height: 300px;
+    padding: 40px;
 }
 
 .project_title_half {
     width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     -webkit-transform: translateY(150px);
     -ms-transform: translateY(150px);
     transform: translateY(150px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
     -webkit-backface-visibility: hidden;
 }
 
@@ -72,81 +72,97 @@
 }
 
 .project_content_half {
-    width: 100%;
-    text-align: justify;
     visibility: hidden;
-    opacity: 0;
+    width: 100%;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
+    text-align: justify;
+    opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 .project_content_half_hovered {
     visibility: visible;
-    opacity: 1;
     -webkit-transform: translateY(30px);
     -ms-transform: translateY(30px);
     transform: translateY(30px);
+    opacity: 1;
 }
 
 #project_1 {
-    background-color: #EFECE7;
-    color: #3D414D;
-    background-image: url(../images/statistical_analysis/statistical_analysis.jpg);
-    background-size: cover;
+    color: #EFECE7;
+    background-color: #3D414D;
+    background-image: url(../images/mok-project/keyboard.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_2 {
-    background-color: #FF7878;
     color: #EFECE7;
-    background-image: url(../images/poc_website/poc.jpg);
-    background-size: cover;
+    background-color: #FF7878;
+    background-image: url(../images/terminal-reskin/kiosk.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_3 {
-    background-color: #3D414D;
-    color: #EFECE7;
-    background-image: url(../images/quadcopter/quadcopter.jpg);
-    background-size: cover;
+    color: #3D414D;
+    background-color: #EFECE7;
+    background-image: url(../images/statistical_analysis/statistical_analysis.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_4 {
-    background-color: #4EDEC2;
-    color: #3D414D;
-    background-image: url(../images/statistical_maintenance/statistical_maintenance.jpg);
-    background-size: cover;
+    color: #EFECE7;
+    background-color: #FF7878;
+    background-image: url(../images/poc_website/poc.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_5 {
-    background-color: #EFECE7;
-    color: #3D414D;
-    background-image: url(../images/bearing_wipe/bearing_wipe.jpg);
-    background-size: cover;
+    color: #EFECE7;
+    background-color: #3D414D;
+    background-image: url(../images/quadcopter/quadcopter.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_6 {
-    background-color: #FF7878;
     color: #3D414D;
-    background-image: url(../images/graphic_design/graphic_background.png);
-    background-size: 100% 100%;
+    background-color: #4EDEC2;
+    background-image: url(../images/statistical_maintenance/statistical_maintenance.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #project_7 {
-    background-color: #3D414D;
-    color: #FF7878;
-    background-image: url(../images/bit_error/bit_error.jpg);
-    background-size: cover;
+    color: #3D414D;
+    background-color: #EFECE7;
+    background-image: url(../images/bearing_wipe/bearing_wipe.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project_8 {
+    color: #3D414D;
+    background-color: #FF7878;
+    background-image: url(../images/graphic_design/graphic_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#project_9 {
+    color: #FF7878;
+    background-color: #3D414D;
+    background-image: url(../images/bit_error/bit_error.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -193,18 +209,3 @@
         transform: translateY(163px);
     }
 }
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {}
-
-
-/* Very Large Devices, Very Wide Screens */
-
-@media only screen and (min-width: 1600px) {}
