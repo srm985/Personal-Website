@@ -116,7 +116,7 @@
     right: 0;
     left: 0;
     opacity: 100%;
-    background-image: url(../images/arrow-compressor.png);
+    background-image: url(../images/arrow.png);
     background-size: 100% 100%;
     -webkit-animation: header_arrow 5s infinite;
     -moz-animation: header_arrow 5s infinite;
