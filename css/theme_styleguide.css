@@ -196,7 +196,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 16px;
         font-weight: 500;
     }
@@ -257,7 +258,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 18px;
         font-weight: 500;
     }
@@ -306,7 +308,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 22px;
         font-weight: 500;
     }
@@ -333,7 +336,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 22px;
         font-weight: 500;
     }
@@ -360,7 +364,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 22px;
         font-weight: 500;
     }
@@ -387,7 +392,8 @@ a:visited {
     label,
     input,
     textarea,
-    button {
+    button,
+    li {
         font-size: 22px;
         font-weight: 500;
     }

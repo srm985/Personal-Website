@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -10,8 +10,8 @@
     color: #FFFFFF;
     background-color: #4EDEC2;
     background-image: url(../images/mok-project/keyboard.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -32,44 +32,52 @@
 #image_1 {
     height: 100%;
     background-image: url(../images/poc_website/poc_old_screen.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_2 {
     height: 100%;
     background-image: url(../images/poc_website/poc_new_screen.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_5 {
-    color: #FFFFFF;
-    background-color: #4EDEC2;
-}
-
-#section_6 {
-    color: #FFFFFF;
+    color: #3D414D;
     background-color: #EFECE7;
 }
 
-#image_3 {
-    height: 100%;
-    background-image: url(../images/poc_website/contact_old.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+table {
+    max-width: 100%;
+    border: solid 1px #3D414D;
+    border-collapse: collapse;
+    border-radius: 2px;
 }
 
-#image_4 {
-    height: 100%;
-    background-image: url(../images/poc_website/contact_new.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+th {
+    color: #ffffff;
+    background-color: #3D414D;
 }
 
-#section_7 {
-    color: #FFFFFF;
-    background-color: #4EDEC2;
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+    text-align: left;
+}
+
+td:nth-of-type(3) {
+    text-align: justify;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 
