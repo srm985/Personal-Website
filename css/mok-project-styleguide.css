@@ -31,14 +31,7 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/poc_website/poc_old_screen.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-#image_2 {
-    height: 100%;
-    background-image: url(../images/poc_website/poc_new_screen.png);
+    background-image: url(/images/mok-project/keyboard.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -61,6 +54,10 @@ tr {
 
 tr:nth-of-type(even) {
     background-color: #F5F5F5;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #EFECE7;
 }
 
 th {
