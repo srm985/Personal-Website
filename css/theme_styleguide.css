@@ -65,7 +65,7 @@ a:visited {
     transition: all 0.2 ease-in-out;
 }
 
-.social_media_icon:hover {
+.social_media_icon_hover_attr:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -138,7 +138,7 @@ a:visited {
     transition: all 0.2s ease-in-out;
 }
 
-.link_button:hover {
+.link_button_hover_attr:hover {
     background-color: #FFFFFF;
     color: #4EDEC2;
 }
