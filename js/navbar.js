@@ -74,10 +74,10 @@ $(document).ready(function() {
         }
     }, 500);
 
-    $('#hamburger_menu').click(function() {
+    $(document).on('click touch', '#hamburger_menu', function() {
         $('.blackout_background').toggleClass('navbar_open');
     });
-    $('.blackout_background').click(function() {
+    $(document).on('click touch', '.blackout_background', function() {
         $('#myNavbar').collapse('hide');
         $('.blackout_background').toggleClass('navbar_open');
     });
