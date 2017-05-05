@@ -2,6 +2,8 @@ $(document).ready(function() {
 
     $('.fouc_blocker').removeClass('fouc_blocker'); //Shed our FOUC blocker.
 
+    toggleDeviceType(); //Initialize as non-touch device.
+
     $(function() {
         var pgurl = '';
         if (window.location.href.lastIndexOf('#') > 1) {
@@ -102,14 +104,9 @@ $(document).ready(function() {
     }, 100);
 
     function toggleDeviceType() {
-        $('.services_tile').toggleClass('touch_device_mode');
-        $('#video_thumbnail').toggleClass('touch_device_mode');
-        $('.animated_social_icon').toggleClass('animated_social_icon_hover_attr');
-        $('.content_button').toggleClass('content_button_hover_attr');
-        $('.download_button').toggleClass('touch_device_mode');
-        $('.video_thumbnail').toggleClass('touch_device_mode');
+        $('.link_button').toggleClass('link_button_hover_attr');
+        $('.social_media_icon').toggleClass('social_media_icon_hover_attr');
         $('#submit_button').toggleClass('submit_button_hover_attr');
-        $('#services_tile_8').toggleClass('touch_device_mode');
     }
 
     function removeCheckMobileEvent() {
