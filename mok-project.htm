@@ -154,86 +154,45 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Installation / Running</h3>
-                        <p>Install <a href="https://nodejs.org/en/download/">Node.js</a></p>
+                        <p>Install <a href="https://nodejs.org/en/download/" class="anchor-formatted">Node.js</a></p>
                         <p>Update npm to the latest version.</p>
                         <pre><code>$ npm install npm@latest -g</code></pre>
-                        <p>Install <a href="https://www.npmjs.com/package/http-server">http-server</a> or your own prefered server.</p>
+                        <p>Install <a href="https://www.npmjs.com/package/http-server" class="anchor-formatted">http-server</a> or your own prefered server.</p>
                         <pre><code>$ npm install http-server -g<br>$ cd /mok-project<br>$ http-server</code></pre>
                         <p><em>Feel free to disregard these instructions if you have your own preferred server package or are running it live.</em></p>
                         <p>
                             <a></a>Prerequisites / Dependencies</p>
-                        <p>This project was built and tested on jQuery 3.2 and is fed .klc files from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339">Microsoft Keyboard Layout Creator</a> V1.4.</p>
+                        <p>This project was built and tested on jQuery 3.2 and is fed .klc files from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339" class="anchor-formatted">Microsoft Keyboard Layout Creator</a> V1.4.</p>
                         <h3><a></a>Usage</h3>
                         <p>To initiate an instance of the keyboard within your application you may include the following script:</p>
                         <pre><code>&lt;script type="text/javascript" src="keyboard.min.js"&gt;&lt;/script&gt;<br>&lt;link rel="stylesheet" type="text/css" href="keyboard.min.css"&gt;<br><br>&lt;script type="text/javascript"&gt;<br>    $(document).ready(function<() {<br>        $(document).keyboard({<br>            language: 'us',<br>            keyboardPosition: 'bottom'<br>        });<br>    });<br>&lt;/script&gt;</code></pre>
                         <p>Options</p>
-                        <table>
-                            <tr>
-                                <th>Option</th>
-                                <th>Default Value</th>
-                                <th>Information</th>
-                            </tr>
-                            <tr>
-                                <td>inputType</td>
-                                <td>‘text, textarea, number, password, search, tel, url, contenteditable’</td>
-                                <td>May pass individual input types or comma-separated values.</td>
-                            </tr>
-                            <tr>
-                                <td>language</td>
-                                <td>none</td>
-                                <td>Given as a string with comma-separated values i.e. ‘us, spanish, arabic, russian’.</td>
-                            </tr>
-                            <tr>
-                                <td>keyboardPosition</td>
-                                <td>‘bottom’</td>
-                                <td>Locate the keyboard at page ‘top’, ‘middle’, or ‘bottom’ with a default edge padding of 20px.</td>
-                            </tr>
-                            <tr>
-                                <td>cancelColor</td>
-                                <td>‘#E74C3C’</td>
-                                <td>Defines background color of cancel button. May pass hex string or specific color i.e. ‘blue’.</td>
-                            </tr>
-                            <tr>
-                                <td>cancelTextColor</td>
-                                <td>‘#FFFFFF’</td>
-                                <td>Defines text color of cancel button. May pass hex string or specific color i.e. ‘white’.</td>
-                            </tr>
-                            <tr>
-                                <td>acceptColor</td>
-                                <td>‘#2ECC71’</td>
-                                <td>Defines background color of accept button. May pass hex string or specific color i.e. ‘blue’.</td>
-                            </tr>
-                            <tr>
-                                <td>acceptTextColor</td>
-                                <td>‘#FFFFFF’</td>
-                                <td>Defines text color of accept button. May pass hex string or specific color i.e. ‘white’.</td>
-                            </tr>
-                            <tr>
-                                <td>keyColor</td>
-                                <td>‘#E0E0E0’</td>
-                                <td>Defines background color of keys. May pass hex string or specific color i.e. ‘blue’.</td>
-                            </tr>
-                            <tr>
-                                <td>keyTextColor</td>
-                                <td>‘#555555’</td>
-                                <td>Defines text color used on keys. May pass hex string or specific color i.e. ‘blue’.</td>
-                            </tr>
-                            <tr>
-                                <td>blackoutColor</td>
-                                <td>‘25, 25, 25, 0.9’</td>
-                                <td>Defines color and opacity of blackout background. Passed as RGBA string.</td>
-                            </tr>
-                            <tr>
-                                <td>allowEscapeCancel</td>
-                                <td>true</td>
-                                <td>Cancel keyboard input with hardware keyboard [Escape] key.</td>
-                            </tr>
-                            <tr>
-                                <td>allowEnterAccept</td>
-                                <td>true</td>
-                                <td>Accept keyboard input with hardware keyboard [Enter] key.</td>
-                            </tr>
-                        </table>
+                        <ul>
+                            <li>inputType: ‘text, textarea, number, password, search, tel, url, contenteditable’
+                                <br>May pass individual input types or comma-separated values.</li>
+                            <li>language: ‘us’
+                                <br>Given as a string with comma-separated values i.e. ‘us, spanish, arabic, russian’.</li>
+                            <li>keyboardPosition: ‘bottom’
+                                <br>Locate the keyboard at page ‘top’, ‘middle’, or ‘bottom’ with a default edge padding of 20px.</li>
+                            <li>cancelColor: ‘#E74C3C’
+                                <br>Defines background color of cancel button. May pass hex string or specific color i.e. ‘blue’.</li>
+                            <li>cancelTextColor: ‘#FFFFFF’
+                                <br>Defines text color of cancel button. May pass hex string or specific color i.e. ‘white’.</li>
+                            <li>acceptColor: ‘#2ECC71’
+                                <br>Defines background color of accept button. May pass hex string or specific color i.e. ‘blue’.</li>
+                            <li>acceptTextColor: ‘#FFFFFF’
+                                <br>Defines text color of accept button. May pass hex string or specific color i.e. ‘white’.</li>
+                            <li>keyColor: ‘#E0E0E0’
+                                <br>Defines background color of keys. May pass hex string or specific color i.e. ‘blue’.</li>
+                            <li>keyTextColor: ‘#555555’
+                                <br>Defines text color used on keys. May pass hex string or specific color i.e. ‘blue’.</li>
+                            <li>blackoutColor: ‘25, 25, 25, 0.9’
+                                <br>Defines color and opacity of blackout background. Passed as RGBA string.</li>
+                            <li>allowEscapeCancel: true
+                                <br>Cancel keyboard input with hardware keyboard [Escape] key.</li>
+                            <li>allowEnterAccept: true
+                                <br>Accept keyboard input with hardware keyboard [Enter] key.</li>
+                        </ul>
                         <p>Callbacks</p>
                         <table>
                             <tr>
@@ -370,7 +329,8 @@
                             </ul>
                         </div>
                         <h3>Customization</h3>
-                        <p>If you find that a key position is not where you prefer or you’d like to add additional functionality, you may simply modify the .klc file of your choosing or replicate it as your own version. Depending on the language selected, there may be three different tables you can modify. These include <strong>LAYOUT</strong> which contains standard keys, <strong>DEADKEYS</strong> which contains combinations such as <code>a + ` = à</code>, and <strong>LIGATURE</strong> which contains specific character combinations such as <code>a + e = æ</code>. Standard keys may be modified, starting in column 4. Modifying anything prior to this will cause issues with the way information is parsed from the file. To eliminate a specific character, replace the unicode value with <code>-1</code>. Keys with <code>@</code> indicate a dead key combination is possible. You may append this symbol to the end of a unicode value and add an entry in the <strong>DEADKEY</strong> table. Columns containing <code>%%</code> indicate that key ligature occurs i.e. several unicode values are combined to form that key. These may also be revised by modifying / adding entries in the <strong>LIGATURE</strong> table.</p>
+                        <p>If you find that a key position is not where you prefer or you’d like to add additional functionality, you may simply modify the .klc file of your choosing or replicate it as your own version. Depending on the language selected, there may be three different tables you can modify. These include <b>LAYOUT</b> which contains standard keys, <b>DEADKEYS</b> which contains combinations such as <code>a + ` = à</code>, and <b>LIGATURE</b> which contains specific character combinations such as <code>a + e = æ</code>.</p>
+                        <p>Standard keys may be modified, starting in column 4. Modifying anything prior to this will cause issues with the way information is parsed from the file. To eliminate a specific character, replace the unicode value with <code>-1</code>. Keys with <code>@</code> indicate a dead key combination is possible. You may append this symbol to the end of a unicode value and add an entry in the <b>DEADKEY</b> table. Columns containing <code>%%</code> indicate that key ligature occurs i.e. several unicode values are combined to form that key. These may also be revised by modifying / adding entries in the <b>LIGATURE</b> table.</p>
                         <p>For example, you might have the following line:</p>
                         <table>
                             <tr>
@@ -419,28 +379,28 @@
                         </table>
                         <p>It should be noted that anything after <code>//</code> is for your own reference and is not used in code.</p>
                         <h3>Bugs / Drawbacks</h3>
-                        <p>I’m not certain if ligature support is fully functioning for keyboards such as Hindi, Punjabi, Arabic, etc… I need your help in verifying these layouts! I do not speak these languages and I’ve found keyboard layouts very inconsistent. If you find a keyboard that is not function, I’ll be happy to make any revisions needed.</p>
-                        <p>I have not personally tested every keyboard and you may find bugs along your journey. I’ll work to quickly resolve any issues you might uncover.</p>
-                        <p>This initial release is not intended to be mobile friendly. It’s original scope was intended for those devices such as terminals and kiosks. It is the intention to provide mobile support at a later time.</p>
-                        <p>Due to the nature of JavaScript / jQuery, I currently do not know of a way to load all keyboard layouts in a directory. You must declare all keyboards which you wish to use.</p>
+                        <ul>
+                            <li>I’m not certain if ligature support is fully functioning for keyboards such as Hindi, Punjabi, Arabic, etc… I need your help in verifying these layouts! I do not speak these languages and I’ve found keyboard layouts very inconsistent. If you find a keyboard that is not function, I’ll be happy to make any revisions needed.</li>
+                            <li>I have not personally tested every keyboard and you may find bugs along your journey. I’ll work to quickly resolve any issues you might uncover.</li>
+                            <li>This initial release is not intended to be mobile friendly. It’s original scope was intended for those devices such as terminals and kiosks. It is the intention to provide mobile support at a later time.</li>
+                            <li>Due to the nature of JavaScript / jQuery, I currently do not know of a way to load all keyboard layouts in a directory. You must declare all keyboards which you wish to use.</li>
+                        </ul>
                         <h3>Coming Features</h3>
-                        <div class="col-xs-12">
-                            <ul>
-                                <li>Mobile Options</li>
-                                <li>Hardware-Keyboard Listeners (Perhaps)</li>
-                                <li>Number Pad Only Option</li>
-                                <li>Keyboard Layout Creator GUI</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li>Mobile Options</li>
+                            <li>Hardware-Keyboard Listeners (Perhaps)</li>
+                            <li>Number Pad Only Option</li>
+                            <li>Keyboard Layout Creator GUI</li>
+                        </ul>
                         <h3>Versioning</h3>
-                        <p>We use <a href="http://semver.org/">SemVer</a> for versioning.</p>
+                        <p>We use <a href="http://semver.org/" class="anchor-formatted">SemVer</a> for versioning.</p>
                         <h3>Authors</h3>
                         <ul>
-                            <li><strong>Sean McQuay</strong> - <em>Initial work</em> - <a href="https://github.com/srm985">GitHub</a> - <a href="http://www.seanmcquay.com">Website</a></li>
+                            <li><strong>Sean McQuay</strong> - <em>Initial work</em> - <a href="https://github.com/srm985" class="anchor-formatted">GitHub</a> - <a href="http://www.seanmcquay.com" class="anchor-formatted">Website</a></li>
                         </ul>
-                        <p>See also the list of <a href="https://github.com/srm985/mok-project/contributors">contributors</a> who participated in this project.</p>
-                        <h3><a></a>License</h3>
-                        <p>This project is licensed under the MIT License - see the <a href="https://github.com/srm985/mok-project/blob/master/LICENSE">LICENSE</a> file for details.</p>
+                        <p>See also the list of <a href="https://github.com/srm985/mok-project/contributors" class="anchor-formatted">contributors</a> who participated in this project.</p>
+                        <h3>License</h3>
+                        <p>This project is licensed under the MIT License - see the <a href="https://github.com/srm985/mok-project/blob/master/LICENSE" class="anchor-formatted">LICENSE</a> file for details.</p>
                     </div>
                 </div>
             </div>
