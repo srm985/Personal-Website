@@ -160,40 +160,39 @@
                         <p>Install <a href="https://www.npmjs.com/package/http-server" class="anchor-formatted">http-server</a> or your own prefered server.</p>
                         <pre><code>$ npm install http-server -g<br>$ cd /mok-project<br>$ http-server</code></pre>
                         <p><em>Feel free to disregard these instructions if you have your own preferred server package or are running it live.</em></p>
-                        <p>
-                            <a></a>Prerequisites / Dependencies</p>
+                        <h4>Prerequisites / Dependencies</h4>
                         <p>This project was built and tested on jQuery 3.2 and is fed .klc files from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339" class="anchor-formatted">Microsoft Keyboard Layout Creator</a> V1.4.</p>
-                        <h3><a></a>Usage</h3>
+                        <h3>Usage</h3>
                         <p>To initiate an instance of the keyboard within your application you may include the following script:</p>
                         <pre><code>&lt;script type="text/javascript" src="keyboard.min.js"&gt;&lt;/script&gt;<br>&lt;link rel="stylesheet" type="text/css" href="keyboard.min.css"&gt;<br><br>&lt;script type="text/javascript"&gt;<br>    $(document).ready(function<() {<br>        $(document).keyboard({<br>            language: 'us',<br>            keyboardPosition: 'bottom'<br>        });<br>    });<br>&lt;/script&gt;</code></pre>
-                        <p>Options</p>
+                        <h4>Options</h4>
                         <ul>
-                            <li>inputType: ‘text, textarea, number, password, search, tel, url, contenteditable’
+                            <li><b>inputType:</b> ‘text, textarea, number, password, search, tel, url, contenteditable’
                                 <br>May pass individual input types or comma-separated values.</li>
-                            <li>language: ‘us’
+                            <li><b>language:</b> ‘us’
                                 <br>Given as a string with comma-separated values i.e. ‘us, spanish, arabic, russian’.</li>
-                            <li>keyboardPosition: ‘bottom’
+                            <li><b>keyboardPosition:</b> ‘bottom’
                                 <br>Locate the keyboard at page ‘top’, ‘middle’, or ‘bottom’ with a default edge padding of 20px.</li>
-                            <li>cancelColor: ‘#E74C3C’
+                            <li><b>cancelColor:</b> ‘#E74C3C’
                                 <br>Defines background color of cancel button. May pass hex string or specific color i.e. ‘blue’.</li>
-                            <li>cancelTextColor: ‘#FFFFFF’
+                            <li><b>cancelTextColor:</b> ‘#FFFFFF’
                                 <br>Defines text color of cancel button. May pass hex string or specific color i.e. ‘white’.</li>
-                            <li>acceptColor: ‘#2ECC71’
+                            <li><b>acceptColor:</b> ‘#2ECC71’
                                 <br>Defines background color of accept button. May pass hex string or specific color i.e. ‘blue’.</li>
-                            <li>acceptTextColor: ‘#FFFFFF’
+                            <li><b>acceptTextColor:</b> ‘#FFFFFF’
                                 <br>Defines text color of accept button. May pass hex string or specific color i.e. ‘white’.</li>
-                            <li>keyColor: ‘#E0E0E0’
+                            <li><b>keyColor:</b> ‘#E0E0E0’
                                 <br>Defines background color of keys. May pass hex string or specific color i.e. ‘blue’.</li>
-                            <li>keyTextColor: ‘#555555’
+                            <li><b>keyTextColor:</b> ‘#555555’
                                 <br>Defines text color used on keys. May pass hex string or specific color i.e. ‘blue’.</li>
-                            <li>blackoutColor: ‘25, 25, 25, 0.9’
+                            <li><b>blackoutColor:</b> ‘25, 25, 25, 0.9’
                                 <br>Defines color and opacity of blackout background. Passed as RGBA string.</li>
-                            <li>allowEscapeCancel: true
+                            <li><b>allowEscapeCancel:</b> true
                                 <br>Cancel keyboard input with hardware keyboard [Escape] key.</li>
-                            <li>allowEnterAccept: true
+                            <li><b>allowEnterAccept:</b> true
                                 <br>Accept keyboard input with hardware keyboard [Enter] key.</li>
                         </ul>
-                        <p>Callbacks</p>
+                        <h4>Callbacks</h4>
                         <table>
                             <tr>
                                 <th>Name</th>
@@ -226,7 +225,7 @@
                         </table>
                         <p><em>You may change the user-displayed names of any keys in keyboard.js without affecting functionality.</em></p>
                         <h3>Supported Keyboards</h3>
-                        <div class="col-sm-6 col-xs-6">
+                        <div class="split-column">
                             <ul>
                                 <li>Albanian</li>
                                 <li>Arabic</li>
@@ -275,12 +274,10 @@
                                 <li>Macedonian</li>
                                 <li>Malayalam</li>
                                 <li>Maltese</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-xs-6">
-                            <ul>
                                 <li>Maori</li>
                                 <li>Marathi</li>
+                            </ul>
+                            <ul>
                                 <li>Mongolian</li>
                                 <li>Nepali</li>
                                 <li>Norwegian</li>
@@ -329,54 +326,12 @@
                             </ul>
                         </div>
                         <h3>Customization</h3>
-                        <p>If you find that a key position is not where you prefer or you’d like to add additional functionality, you may simply modify the .klc file of your choosing or replicate it as your own version. Depending on the language selected, there may be three different tables you can modify. These include <b>LAYOUT</b> which contains standard keys, <b>DEADKEYS</b> which contains combinations such as <code>a + ` = à</code>, and <b>LIGATURE</b> which contains specific character combinations such as <code>a + e = æ</code>.</p>
-                        <p>Standard keys may be modified, starting in column 4. Modifying anything prior to this will cause issues with the way information is parsed from the file. To eliminate a specific character, replace the unicode value with <code>-1</code>. Keys with <code>@</code> indicate a dead key combination is possible. You may append this symbol to the end of a unicode value and add an entry in the <b>DEADKEY</b> table. Columns containing <code>%%</code> indicate that key ligature occurs i.e. several unicode values are combined to form that key. These may also be revised by modifying / adding entries in the <b>LIGATURE</b> table.</p>
+                        <p>If you find that a key position is not where you prefer or you’d like to add additional functionality, you may simply modify the .klc file of your choosing or replicate it as your own version. Depending on the language selected, there may be three different tables you can modify. These include <i>LAYOUT</i> which contains standard keys, <i>DEADKEYS</i> which contains combinations such as <code>a + ` = à</code>, and <i>LIGATURE</i> which contains specific character combinations such as <code>a + e = æ</code>.</p>
+                        <p>Standard keys may be modified, starting in column 4. Modifying anything prior to this will cause issues with the way information is parsed from the file. To eliminate a specific character, replace the unicode value with <code>-1</code>. Keys with <code>@</code> indicate a dead key combination is possible. You may append this symbol to the end of a unicode value and add an entry in the <i>DEADKEY</i> table. Columns containing <code>%%</code> indicate that key ligature occurs i.e. several unicode values are combined to form that key. These may also be revised by modifying / adding entries in the <i>LIGATURE</i> table.</p>
                         <p>For example, you might have the following line:</p>
-                        <table>
-                            <tr>
-                                <th>SC</th>
-                                <th>VC</th>
-                                <th>Cap</th>
-                                <th>0</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>6</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>04</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0023</td>
-                                <td>-1</td>
-                                <td>00a3</td>
-                                <td>// DIGIT THREE, NUMBER SIGN, &lt;none&gt;, POUND SIGN</td>
-                            </tr>
-                        </table>
+                        <code><pre>04   3   0   3   0023   -1   00a3   // DIGIT THREE, NUMBER SIGN, &lt;none&gt;, POUND SIGN</pre></code>
                         <p>You decide for some reason you’d like to replace the NUMBER SIGN with EXCLAMATION MARK so you might modify the table as such:</p>
-                        <table>
-                            <tr>
-                                <th>SC</th>
-                                <th>VC</th>
-                                <th>Cap</th>
-                                <th>0</th>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>6</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>04</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td><strong>0021</strong></td>
-                                <td>-1</td>
-                                <td>00a3</td>
-                                <td>// DIGIT THREE, EXCLAMATION MARK, &lt;none&gt;, POUND SIGN</td>
-                            </tr>
-                        </table>
+                        <code><pre>04   3   0   3   <b>0021</b>   -1   00a3   // DIGIT THREE, NUMBER SIGN, &lt;none&gt;, POUND SIGN</pre></code>
                         <p>It should be noted that anything after <code>//</code> is for your own reference and is not used in code.</p>
                         <h3>Bugs / Drawbacks</h3>
                         <ul>
@@ -396,7 +351,7 @@
                         <p>We use <a href="http://semver.org/" class="anchor-formatted">SemVer</a> for versioning.</p>
                         <h3>Authors</h3>
                         <ul>
-                            <li><strong>Sean McQuay</strong> - <em>Initial work</em> - <a href="https://github.com/srm985" class="anchor-formatted">GitHub</a> - <a href="http://www.seanmcquay.com" class="anchor-formatted">Website</a></li>
+                            <li>Sean McQuay (<a href="https://github.com/srm985" class="anchor-formatted">GitHub</a>) - <em>Initial work</em>
                         </ul>
                         <p>See also the list of <a href="https://github.com/srm985/mok-project/contributors" class="anchor-formatted">contributors</a> who participated in this project.</p>
                         <h3>License</h3>

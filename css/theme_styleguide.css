@@ -56,6 +56,17 @@ a:active {
     color: inherit;
 }
 
+code {
+    color: #4EDEC2;
+    background-color: inherit;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #3D414D;
+}
+
 .anchor-formatted,
 .anchor-formatted:link,
 .anchor-formatted:visited,
@@ -63,6 +74,10 @@ a:active {
 .anchor-formatted:focus,
 .anchor-formatted:active {
     text-decoration: underline;
+}
+
+.split-column {
+    column-count: 2;
 }
 
 .social_media_icon {
@@ -208,7 +223,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 16px;
         font-weight: 500;
     }
@@ -270,7 +286,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 18px;
         font-weight: 500;
     }
@@ -320,7 +337,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 22px;
         font-weight: 500;
     }
@@ -348,7 +366,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 22px;
         font-weight: 500;
     }
@@ -376,7 +395,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 22px;
         font-weight: 500;
     }
@@ -404,7 +424,8 @@ a:active {
     input,
     textarea,
     button,
-    li {
+    li,
+    h4 {
         font-size: 22px;
         font-weight: 500;
     }
