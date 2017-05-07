@@ -1,3 +1,7 @@
+body {
+	background-color: #EFECE7
+}
+
 section:nth-of-type(1) {
     margin-top: 75px;
 }

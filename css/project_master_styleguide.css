@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -13,10 +13,9 @@
 .code_format {
     font-family: 'Consolas';
     font-size: 16px;
+    padding: 10px;
     word-break: break-all;
     background-color: #FFFFFF;
-    padding: 10px;
-    -webkit-box-shadow: 0 4px 5px #3D414D;
     box-shadow: 0 4px 5px #3D414D;
 }
 

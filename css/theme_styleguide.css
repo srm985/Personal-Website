@@ -31,7 +31,6 @@ body {
 }
 
 .image_styling {
-    -webkit-box-shadow: 0 4px 5px rgba(61, 65, 77, 0.7);
     box-shadow: 0 4px 5px rgba(61, 65, 77, 0.7);
 }
 
@@ -77,6 +76,8 @@ pre {
 }
 
 .split-column {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
 }
 
@@ -93,7 +94,6 @@ pre {
 
 .social_media_icon_hover_attr:hover {
     -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 

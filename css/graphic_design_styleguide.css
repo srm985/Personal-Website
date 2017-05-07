@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -11,8 +11,8 @@
     color: #FFFFFF;
     background-color: #4EDEC2;
     background-image: url(../images/graphic_design/graphic_background.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_2 {
@@ -33,15 +33,15 @@
 #image_1 {
     height: 100%;
     background-image: url(../images/graphic_design/business_card_3d.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_2 {
     height: 100%;
     background-image: url(../images/graphic_design/value_prop.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_5 {
@@ -52,50 +52,62 @@
 #image_3 {
     height: 100%;
     background-image: url(../images/graphic_design/backdrop.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_4 {
     height: 100%;
     background-image: url(../images/graphic_design/funnel.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_5 {
     height: 100%;
     background-image: url(../images/graphic_design/podium.png);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+    /**/
+}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /**/
+}
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /**/
+}
 
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /**/
+}
 
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    /**/
+}
 
 
 /* Very Large Devices, Very Wide Screens */
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+    /**/
+}

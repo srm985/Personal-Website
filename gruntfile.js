@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks 
+    grunt.loadNpmTasks('grunt-postcss');
 
     grunt.initConfig({
         clean: {
@@ -36,11 +37,25 @@ module.exports = function(grunt) {
                 }
             }
         },
+        postcss: {
+            options: {
+                map: false,
+                processors: [
+                    require('autoprefixer')({browsers: ['last 15 versions']})
+                ]
+            },
+            dist: {
+                expand: true,
+                cwd: 'css/',
+                src: '*.css',
+                dest: 'css/prefixed-css/'
+            }
+        },
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'css/',
+                    cwd: 'css/prefixed-css/',
                     src: '**/*.css',
                     dest: 'web/css/'
                 }]
@@ -75,7 +90,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['minifyHtml', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['minifyHtml', 'postcss', 'cssmin', 'uglify']);
+    grunt.registerTask('prefixcss', 'postcss');
     grunt.registerTask('compress-images', 'imagemin');
     grunt.registerTask('run-all', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'imagemin']);
 };
