@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -13,20 +13,20 @@ ul {
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/header-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/header.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #profile_image {
-    margin: 0 auto;
-    margin-bottom: 40px;
-    height: 200px;
     width: 200px;
+    height: 200px;
+    margin: 0 auto;
     margin-top: 30px;
-    background-image: url(../images/profile-compressor.png);
-    background-size: cover;
+    margin-bottom: 40px;
+    background-image: url(../images/profile.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .link_button {
@@ -49,8 +49,8 @@ ul {
 }
 
 #bio_text {
-    text-align: justify;
     margin-top: 5%;
+    text-align: justify;
 }
 
 
@@ -89,14 +89,20 @@ ul {
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /**/
+}
 
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    /**/
+}
 
 
 /* Very Large Devices, Very Wide Screens */
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+    /**/
+}

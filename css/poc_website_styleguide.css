@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -9,9 +9,9 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/poc_website/poc-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/poc_website/poc.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -31,16 +31,16 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/poc_website/poc_old_screen-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/poc_website/poc_old_screen.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_2 {
     height: 100%;
-    background-image: url(../images/poc_website/poc_new_screen-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/poc_website/poc_new_screen.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_5 {
@@ -55,16 +55,16 @@
 
 #image_3 {
     height: 100%;
-    background-image: url(../images/poc_website/contact_old-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/poc_website/contact_old.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_4 {
     height: 100%;
-    background-image: url(../images/poc_website/contact_new-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/poc_website/contact_new.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_7 {

@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -9,9 +9,9 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/quadcopter/quadcopter-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/quadcopter/quadcopter.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -31,16 +31,16 @@
 
 #image_1 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_1-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/quadcopter/quadcopter_1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #image_2 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_2-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/quadcopter/quadcopter_2.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_5 {
@@ -55,16 +55,16 @@
 
 #image_3 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_3-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/quadcopter/quadcopter_3.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #image_4 {
     height: 100%;
-    background-image: url(../images/quadcopter/quadcopter_4-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/quadcopter/quadcopter_4.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_7 {

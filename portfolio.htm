@@ -52,16 +52,16 @@
     ga('send', 'pageview');
     </script>
     <!--Link local CSS sheets.-->
-    <link rel="stylesheet" href="css/theme_styleguide.min.css">
-    <link rel="stylesheet" href="css/navbar_styleguide.min.css">
-    <link rel="stylesheet" href="css/portfolio_styleguide.min.css">
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/portfolio_styleguide.css">
     <!--Link local JS sheets.-->
-    <script defer type="text/javascript" src="js/navbar.min.js"></script>
-    <script defer type="text/javascript" src="js/half_screen_header.min.js"></script>
-    <script defer type="text/javascript" src="js/portfolio_page.min.js"></script>
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <script defer type="text/javascript" src="js/portfolio_page.js"></script>
     <!--Page Description-->
     <title>Sean McQuay | Portfolio</title>
-    <link rel="icon" href="images/icon-compressor.png">
+    <link rel="icon" href="images/icon.png">
     <meta name="description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
     <meta name="keywords" content="" />
     <meta http-equiv="author" content="Sean McQuay" />
@@ -71,7 +71,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Portfolio" />
     <meta property="og:description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
-    <meta property="og:image" content="http://www.seanmcquay.com/images/header-compressor.jpg" />
+    <meta property="og:image" content="http://www.seanmcquay.com/images/header.jpg" />
     <!--Load our dynamic header and footer-->
     <script type="text/javascript">
     $(document).ready(function() {
@@ -102,8 +102,28 @@
     </section>
     <section>
         <div class="container-fluid base" id="section_2">
+            <a href="mok-project.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_1">
+                    <div class="project_title_half">
+                        <h3>MOK Project</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_red">
+                        <p>A jQuery plugin providing multilingual onscreen keyboard for terminals and kiosks.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="terminal-project.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_2">
+                    <div class="project_title_half">
+                        <h3>Terminal Project</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_tan">
+                        <p>A fresh take on an outdated video visitation terminal front end helping users more easily communicate with their loved ones.</p>
+                    </div>
+                </div>
+            </a>
             <a href="statistical_analysis.htm">
-                <div class="container-fluid project_wrapper_full" id="project_1">
+                <div class="container-fluid project_wrapper_full" id="project_3">
                     <div class="project_title_full project_title_full_left">
                         <h3>Statistical Analysis</h3>
                     </div>
@@ -113,7 +133,7 @@
                 </div>
             </a>
             <a href="poc_website.htm">
-                <div class="container-fluid project_wrapper_half split_screen_left" id="project_2">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_4">
                     <div class="project_title_half">
                         <h3>POC Website Redesign</h3>
                     </div>
@@ -123,7 +143,7 @@
                 </div>
             </a>
             <a href="autonomous_drone.htm">
-                <div class="container-fluid project_wrapper_half split_screen_right" id="project_3">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_5">
                     <div class="project_title_half">
                         <h3>Autonomous Drone</h3>
                     </div>
@@ -133,7 +153,7 @@
                 </div>
             </a>
             <a href="statistical_maintenance.htm">
-                <div class="container-fluid project_wrapper_full" id="project_4">
+                <div class="container-fluid project_wrapper_full" id="project_6">
                     <div class="project_title_full project_title_full_right">
                         <h3>Statistical Maintenance</h3>
                     </div>
@@ -143,7 +163,7 @@
                 </div>
             </a>
             <a href="bearing_wipe.htm">
-                <div class="container-fluid project_wrapper_half split_screen_left" id="project_5">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_7">
                     <div class="project_title_half">
                         <h3>Bearing Wipe Detection</h3>
                     </div>
@@ -153,7 +173,7 @@
                 </div>
             </a>
             <a href="graphic_design.htm">
-                <div class="container-fluid project_wrapper_half split_screen_right" id="project_6">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_8">
                     <div class="project_title_half">
                         <h3>Graphic Design</h3>
                     </div>
@@ -163,7 +183,7 @@
                 </div>
             </a>
             <a href="bit_error.htm">
-                <div class="container-fluid project_wrapper_full" id="project_7">
+                <div class="container-fluid project_wrapper_full" id="project_9">
                     <div class="project_title_full project_title_full_left">
                         <h3>Bit Error Correction</h3>
                     </div>

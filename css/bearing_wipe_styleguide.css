@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -9,9 +9,9 @@
 #section_1 {
     color: #3D414D;
     background-color: #4EDEC2;
-    background-image: url(../images/bearing_wipe/bearing_wipe-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/bearing_wipe/bearing_wipe.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -37,29 +37,41 @@
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+    /**/
+}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /**/
+}
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /**/
+}
 
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /**/
+}
 
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    /**/
+}
 
 
 /* Very Large Devices, Very Wide Screens */
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+    /**/
+}

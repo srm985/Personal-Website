@@ -52,16 +52,16 @@
     ga('send', 'pageview');
     </script>
     <!--Link local CSS sheets.-->
-    <link rel="stylesheet" href="css/theme_styleguide.min.css">
-    <link rel="stylesheet" href="css/navbar_styleguide.min.css">
-    <link rel="stylesheet" href="css/project_master_styleguide.min.css">
-    <link rel="stylesheet" href="css/bearing_wipe_styleguide.min.css">
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/project_master_styleguide.css">
+    <link rel="stylesheet" href="css/bearing_wipe_styleguide.css">
     <!--Link local JS sheets.-->
-    <script defer type="text/javascript" src="js/navbar.min.js"></script>
-    <script defer type="text/javascript" src="js/half_screen_header.min.js"></script>
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
     <!--Page Description-->
     <title>Sean McQuay | Bearing Wipe Detection</title>
-    <link rel="icon" href="images/icon-compressor.png">
+    <link rel="icon" href="images/icon.png">
     <meta name="description" content="Simple OSIsoft PE script to identify real-time, potential bearing wipes during transient events on large machinery - removing the lengthy manual review process." />
     <meta name="keywords" content="" />
     <meta http-equiv="author" content="Sean McQuay" />
@@ -134,7 +134,7 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Performance Equation<br><br></h3>
-                        <p class="code_format">if(TagVal('TURBINE_SPEED','*'))<3550 then (if(TagVal('TURBINE_SPEED','*-10s'))>10 then (*A*) else 0) else 0<br><br>*A*: if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))>2 then (*B*) else if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))<2 then (*C*) else 0<br><br>*B*: if(TagVal('BEARING_TEMPERATURE','*-10s'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0<br><br>*C*: if(TagVal('BEARING_TEMPERATURE','*'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0</p>
+                        <code><pre>if(TagVal('TURBINE_SPEED','*'))&lt;3550 then (if(TagVal('TURBINE_SPEED','*-10s'))&gt;10 then (*A*) else 0) else 0<br><br>*A*: if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))>2 then (*B*) else if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))<2 then (*C*) else 0<br><br>*B*: if(TagVal('BEARING_TEMPERATURE','*-10s'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0<br><br>*C*: if(TagVal('BEARING_TEMPERATURE','*'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0</pre></code>
                     </div>
                 </div>
             </div>

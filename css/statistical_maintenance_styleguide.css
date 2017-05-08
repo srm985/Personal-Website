@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -19,9 +19,9 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
-    background-image: url(../images/statistical_maintenance/statistical_maintenance-compressor.jpg);
-    background-size: cover;
+    background-image: url(../images/statistical_maintenance/statistical_maintenance.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -51,16 +51,16 @@
 
 #image_3 {
     height: 100%;
-    background-image: url(../images/statistical_maintenance/deviation-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/statistical_maintenance/deviation.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #image_4 {
     height: 100%;
-    background-image: url(../images/statistical_maintenance/duration-compressor.png);
-    background-size: 100% 100%;
+    background-image: url(../images/statistical_maintenance/duration.png);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #section_7 {
