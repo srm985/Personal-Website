@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.ui.touch-punch.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font/css/styles.min.css">
+    <script type="text/javascript" src="terminal.js"></script>
+    <link rel="stylesheet" type="text/css" href="terminal-styleguide.css">
+</head>
+
+<body>
+    <div id="blackout-div" style="display: none;"></div>
+    <div id="terminal-wrapper">
+        <div id="terminal-header"></div>
+        <div id="terminal-body">
+            <div id="restart-terminal" onclick="restartTerminal();"><i class="icons8-restart-filled"></i>&nbsp;<u>Restart</u></div>
+            <div id="body-content-wrapper">
+                <div id="progress-indicator-wrapper" data-theProgressStep="0">
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-day-view-filled"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-user"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-calendar"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-ok"></p>
+                    </div>
+                </div>
+                <p align="center" id="page-title">ADDITIONAL VISITORS</p>
+                <div class="content-row">
+                    <div class="form-element">
+                        <label>Full Name:</label>
+                        <input type="text" name="name_1">
+                    </div>
+                    <div class="form-element">
+                        <label>Date Of Birth:</label>
+                        <input type="" class="dob-input-field date-input-field" name="dob_1" readonly>
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row">
+                    <div class="form-element">
+                        <label>Full Name:</label>
+                        <input type="text" name="name_2">
+                    </div>
+                    <div class="form-element">
+                        <label>Date Of Birth:</label>
+                        <input type="" class="dob-input-field date-input-field" name="dob_2" readonly>
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row">
+                    <div class="form-element">
+                        <label>Full Name:</label>
+                        <input type="text" name="name_3">
+                    </div>
+                    <div class="form-element">
+                        <label>Date Of Birth:</label>
+                        <input type="" class="dob-input-field date-input-field" name="dob_3" readonly>
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row">
+                    <div class="form-element">
+                        <label>Full Name:</label>
+                        <input type="text" name="name_4">
+                    </div>
+                    <div class="form-element">
+                        <label>Date Of Birth:</label>
+                        <input type="" class="dob-input-field date-input-field" name="dob_4" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="terminal-footer">
+            <div id="footer-content-wrapper">
+                <button href="scheduler-1.htm" class="default-button navigation-button" id="navigation-button-back">DISCARD</button>
+                <button href="scheduler-1.htm" class="default-button navigation-button" id="navigation-button-next">ADD</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks 
+    grunt.loadNpmTasks('grunt-postcss');
 
     grunt.initConfig({
         clean: {
@@ -11,7 +12,9 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     { expand: true, cwd: 'php', src: '**/*', dest: 'web/php/' },
-                    { expand: true, cwd: 'documents', src: '**/*', dest: 'web/documents/' }
+                    { expand: true, cwd: 'documents', src: '**/*', dest: 'web/documents/' },
+                    { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
+                    { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' }
                 ]
             }
         },
@@ -22,6 +25,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'web/autonomous_drone.htm': 'autonomous_drone.htm',
+                    'web/mok-project.htm': 'mok-project.htm',
+                    'web/terminal-project.htm': 'terminal-project.htm',
                     'web/bearing_wipe.htm': 'bearing_wipe.htm',
                     'web/bit_error.htm': 'bit_error.htm',
                     'web/contact.htm': 'contact.htm',
@@ -33,14 +38,29 @@ module.exports = function(grunt) {
                     'web/portfolio.htm': 'portfolio.htm',
                     'web/statistical_analysis.htm': 'statistical_analysis.htm',
                     'web/statistical_maintenance.htm': 'statistical_maintenance.htm',
+                    'web/style_guide.htm': 'style_guide.htm',
                 }
+            }
+        },
+        postcss: {
+            options: {
+                map: false,
+                processors: [
+                    require('autoprefixer')({ browsers: ['last 15 versions'] })
+                ]
+            },
+            dist: {
+                expand: true,
+                cwd: 'css/',
+                src: '*.css',
+                dest: 'css/prefixed-css/'
             }
         },
         cssmin: {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'css/',
+                    cwd: 'css/prefixed-css/',
                     src: '**/*.css',
                     dest: 'web/css/'
                 }]
@@ -75,7 +95,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['minifyHtml', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['copy', 'minifyHtml', 'postcss', 'cssmin', 'uglify']);
+    grunt.registerTask('prefixcss', 'postcss');
     grunt.registerTask('compress-images', 'imagemin');
     grunt.registerTask('run-all', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'imagemin']);
 };

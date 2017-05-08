@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font/css/styles.min.css">
+    <script type="text/javascript" src="terminal.js"></script>
+    <link rel="stylesheet" type="text/css" href="terminal-styleguide.css">
+</head>
+
+<body>
+    <div id="terminal-wrapper">
+        <div id="terminal-header"></div>
+        <div id="terminal-body">
+            <div id="restart-terminal" onclick="restartTerminal();"><i class="icons8-restart-filled"></i>&nbsp;<u>Restart</u></div>
+            <div id="body-content-wrapper">
+                <div id="progress-indicator-wrapper" data-theProgressStep="1">
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-day-view-filled"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-user"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-calendar"></p>
+                    </div>
+                    <div class="progress-indicator-line"></div>
+                    <div class="progress-indicator-element">
+                        <p align="center" class="icons8-ok"></p>
+                    </div>
+                </div>
+                <p align="center" id="page-title">INMATE SEARCH</p>
+                <div class="content-row content-row-single-element">
+                    <div class="form-element">
+                        <label>First Name:</label>
+                        <input type="text" name="firstname">
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row content-row-single-element">
+                    <div class="form-element">
+                        <label>Last Name:</label>
+                        <input type="text" name="lastname">
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row content-row-single-element">
+                    <div class="form-element">
+                        <p id="section-break-text">OR</p>
+                    </div>
+                </div>
+                <div class="content-row content-row-single-element">
+                    <div class="form-element">
+                        <div id="section-break-line"></div>
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row content-row-single-element">
+                    <div class="form-element">
+                        <label>Inmate Number (JID):</label>
+                        <input type="text" name="jid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="terminal-footer">
+            <div id="footer-content-wrapper">
+                <button href="scheduler-1.htm" class="default-button navigation-button" id="navigation-button-back">BACK</button>
+                <button href="scheduler-4.htm" class="default-button navigation-button" id="navigation-button-next">NEXT</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

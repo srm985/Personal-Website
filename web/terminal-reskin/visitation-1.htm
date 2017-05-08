@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font/css/styles.min.css">
+    <script type="text/javascript" src="terminal.js"></script>
+    <link rel="stylesheet" type="text/css" href="terminal-styleguide.css">
+</head>
+
+<body>
+    <div id="terminal-wrapper">
+        <div id="terminal-header"></div>
+        <div id="terminal-body">
+            <div id="restart-terminal" onclick="restartTerminal();"><i class="icons8-restart-filled"></i>&nbsp;<u>Restart</u></div>
+            <div id="body-content-wrapper">
+                <div class="no-progress-indicator">
+                </div>
+                <p align="center" id="page-title">ENTER PIN NUMBER</p>
+                <div class="content-row content-row-single-element">
+                    <div class="form-element">
+                        <input type="tel" name="pin" id="pin-input-field" readonly>
+                    </div>
+                </div>
+                <div class="content-row spaced-content-row content-row-single-element">
+                    <div id="keypad">
+                        <button class="key" value="1">1</button>
+                        <button class="key" value="2">2</button>
+                        <button class="key" value="3">3</button>
+                        <button class="key" value="4">4</button>
+                        <button class="key" value="5">5</button>
+                        <button class="key" value="6">6</button>
+                        <button class="key" value="7">7</button>
+                        <button class="key" value="8">8</button>
+                        <button class="key" value="9">9</button>
+                        <button class="key" value="clear">CLEAR</button>
+                        <button class="key" value="0">0</button>
+                        <button class="key" value="del"><i class="icons8-clear-symbol"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="terminal-footer">
+            <div id="footer-content-wrapper">
+                <button href="select-service.htm" class="default-button navigation-button" id="navigation-button-back">BACK</button>
+                <button href="visitation-2.htm" class="default-button navigation-button" id="navigation-button-next">NEXT</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

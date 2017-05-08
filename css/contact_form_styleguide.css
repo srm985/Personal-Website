@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -14,14 +14,14 @@
 
 .input_space {
     text-indent: 7px;
-    border: solid 1px #3D414D;
     color: #757575;
+    border: solid 1px #3D414D;
     background-color: #FFFFFF;
 }
 
 .input_space:focus {
-    outline: none;
     border: solid 2px #4EDEC2;
+    outline: none;
 }
 
 .floating_placeholder input {
@@ -33,29 +33,28 @@
 }
 
 .input_space:invalid {
-    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 #description_parent textarea {
     height: 6em;
+    padding: 7px;
     resize: none;
     text-indent: 0;
-    padding: 7px;
 }
 
 #submit_button {
-    height: 50px;
     width: 100%;
-    border: solid 2px #4EDEC2;
+    height: 50px;
     margin-top: 3em;
     padding: 0;
-    color: #4EDEC2;
-    background-color: transparent;
     -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
     -webkit-transition: background-position 0.75s ease-in-out;
+    transition: all 1s ease-in-out;
     transition: background-position 0.75s ease-in-out;
+    color: #4EDEC2;
+    border: solid 2px #4EDEC2;
+    background-color: transparent;
 }
 
 #submit_button:focus,
@@ -69,64 +68,61 @@ input {
 }
 
 .submit_button_hover_attr:hover {
-    background-color: #4EDEC2 !important;
     color: #EFECE7 !important;
+    background-color: #4EDEC2 !important;
 }
 
 #submit_button .disabled {
     color: #757575;
-    background-color: #FFFFFF;
     border: solid 1px #3D414D;
-    -o-box-shadow: none;
-    -webkit-box-shadow: none;
+    background-color: #FFFFFF;
     box-shadow: none;
+    -o-box-shadow: none;
 }
 
 .message_sending {
-    background-image: url(../images/contact_form_icons/sending.png);
     border: none !important;
     background-color: #4EDEC2 !important;
-    background-size: 40px;
+    background-image: url(../images/contact_form_icons/sending.png);
     background-repeat: no-repeat;
     background-position: 115% 50%;
+    background-size: 40px;
 }
 
 .send_confirm {
-    background-image: url(../images/contact_form_icons/sent.png);
     border: none !important;
     background-color: #4EDEC2 !important;
-    background-size: 40px;
+    background-image: url(../images/contact_form_icons/sent.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: 40px;
 }
 
 .send_error {
     color: #3D414D !important;
-    background-color: #FF7878 !important;
     border: none !important;
-    -o-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    background-color: #FF7878 !important;
     box-shadow: none !important;
+    -o-box-shadow: none !important;
 }
 
 .contact_icon {
     position: absolute;
-    margin-top: 0.35em;
-    left: 0;
-    height: 1.8em;
-    width: 1.8em;
     z-index: -1;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    left: 0;
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 0.35em;
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .contact_icon_animation {
-    -webkit-transform: translate(-2.5em, 0);
-    -ms-transform: translate(-2.5em, 0);
-    transform: translate(-2.5em, 0);
     z-index: 1;
+    -webkit-transform: translate(-2.5em, 0);
+    transform: translate(-2.5em, 0);
 }
 
 #name_icon {

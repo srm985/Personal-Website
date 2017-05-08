@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* CSS Document */
 
@@ -10,8 +10,8 @@
     color: #FFFFFF;
     background-color: #4EDEC2;
     background-image: url(../images/quadcopter/quadcopter.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {
@@ -32,15 +32,15 @@
 #image_1 {
     height: 100%;
     background-image: url(../images/quadcopter/quadcopter_1.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #image_2 {
     height: 100%;
     background-image: url(../images/quadcopter/quadcopter_2.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_5 {
@@ -56,15 +56,15 @@
 #image_3 {
     height: 100%;
     background-image: url(../images/quadcopter/quadcopter_3.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #image_4 {
     height: 100%;
     background-image: url(../images/quadcopter/quadcopter_4.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_7 {

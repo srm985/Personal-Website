@@ -134,7 +134,7 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Performance Equation<br><br></h3>
-                        <p class="code_format">if(TagVal('TURBINE_SPEED','*'))<3550 then (if(TagVal('TURBINE_SPEED','*-10s'))>10 then (*A*) else 0) else 0<br><br>*A*: if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))>2 then (*B*) else if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))<2 then (*C*) else 0<br><br>*B*: if(TagVal('BEARING_TEMPERATURE','*-10s'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0<br><br>*C*: if(TagVal('BEARING_TEMPERATURE','*'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0</p>
+                        <code><pre>if(TagVal('TURBINE_SPEED','*'))&lt;3550 then (if(TagVal('TURBINE_SPEED','*-10s'))&gt;10 then (*A*) else 0) else 0<br><br>*A*: if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))>2 then (*B*) else if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))<2 then (*C*) else 0<br><br>*B*: if(TagVal('BEARING_TEMPERATURE','*-10s'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0<br><br>*C*: if(TagVal('BEARING_TEMPERATURE','*'))<(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0</pre></code>
                     </div>
                 </div>
             </div>
