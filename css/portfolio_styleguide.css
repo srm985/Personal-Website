@@ -5,6 +5,9 @@
 #section_1 {
     color: #FFFFFF;
     background-color: #4EDEC2;
+    background-image: url(../images/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section_2 {

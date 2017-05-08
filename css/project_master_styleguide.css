@@ -19,6 +19,11 @@
     box-shadow: 0 4px 5px #3D414D;
 }
 
+#section_3 span {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
 
 /* Custom, iPhone Retina */
 
