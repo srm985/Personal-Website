@@ -3,7 +3,7 @@ $(document).ready(function() {
         windowHeight = $(window).height();
         contentHeight = $('#header_content').height();
         navHeight = 50;
-        padding = 75;
+        padding = 60;
 
         if (((windowHeight / 2) - navHeight) > (contentHeight + (padding * 2))) {
             document.getElementById("section_1").style.height = String(windowHeight / 2) + "px";
