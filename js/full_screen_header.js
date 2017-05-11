@@ -7,12 +7,12 @@ $(document).ready(function() {
     padding = 100;
     
     if ((windowHeight - navHeight) <= (contentHeight + (padding * 2))) {
-    	document.getElementById("break_1").setAttribute("style","height:" + (contentHeight + navHeight + (padding * 2)).toString() + "px");
+    	document.getElementById("section_1").setAttribute("style","height:" + (contentHeight + navHeight + (padding * 2)).toString() + "px");
     	document.getElementById("header_content").setAttribute("style","margin-top:" + (navHeight + padding).toString() + "px");
       $(".header_arrow").hide();
     	
     } else {
-    	document.getElementById("break_1").setAttribute("style","height:" + (windowHeight).toString() + "px");
+    	document.getElementById("section_1").setAttribute("style","height:" + (windowHeight).toString() + "px");
     	document.getElementById("header_content").setAttribute("style","margin-top:" + (((windowHeight - contentHeight - navHeight) / 2) + navHeight).toString() + "px");
       $(".header_arrow").show();
     }
