@@ -50,6 +50,15 @@ ul {
     background-color: #EFECE7;
 }
 
+#section_4 .container .row {
+    display: table-row;
+}
+
+#section_4 .container .row > div {
+    display: table-cell;
+    padding: 0;
+}
+
 #bio_text {
     margin-top: 5%;
     text-align: justify;

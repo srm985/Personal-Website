@@ -1,18 +1,19 @@
 module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks 
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-newer');
 
     grunt.initConfig({
         clean: {
-            build: {
-                src: ['web/']
-            }
+            files: [
+                'web/**/*', '!web/images/**'
+            ]
         },
         copy: {
             main: {
                 files: [
                     { expand: true, cwd: 'php', src: '**/*', dest: 'web/php/' },
-                    { expand: true, cwd: 'documents', src: '**/*', dest: 'web/documents/' },
+                    { expand: true, cwd: 'documents', src: ['**/*.pdf'], dest: 'web/documents/' },
                     { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
                     { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' }
                 ]
@@ -89,14 +90,14 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'images',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'web/images'
+                    dest: 'web/images/'
                 }]
             }
         }
     });
 
-    grunt.registerTask('default', ['copy', 'minifyHtml', 'postcss', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['clean', 'copy', 'minifyHtml', 'postcss', 'cssmin', 'uglify']);
     grunt.registerTask('prefixcss', 'postcss');
-    grunt.registerTask('compress-images', 'imagemin');
-    grunt.registerTask('run-all', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'imagemin']);
+    grunt.registerTask('compress-images', 'newer:imagemin');
+    grunt.registerTask('run-all', ['clean', 'copy', 'minifyHtml', 'cssmin', 'uglify', 'newer:imagemin']);
 };
