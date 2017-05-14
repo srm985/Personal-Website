@@ -22,10 +22,10 @@ $(document).ready(function() {
     //*          Size our portfolio cards to half of screen height.             *
     //***************************************************************************
     function projectTileHeight() {
-        var viewportHeight = $(window).height(),
+        var viewportHeight = $(window).outerHeight(),
             projectTileSize = (viewportHeight / 2) + 'px';
 
-        if (viewportHeight >= 600 && windowWidth < 992) {
+        if (viewportHeight >= 560 && windowWidth < 992) {
             $('.project_wrapper_half').css('height', projectTileSize);
             $('.project_wrapper_full').css('height', projectTileSize);
         }
@@ -35,7 +35,9 @@ $(document).ready(function() {
     projectTileHeight();
 
     $(window).resize(function() {
-        projectHover();
-        projectTileHeight();
+        setTimeout(function() {
+            projectHover();
+            projectTileHeight();
+        }, 100);
     });
 });
