@@ -1,3 +1,10 @@
+if (!window.jQuery) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
+    document.getElementByTagName('head')[0].appendChild(script);
+}
+
 $(document).ready(function() {
 
     var setVolumeLevel;
@@ -10,8 +17,8 @@ $(document).ready(function() {
     //******************************************************************************
     //*                        Initialize our keyboard.                            *
     //******************************************************************************
-    $('head').append('<script type="text/javascript" src="/mok-project/keyboard.min.js"></script>');
-    $('head').append('<link rel="stylesheet" type="text/css" href="/mok-project/keyboard.min.css">');
+    $('head').append('<script type="text/javascript" src="keyboard/keyboard.min.js"></script>');
+    $('head').append('<link rel="stylesheet" type="text/css" href="keyboard/keyboard.min.css">');
 
     $(document).keyboard({
         language: 'us',
@@ -46,11 +53,15 @@ $(document).ready(function() {
     //******************************************************************************
     $('#volume-content-wrapper i').on('click touch', function() {
         var currentVolumeLevel = $('#speaker-volume-slider').slider('value');
-        if (currentVolumeLevel > 0) {
+        if ($('.icons8-medium-volume-filled').length) {
             setVolumeLevel = currentVolumeLevel;
             $('#speaker-volume-slider').slider('value', 0);
+            $('.icons8-medium-volume-filled').addClass('icons8-mute-filled');
+            $('.icons8-medium-volume-filled').removeClass('icons8-medium-volume-filled');
         } else {
             $('#speaker-volume-slider').slider('value', setVolumeLevel);
+            $('.icons8-mute-filled').addClass('icons8-medium-volume-filled');
+            $('.icons8-mute-filled').removeClass('icons8-mute-filled');
         }
     });
 
