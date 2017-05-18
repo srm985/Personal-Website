@@ -118,7 +118,7 @@ $(document).ready(function() {
 
   function onFontFamilyChanged(e) {
     var val = e.target.value.trim();
-    $textarea.css("font-family", "Downloaded, " + val);
+    $textarea.css("font-family", "SVV-Onsite, " + val);
   }
 
   function onCheatcodeFocus(e) {
