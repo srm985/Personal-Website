@@ -7,9 +7,9 @@ $(document).ready(function() {
     $(function() {
         var pgurl = '';
         if (window.location.href.lastIndexOf('#') > 1) {
-            pgurl = window.location.href.substr(window.location.href.lastIndexOf('/') + 1, window.location.href.lastIndexOf('#') - (window.location.href.lastIndexOf('/') + 1));
+            pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'), window.location.href.lastIndexOf('#') - (window.location.href.lastIndexOf('/')));
         } else {
-            pgurl = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+            pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'));
         }
         $('.navbar ul li a').each(function() {
             if ($(this).attr('href') == pgurl || $(this).attr('href') == '') {
