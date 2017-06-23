@@ -15,6 +15,7 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'php', src: '**/*', dest: 'web/php/' },
                     { expand: true, cwd: 'documents', src: ['**/*.pdf'], dest: 'web/documents/' },
                     { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
+                    { expand: true, cwd: 'axure-redline-tool', src: '**/*', dest: 'web/axure-redline-tool/' },
                     { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' }
                 ]
             }
@@ -27,6 +28,7 @@ module.exports = function(grunt) {
                 files: {
                     'web/autonomous_drone.htm': 'autonomous_drone.htm',
                     'web/mok-project.htm': 'mok-project.htm',
+                    'web/axure-redline-tool.htm': 'axure-redline-tool.htm',
                     'web/terminal-project.htm': 'terminal-project.htm',
                     'web/bearing_wipe.htm': 'bearing_wipe.htm',
                     'web/bit_error.htm': 'bit_error.htm',
