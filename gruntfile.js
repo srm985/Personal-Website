@@ -16,7 +16,8 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'documents', src: ['**/*.pdf'], dest: 'web/documents/' },
                     { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
                     { expand: true, cwd: 'axure-redline-tool', src: '**/*', dest: 'web/axure-redline-tool/' },
-                    { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' }
+                    { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' },
+                    { expand: true, cwd: 'poc_website', src: '**/*', dest: 'web/poc_website/' }
                 ]
             }
         },
