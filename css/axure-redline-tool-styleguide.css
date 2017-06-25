@@ -7,9 +7,9 @@
 }
 
 #section_1 {
-    color: #FFFFFF;
+    color: #3D414D;
     background-color: #4EDEC2;
-    background-image: url(../images/mok-project/keyboard.jpg);
+    background-image: url(/images/axure-redline-tool/measure.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,10 +30,13 @@
 }
 
 #image_1 {
-    height: 100%;
-    background-image: url(/images/mok-project/keyboard.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#image_2 {
+    max-width: 100%;
+    height: auto;
 }
 
 #section_5 {

@@ -25,7 +25,7 @@
 .project_title_full_left {
     float: left;
     width: 40%;
-    margin-top: -2%;
+    margin-top: -24px;
 }
 
 .project_content_full_right {
@@ -97,6 +97,15 @@
     -ms-transform: translateY(30px);
         transform: translateY(30px);
     opacity: 1;
+}
+
+#project_0 {
+    color: #3D414D;
+    background-color: #EFECE7;
+    background-image: url(../images/axure-redline-tool/measure.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
 }
 
 #project_1 {
@@ -193,6 +202,10 @@
         -ms-transform: translateY(150px);
             transform: translateY(150px);
     }
+    .project_title_full_left,
+    .project_title_full_right {
+        margin-top: 0;
+    }
 }
 
 
@@ -208,6 +221,10 @@
         -ms-transform: translateY(150px);
             transform: translateY(150px);
     }
+    .project_title_full_left,
+    .project_title_full_right {
+        margin-top: 0;
+    }
 }
 
 
@@ -222,5 +239,9 @@
         -webkit-transform: translateY(163px);
         -ms-transform: translateY(163px);
             transform: translateY(163px);
+    }
+    .project_title_full_left,
+    .project_title_full_right {
+        margin-top: -15px;
     }
 }
