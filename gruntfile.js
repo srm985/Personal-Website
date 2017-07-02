@@ -17,7 +17,9 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
                     { expand: true, cwd: 'axure-redline-tool', src: '**/*', dest: 'web/axure-redline-tool/' },
                     { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' },
-                    { expand: true, cwd: 'poc_website', src: '**/*', dest: 'web/poc_website/' }
+                    { expand: true, cwd: 'poc_website', src: '**/*', dest: 'web/poc_website/' },
+                    { expand: true, cwd: 'font-icons/css', src: 'styles.min.css', dest: 'web/font-icons/css/' },
+                    { expand: true, cwd: 'font-icons/fonts', src: '**/*', dest: 'web/font-icons/fonts/' }
                 ]
             }
         },

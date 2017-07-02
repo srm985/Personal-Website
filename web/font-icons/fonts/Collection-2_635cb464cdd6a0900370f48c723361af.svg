@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2017-7-1: Created.
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Sat Jul  1 16:41:44 2017
+ By icons8
+
+</metadata>
+<defs>
+<font id="Collection-2" horiz-adv-x="512" >
+  <font-face 
+    font-family="Collection-2"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -42.667 512 410.473"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F102"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+ />
+    <glyph glyph-name="undo-2" unicode="&#xf102;" 
+d="M149.333 408v-66.667h170.667c105.533 0 192 -86.4668 192 -192s-86.4668 -192 -192 -192h-320v85.334h320c59.416 0 106.667 47.25 106.667 106.666s-47.251 106.667 -106.667 106.667h-170.667v-66.667l-149.333 109.334z" />
+    <glyph glyph-name="undo" unicode="&#xf100;" 
+d="M206.316 409.305c5.73047 -2.36328 9.13672 -7.93652 9.15723 -14.1387v-87.4736c192.374 0 351.764 -63.6846 268.721 -345.442c13.0557 176.108 -72.6846 231.404 -268.721 231.404v-85.8389c0 -6.20312 -3.42676 -11.7764 -9.15723 -14.1592
+c-1.89062 -0.748047 -3.87988 -1.16113 -5.8877 -1.16113c-3.95898 0 -7.89746 1.55566 -10.8115 4.50879l-183.315 143.321c-5.98633 5.9668 -5.98633 15.7139 0 21.6611l183.315 144.01c4.3916 4.35254 11.0078 5.69141 16.6992 3.30859z" />
+  </font>
+</defs></svg>

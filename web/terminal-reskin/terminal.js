@@ -17,11 +17,11 @@ $(document).ready(function() {
     //******************************************************************************
     //*                        Initialize our keyboard.                            *
     //******************************************************************************
-    $('head').append('<script type="text/javascript" src="keyboard/keyboard.min.js"></script>');
-    $('head').append('<link rel="stylesheet" type="text/css" href="keyboard/keyboard.min.css">');
+    $('head').append('<script type="text/javascript" src="keyboard.js"></script>');
+    $('head').append('<link rel="stylesheet" type="text/css" href="keyboard.css">');
 
     $(document).keyboard({
-        language: 'us',
+        language: 'us, spanish',
         inputType: 'text'
     });
 

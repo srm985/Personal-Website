@@ -76,7 +76,7 @@
     </script>
 </head>
 
-<body>
+<body class="portfolio-project">
     <div class="fouc_blocker"></div>
     <nav class="navbar navbar-fixed-top"></nav>
     <div class="blackout_background"></div>
@@ -186,6 +186,10 @@
                                 <br>Cancel keyboard input with hardware keyboard [Escape] key.</li>
                             <li><b>allowEnterAccept:</b> true
                                 <br>Accept keyboard input with hardware keyboard [Enter] key.</li>
+                            <li><b>keyCharacterRegex:</b> { <b>number</b>: /[0-9]|[eE]|\.|\+|\-/, <b>tel</b>: /[0-9]|\.|\+|\-|\#|\(|\)/ }
+                                <br>Define regular expressions for input field types. These pertain to the individual key pressed, not the whole accepted pattern. The object keys must match identically to the input type.</li>
+                            <li><b>inputFieldRegex:</b> { <b>number</b>: /^(-)?(((\d+)|(\d+\.(\d+)?)|(\.(\d+)?))(eE?(\d+)?)?)?$/ }
+                                <br>Define regular expressions for the accepted patterns of input field types. These patterns serve to further restrict browser-specific prepopulated patterns. For example, you may NOT generate a regex to allow letters in an input[type="number"]. Ensure these are whole pattern matches handled by the prepension and appension of ^ and $. The object keys must match identically to the input type.</li>
                         </ul>
                         <h4>Callbacks:</h4>
                         <ul>
@@ -319,11 +323,15 @@
                             <li>I have not personally tested every keyboard and you may find bugs along your journey. I’ll work to quickly resolve any issues you might uncover.</li>
                             <li>This initial release is not intended to be mobile friendly. It’s original scope was intended for those devices such as terminals and kiosks. It is the intention to provide mobile support at a later time.</li>
                             <li>Due to the nature of JavaScript / jQuery, I currently do not know of a way to load all keyboard layouts in a directory. You must declare all keyboards which you wish to use.</li>
+                            <li>I have not spent much time investigating how nested markup within contenteditable elements will effect the keyboard. I'm not sure the use case and therefore have not pursued this.</li>
+                            <li>At a future point, I'd like to support honoring of input patterns. These patterns are typically evaluated on form submission, but I'd like to eventually support them prior to this point.</li>
                         </ul>
                         <h3>Coming Features</h3>
                         <ul>
-                            <li>Mobile Options</li>
-                            <li>Hardware-Keyboard Listeners (Perhaps)</li>
+                            <li>Mobile Support</li>
+                            <li>Direct Entry (No Modal)</li>
+                            <li>Condensed Keyboard Layout</li>
+                            <li>Hardware-Keyboard Mapping (Perhaps)</li>
                             <li>Number Pad Only Option</li>
                             <li>Keyboard Layout Creator GUI</li>
                         </ul>
@@ -336,6 +344,10 @@
                         <p>See also the list of <a href="https://github.com/srm985/mok-project/contributors" class="anchor-formatted">contributors</a> who participated in this project.</p>
                         <h3>License</h3>
                         <p>This project is licensed under the MIT License - see the <a href="https://github.com/srm985/mok-project/blob/master/LICENSE" class="anchor-formatted">LICENSE</a> file for details.</p>
+                        <h3>Change Log</h3>
+                        <p><b>Version 1.1</b></p>
+                        <br>
+                        <p>In this release I have addressed several issues related to how the keyboard handles various input types. Beyond that, I have implemented regular expressions to handle input attribute validations. The keyboard also now respects the attributes 'disabled' and 'readonly'. Added the object inputAttributes to collect and organize these attributes.</p>
                     </div>
                 </div>
             </div>

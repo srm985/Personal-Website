@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $('head').append('<link rel="stylesheet" type="text/css" href="/font-icons/css/styles.min.css"/>');
+
     $('.fouc_blocker').removeClass('fouc_blocker'); //Shed our FOUC blocker.
 
     toggleDeviceType(); //Initialize as non-touch device.
@@ -12,7 +14,7 @@ $(document).ready(function() {
             pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'));
         }
         $('.navbar ul li a').each(function() {
-            if ($(this).attr('href') == pgurl || $(this).attr('href') == '') {
+            if ($(this).attr('href') == pgurl || ($(this).attr('href') == '/portfolio.htm' && $('body').hasClass('portfolio-project')) || ($(this).attr('href') == '/index.htm' && pgurl == '')) {
                 //$(this).parent('li').removeClass('li');
                 $(this).parent('li').addClass('active_link');
             }
@@ -107,6 +109,7 @@ $(document).ready(function() {
         $('.link_button').toggleClass('link_button_hover_attr');
         $('.social_media_icon').toggleClass('social_media_icon_hover_attr');
         $('#submit_button').toggleClass('submit_button_hover_attr');
+        $('.portfolio-back-button').toggleClass('portfolio-back-button-hover-attr');
     }
 
     function removeCheckMobileEvent() {
@@ -114,6 +117,8 @@ $(document).ready(function() {
     }
 
     $('body').find('*').removeAttr('title'); //Hide title attributes from browser.
+
+    appendBackButton();
 });
 
 function checkTouchDevice() {
@@ -125,4 +130,16 @@ function checkTouchDevice() {
     }
 
     return touchEnabledDevice;
+}
+
+function appendBackButton() {
+    var pageDirectory = { 'axure-redline-tool': 'project_0', 'mok-project': 'project_1', 'terminal-project': 'project_2', 'statistical_analysis': 'project_3', 'poc_website': 'project_4', 'autonomous_drone': 'project_5', 'statistical_maintenance': 'project_6', 'bearing_wipe': 'project_7', 'graphic_design': 'project_8', 'bit_error': 'project_9' },
+        currentURL = window.location.href;
+
+    if ($('body').hasClass('portfolio-project')) {
+        $('body').append('<div class="portfolio-back-button portfolio-back-button-hover-attr"><i class="icons8-undo-2"></i></div>');
+        $('body').on('click touch', '.portfolio-back-button', function() {
+            window.location.href = '/portfolio.htm#' + pageDirectory[currentURL.substr(currentURL.lastIndexOf('/') + 1).replace('.htm', '')];
+        });
+    }
 }

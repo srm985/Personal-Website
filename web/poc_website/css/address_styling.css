@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+#address_tile {
+	margin-top: -100px;
+}
+#address_block {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
+	-moz-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
+	-o-box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
+	box-shadow: 0 4px 5px rgba(33, 33, 33, 0.5);
+}
+#address_text_block {
+	width: 100%;
+	margin: auto;
+	color: #455A64;
+}
+#address_text_block h2 {
+	font-weight: 700;
+}
+#mobile_response_block {
+	margin-top: 5%;
+	height: 50px;
+	padding: 0 20%;
+}
+#phone_icon {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-left: 12%;
+	background-image: url(../images/ICONS/Phone%20Filled-100.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#map_icon {
+	height: 50px;
+	width: 50px;
+	float: right;
+	margin-right: 10%;
+	background-image: url(../images/ICONS/GPS%20Device-104.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*************************************************************************************************************/
+/**************************************Modify attributes at breakpoints.**************************************/
+/*************************************************************************************************************/
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 479px) {
+	#address_text_block p, h2 {
+		line-height: 24px;
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+	#address_text_block p, h2 {
+		line-height: 26px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+	#address_text_block p, h2 {
+		line-height: 28px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	#address_text_block p, h2 {
+		line-height: 30px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	#address_text_block p, h2 {
+		line-height: 32px;
+	}
+}
+/* Very Large Devices, Very Wide Screens */
+@media only screen and (min-width : 1600px) {
+}
