@@ -172,7 +172,9 @@
                         <p>If you've made changes and would like to build a new version of the plugin, run the following commands and plugin.txt will be updated.</p>
                         <pre><code>$ cd /axure-redline-tool/<br>$ npm install<br>$ grunt</code></pre>
                         <h3>Bugs / Drawbacks</h3>
-                        <p>As this code is embedded within Axure projects, it does not have direct control of how assets are exported from within Axure. The code makes every attempt to handle the various nested elements exported from Axure, but if you do encounter an issue, please let me know and I'll promptly resolve it.</p>
+                        <p>As this code is embedded within Axure projects, it does not have direct control of how assets are exported from within Axure. Additionally, Axure projects allow much more functionality and interactivity than those generated in Sketch and it's difficult to intercept and interact with these. The code makes every attempt to handle the various nested elements exported from Axure, but if you do encounter an issue, please let me know and I'll promptly resolve it.</p>
+                        <br>
+                        <p>You may find the generated artboard sizing odd during initial use. This tool scans all page elements and sizes the artboard based on the most-extreme elements. If you would like a specific size artboard, I would suggest using a background rectangle within Axure to define this. Alternatively, you may use a combination of vertical and horizontal lines to define your artboard border.</p>
                         <h3>Coming Features</h3>
                         <ul>
                             <li>Provide Sliced Images</li>
@@ -188,6 +190,15 @@
                         <p>See also the list of <a href="https://github.com/srm985/axure-redline-tool/contributors" class="anchor-formatted">contributors</a> who participated in this project.</p>
                         <h3>License</h3>
                         <p>This project is licensed under the MIT License - see the <a href="https://github.com/srm985/axure-redline-tool/blob/master/LICENSE" class="anchor-formatted">LICENSE</a> file for details.</p>
+                        <h3>Change Log</h3>
+                        <p><b>Version 1.1</b></p>
+                        <br>
+                        <ul>
+                            <li>Resolved the issue of overflow scrolling content affecting artboard sizing. In Axure terms, hidden dynamic panel content no longer causes the generated artboard to be bigger than visible elements.</li>
+                            <li>Resolved how the tool handle Axure annotations. Annotations can be read while the tool is disabled and while the tool is enabled, their icons are not considered interactive elements.</li>
+                            <li>Added key command functionality to support zoom controls through [Ctrl +] / [Ctrl -] and Esc key to close the redline tool panel / deselect the element.</li>
+                            <li>Added zoom tracking support to ensure current zoom level is maintained while progressing through flows.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
