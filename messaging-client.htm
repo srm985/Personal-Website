@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    .fouc_blocker {
+        height: 10000px;
+        width: 100%;
+        z-index: 10000;
+        background-color: #3D414D;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Lato:300, 400, 900']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+    window.ga = window.ga || function() {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-86885981-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/project_master_styleguide.css">
+    <link rel="stylesheet" href="css/messaging-client-styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Messaging Client</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="A messaging client allowing inmates to communicate with their loved ones." />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="www.seanmcquay.com/messaging-client.htm" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Messaging Client" />
+    <meta property="og:description" content="A messaging client allowing inmates to communicate with their loved ones." />
+    <meta property="og:image" content="www.seanmcquay.com/messaging-client/messaging-client.jpg" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('nav').load('header.htm');
+        $('footer').load('footer.htm');
+    });
+    </script>
+</head>
+
+<body class="portfolio-project">
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div id="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                            <h2>Messaging Client</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <p align="justify" class="left_side_bar_green">This messaging client provides inmates with the opportunity to communicate in near-real time with their loved ones through an email client specifically tailored for the use in prison facilities. Loved ones initiate conversations with inmates for a specific "mailing rate". They may then choose to provide "return postage" so that inmates may reply. Loved ones may send text and images, while inmates may only respond with text. Many restrictions are placed on this client due to security concerns. This repository contains the code for the two separate components of this messaging client - a kiosk version intended for use by inmates and a responsive version used by those communicating with said inmates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_3">
+            <h3 align="center">Resources</h3>
+            <p align="center">Sublime<span class="separator_color">|</span>BitBucket<span class="separator_color">|</span>jQuery<span class="separator_color">|</span>SASS<span class="separator_color">|</span>AJAX</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="/messaging-client/demo-page.htm">
+                                <div class="link_button" id="resource_button_1">
+                                    <p>Demo Pages</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="https://github.com/srm985/messaging-client">
+                                <div class="link_button" id="resource_button_2">
+                                    <p>GitHub Code</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_4">
+            <div class="container">
+                <div class="row image_height">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12 image_size_inherit">
+                        <img src="/images/axure-redline-tool/redline-screenshot.png" id="image_1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Messaging Client Overview</h3>
+                        <p>This messaging client consists of three parts – which required design and development. It consists of a restricted kiosk application for use by inmates, a responsive webpage to support a broad array of devices, and dedicated mobile applications. The intended goal of this client was to provide inmates with the ability to communicate with their loved ones in near-real time. The client borrows many words from the world of postal mail. Stamps indicate available credits. These credits are sold by each facility and purchased by the inmates loved ones. Currently, a message may only be initiated by a loved one. They may send text and images to the inmate. If they so choose, they may provide “return postage” for the inmate to draft a text-only reply. The client’s limited functionality is related to the security measures required to ensure no illegal communications occur.</p>
+                        <br>
+                        <br>
+                        <h3>Design Process</h3>
+                        <p></p>
+                        <h3>Mobile Applications</h3>
+                        <p></p>
+                        <h3>Responsive Web Application</h3>
+                        <p></p>
+                        <h3>Kiosk Application</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
