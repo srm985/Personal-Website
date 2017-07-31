@@ -8,8 +8,8 @@
 
 #section_1 {
     color: #3D414D;
-    background-color: #4EDEC2;
-    background-image: url(/images/messaging-client/messaging-client.jpg);
+    background-color: #EFECE7;
+    background-image: url(/images/messaging-client/isometric-mockups.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,12 +29,10 @@
     background-color: #EFECE7;
 }
 
-#image_1 {
-    max-width: 100%;
-    height: auto;
-}
-
-#image_2 {
+#image_1,
+#image_2,
+#image_3,
+#image_4,#image_5 {
     max-width: 100%;
     height: auto;
 }
