@@ -149,10 +149,14 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Messaging Client Overview</h3>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <p>This messaging client consists of three parts – which required design and development. It consists of a restricted kiosk application for use by inmates, a responsive webpage to support a broad array of devices, and dedicated mobile applications. The intended goal of this client was to provide inmates with the ability to communicate with their loved ones in near-real time. The client borrows many words from the world of postal mail. Stamps indicate available credits. These credits are sold by each facility and purchased by the inmates loved ones. Currently, a message may only be initiated by a loved one. They may send text and images to the inmate. If they so choose, they may provide “return postage” for the inmate to draft a text-only reply. The client’s limited functionality is related to the security measures required to ensure no illegal communications occur.</p>
-                        <br>
-                        <br>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>My Process</h3>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                         <p>Prior to the implementation of this messaging application, a variant was already in existence. Our organization acquired the business and set about stripping the application down to the backend code and building it back up to suit our needs. My design process began by studying and understanding the current application. Additionally, I was able to learn from the previous owners what things could have been done differently and what improvement opportunities existed. From this, I materialized a set of users flows for both user personas.
                             <br><img src="/images/messaging-client/ff-user-flow.png" class="full-width-image">
                             <br>
@@ -166,33 +170,37 @@
                             <br>
                             <br>After finalizing the mockups, I progressed to generating frontend code. To begin, I mocked up all backend services and created simulated API calls so that I could test functionality prior to backend services being available. I focused first on the kiosk application which inmates use to interact with the product. This application is created as one of many modules which are display on a kiosk terminal within prison. Inmates have access to these kiosks at certain hours throughout the day and may use the provided services. Once completed, I moved to development of the responsive web application. This application serves the friends and family members of the incarcerated individual. This application required much more development time as users have much more functionality including purchasing stamps and their actual composition capabilities. Backend developers are then left to remove mocked API calls and replace with correct services.
                             <br>Throughout my entire design and development process I not only met with our product owner and business analysts but I also reviewed my progress at a weekly meeting with those individuals within our organization involved in UX and UI. Any feedback was incorporated into the final designs, where applicable.</p>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Responsive Web Application</h3>
                     </div>
                     <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <p>The responsive web application was the centerpiece of this project – allowing friends and family members the ability to communicate with their incarcerated loved ones in near-real time. From this application, they are able to draft messages to their loved ones and include images to be viewed. Message costs are qualified based on the message length, attachments included, and if the member has chosen to provide their loved one the ability to reply to the message. A member’s remaining stamp balance is always prominently displayed and a primary action button is always available to permit members the ability to purchase additional stamps. During design and development, one difficult hurdle was creating a responsive application that worked well on both desktops and mobile devices.</p>
+                        <p>The responsive web application was the centerpiece of this project – allowing friends and family members the ability to communicate with their incarcerated loved ones in near-real time. Due to design and backend architecture restrictions, this application was required to be loaded within a webpage already containing a common header and footer along with subsequent site navigation controls. This meant special accommodations we required to provide users with a clear distinction between the application and its control as opposed to the site controls. From this application, users are able to draft messages to their loved ones and include images to be viewed. Message costs are quantified based on the message length, attachments included, and if the member has chosen to provide their loved one the ability to reply to the message. A member’s remaining stamp balance is always prominently displayed and a primary action button is always available to permit members the ability to purchase additional stamps. During design and development, one difficult hurdle was creating a responsive application that worked well on both desktops and mobile devices.</p>
                     </div>
                     <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                         <img src="/images/messaging-client/responsive-mobile-inbox.png" class="full-width-image image-shadow">
                     </div>
-                    <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="top-padded col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                         <img src="/images/messaging-client/inbox-responsive-desktop.png" class="full-width-image image-shadow">
                     </div>
-                    <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <p>Careful planning is required for any responsive application, ensuring controls and content are skillfully located within the reach of users. Having the ability to own the project from concept to development permitted me to ensure that all subtleties were accurately implemented.</p>
+                    <div class="top-padded col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>Careful planning needs to be considered for any responsive application, ensuring controls and content are skillfully located within the reach of users. Having the ability to own the project from concept to development permitted me to ensure that all subtleties were accurately accounted for and implemented.</p>
                     </div>
-                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                        <h3>Kiosk Application</h3>
-                        <img src="/images/messaging-client/kiosk-inbox.png" class="full-width-image image-shadow">
-                        <p></p>
-                    </div>
-                    <div class="col-sm-10 col-sm-offset-1 cold-xs-12">
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3>Mobile Application</h3>
                     </div>
                     <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, vim causae scripta sadipscing ut, et autem oporteat nam. Ut consetetur vituperata cotidieque usu. Dico numquam at mea, fastidii recusabo perpetua ei mel. Et legere copiosae quo. Option perfecto vix at. Munere elaboraret sit ex, mel ex dictas vidisse definitionem, ut usu ludus sapientem. Electram molestiae intellegebat ius in, an eum soleat fastidii, nec cu sumo audire.</p>
+                        <p>The mobile application was developed for use by friends and family members and provides identically features to that of the responsive web application, but additionally offers users the convenience of a native mobile application. The design and layout of the mobile application was similar to that of the responsive application, however, primary navigation buttons were moved to the bottom to provide users with a more coherent experience – similar to that of many other applications such as Instagram. The feel of the application is intended to offer users so of the familiarity of Gmail with subtle revisions to accommodate the more-complex messaging client.</p>
                     </div>
                     <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                         <img src="/images/messaging-client/mobile-inbox.png" class="full-width-image image-shadow">
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Kiosk Application</h3>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <img src="/images/messaging-client/kiosk-inbox.png" class="full-width-image image-shadow">
+                        <p></p>
                     </div>
                 </div>
             </div>
