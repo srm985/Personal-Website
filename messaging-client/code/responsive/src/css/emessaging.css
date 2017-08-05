@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0; }
+
 .app-container {
   font-size: 0;
   position: relative;
@@ -634,7 +638,7 @@
   transition: transform 0.2s ease-in-out;
   transform: scale(1); }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 999px) {
   .app-container {
     display: flex;
     width: 100%;
@@ -797,7 +801,7 @@
     font-size: 16px !important; }
   .actions-panel p u {
     font-size: 12px !important; } }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1000px) {
   .app-container .message-thumbnail-selected > div:last-of-type {
     background-color: #E0E0E0 !important; }
   .app-container .controls-section .navigation-button:hover {

@@ -6,7 +6,7 @@ var category,
     scrolled = false,
     resizeTimerActive = false,
     deviceType,
-    mobileBreakpoint = 1024,
+    mobileBreakpoint = 1000,
     tapHold = false;
 
 $(document).ready(function() {
@@ -658,7 +658,7 @@ function scrollBody() {
 function checkDevice() {
     var previousDevice;
 
-    if (deviceType === undefined && $('.app-container').parent().width() <= mobileBreakpoint) {
+    if (deviceType === undefined && $('.app-container').width() <= mobileBreakpoint) {
         deviceType = 'mobile';
     } else if (deviceType === undefined) {
         deviceType = 'desktop';
@@ -670,7 +670,7 @@ function checkDevice() {
     if (!resizeTimerActive) {
         resizeTimerActive = true;
 
-        if ($('.app-container').parent().width() <= mobileBreakpoint) {
+        if ($('.app-container').width() <= mobileBreakpoint) {
             deviceType = 'mobile';
         } else {
             deviceType = 'desktop';

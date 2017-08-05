@@ -89,21 +89,23 @@
                     demoWrapper.show();
                     if (demoWrapper.find('img').attr('src') === undefined) {
                         demoWrapper.find('img').attr('src', '/images/messaging-client/mobile-mockup.png');
-                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                        //demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                        demoWrapper.find('.application-wrapper')[0].innerHTML = '<object type="text/html" data="/messaging-client/code/responsive/web/emessaging.htm"></object>';
                     }
                     break;
                 case 1:
                     demoWrapper.show();
                     if (demoWrapper.find('img').attr('src') === undefined) {
                         demoWrapper.find('img').attr('src', '/images/messaging-client/kiosk-mockup.png');
-                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/kiosk/web/emessaging.htm');
+                        //demoWrapper.find('.application-wrapper').load('/messaging-client/code/kiosk/web/emessaging.htm');
                     }
                     break;
                 case 2:
                     demoWrapper.show();
                     if (demoWrapper.find('img').attr('src') === undefined) {
                         demoWrapper.find('img').attr('src', '/images/messaging-client/desktop-mockup.png');
-                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                        //demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                        demoWrapper.find('.application-wrapper')[0].innerHTML = '<object type="text/html" data="/messaging-client/code/responsive/web/emessaging.htm"></object>';
                     }
                     break;
             }
