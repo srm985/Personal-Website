@@ -381,8 +381,8 @@ function moveMessage(action, actionType) {
                 selectedMessage.remove();
             } else if (actionType == 'bulk') {
                 $('.message-thumbnail input:checked').each(function() {
-                    moveMessage_API($(this).parent().parent().data('thekey'), category.data('thetitle'), action.toLowerCase() == 'restore' ? 'inbox' : '');
-                    $(this).parent().parent().remove();
+                    moveMessage_API($(this).parent().parent().parent().data('thekey'), category.data('thetitle'), action.toLowerCase() == 'restore' ? 'inbox' : '');
+                    $(this).parent().parent().parent().remove();
                 });
             }
             clearBody();
@@ -442,6 +442,7 @@ function initReply(contactID) {
     $('#attachment-form').val('');
     $('.reply-info .line-3 span:nth(1)').text('');
     $('.attachment-remove-button').hide();
+    $('.attachment-button').show();
     $('.message-reply-actions input').prop('checked', false);
     $('.column-2-header p span:first').text('Using');
     $('.column-2-header p span:last').text('0 of ' + queryStamps_API() + ' Stamp(s)');
@@ -657,18 +658,19 @@ function scrollBody() {
 function checkDevice() {
     var previousDevice;
 
-    if (deviceType === undefined && $(window).width() <= mobileBreakpoint) {
+    if (deviceType === undefined && $('.app-container').parent().width() <= mobileBreakpoint) {
         deviceType = 'mobile';
     } else if (deviceType === undefined) {
         deviceType = 'desktop';
     }
+    console.log(deviceType);
 
     previousDevice = deviceType;
 
     if (!resizeTimerActive) {
         resizeTimerActive = true;
 
-        if ($(window).width() <= mobileBreakpoint) {
+        if ($('.app-container').parent().width() <= mobileBreakpoint) {
             deviceType = 'mobile';
         } else {
             deviceType = 'desktop';

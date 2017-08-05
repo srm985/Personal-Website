@@ -52,7 +52,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/js',
-                    src: 'emessaging.js',
+                    src: '**/*.js',
                     dest: 'web/js/'
                 }]
             }

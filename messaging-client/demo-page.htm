@@ -50,7 +50,6 @@
     <link rel="stylesheet" href="/css/theme_styleguide.css">
     <link rel="stylesheet" type="text/css" href="/css/demo-page-styleguide.css">
     <!--Link local JS sheets.-->
-
     <!--Page Description-->
     <title>Sean McQuay | Messaging Client Demo</title>
     <link rel="icon" href="/images/icon.png">
@@ -67,14 +66,66 @@
 </head>
 
 <body>
-    <div class="desktop-demo">
-        <div class="content-screen"></div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        setDevice(0);
+
+        $('.device-selector button').on('click', function() {
+            setDevice($(this).data('thedevice'));
+        });
+
+        function deviceSize() {
+            var deviceWidth = $(window).width();
+        }
+
+        function setDevice(device) {
+            var demoWrapper = $('.demo-wrapper:nth(' + device + ')');
+
+            $('.device-selector button').prop('disabled', '');
+            $('.device-selector button:nth(' + device + ')').prop('disabled', 'disabled');
+            $('.demo-wrapper').hide();
+            switch (device) {
+                case 0:
+                    demoWrapper.show();
+                    if (demoWrapper.find('img').attr('src') === undefined) {
+                        demoWrapper.find('img').attr('src', '/images/messaging-client/mobile-mockup.png');
+                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                    }
+                    break;
+                case 1:
+                    demoWrapper.show();
+                    if (demoWrapper.find('img').attr('src') === undefined) {
+                        demoWrapper.find('img').attr('src', '/images/messaging-client/kiosk-mockup.png');
+                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/kiosk/web/emessaging.htm');
+                    }
+                    break;
+                case 2:
+                    demoWrapper.show();
+                    if (demoWrapper.find('img').attr('src') === undefined) {
+                        demoWrapper.find('img').attr('src', '/images/messaging-client/desktop-mockup.png');
+                        demoWrapper.find('.application-wrapper').load('/messaging-client/code/responsive/web/emessaging.htm');
+                    }
+                    break;
+            }
+        }
+    })
+    </script>
+    <div class="device-selector">
+        <button data-theDevice="0">Mobile</button>
+        <button data-theDevice="1">Kiosk</button>
+        <button data-theDevice="2">Desktop</button>
     </div>
-    <div class="mobile-demo">
-        <div class="content-screen"></div>
+    <div class="demo-wrapper mobile-demo">
+        <img class="content-screen"></img>
+        <div class="application-wrapper"></div>
     </div>
-    <div class="kiosk-demo">
-        <div class="content-screen"></div>
+    <div class="demo-wrapper kiosk-demo">
+        <img class="content-screen"></img>
+        <div class="application-wrapper"></div>
+    </div>
+    <div class="demo-wrapper desktop-demo">
+        <img class="content-screen"></img>
+        <div class="application-wrapper"></div>
     </div>
 </body>
 
