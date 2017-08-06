@@ -6,7 +6,7 @@ var category,
     scrolled = false,
     resizeTimerActive = false,
     deviceType,
-    mobileBreakpoint = 1000,
+    mobileBreakpoint = 900,
     tapHold = false;
 
 $(document).ready(function() {

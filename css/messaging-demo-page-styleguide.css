@@ -47,19 +47,18 @@ body {
   top: 85px;
   left: 23px;
   width: 305px;
-  height: 542px;
-  background-color: red; }
+  height: 542px; }
 
 .kiosk-demo .application-wrapper {
-  top: 46px;
-  left: 44px;
-  width: 1000px;
-  height: 560px; }
+  top: 47px;
+  left: 99px;
+  width: 904px;
+  height: 644px; }
 
 .desktop-demo .application-wrapper {
-  top: 46px;
-  left: 44px;
+  top: 45px;
+  left: 45px;
   width: 1000px;
-  height: 560px; }
+  height: 561px; }
 
-/*# sourceMappingURL=demo-page-styleguide.css.map */
+/*# sourceMappingURL=messaging-demo-page-styleguide.css.map */

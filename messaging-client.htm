@@ -73,6 +73,10 @@
         $('nav').load('header.htm');
         $('footer').load('footer.htm');
     });
+    $('body').parent().parent().on('click touch', '*', function(e) {
+        console.log($(this));
+        confirm('Your device width will provide a less than satisfactory viewing experience. Devices should be at least 1200px wide. You may still proceed by clicking ok.');
+    });
     </script>
 </head>
 
@@ -112,7 +116,7 @@
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                         <div align="center">
-                            <a target="_blank" href="/messaging-client/demo-page.htm">
+                            <a target="_blank" href="/messaging-demo-page.htm">
                                 <div class="link_button" id="resource_button_1">
                                     <p>Demo Page</p>
                                 </div>

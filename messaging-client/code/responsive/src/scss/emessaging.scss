@@ -15,7 +15,7 @@ $font-light: #FFFFFF;
 $header-height: 50px;
 $default-border: solid 1px $primary-light-gray;
 $default-border-radius: 2px;
-$container-width: 1003px;
+$container-width: 1000px;
 $column1-width: 175px;
 $card-shadow: rgba(161, 161, 161, 0.35) 0 3px 3px 0;
 
@@ -246,7 +246,7 @@ body {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    width: calc(#{$container-width} - #{$column1-width});
+    width: calc(#{$container-width} - #{$column1-width} + 2px);
     height: calc(100% + 2px);
     margin: -1px 0 0 -2px;
     border: $default-border;
@@ -371,7 +371,7 @@ body {
 
 .column-2b {
     overflow-y: scroll;
-    width: 526px;
+    width: 548px;
     height: calc(100% - #{$header-height} + 1px);
     padding: 20px;
     vertical-align: top;
@@ -828,13 +828,13 @@ body {
     transform: scale(1);
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 899px) {
     .app-container {
         display: flex;
         width: 100%;
-        min-width: 320px;
+        min-width: 300px;
         max-width: 768px;
-        height: 530px;
+        height: 541px;
         .button-specs {
             font-size: 12px;
             font-weight: bold;
@@ -1066,7 +1066,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
     .app-container {
         .message-thumbnail-selected {
             >div:last-of-type {

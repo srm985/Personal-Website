@@ -5,7 +5,7 @@ body {
 .app-container {
   font-size: 0;
   position: relative;
-  width: 1003px;
+  width: 1000px;
   height: 560px; }
   .app-container ::-webkit-scrollbar {
     display: none; }
@@ -165,7 +165,7 @@ body {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  width: calc(1003px - 175px);
+  width: calc(1000px - 175px + 2px);
   height: calc(100% + 2px);
   margin: -1px 0 0 -2px;
   border: solid 1px #E0E0E0; }
@@ -268,7 +268,7 @@ body {
 
 .column-2b {
   overflow-y: scroll;
-  width: 526px;
+  width: 548px;
   height: calc(100% - 50px + 1px);
   padding: 20px;
   vertical-align: top;
@@ -638,13 +638,13 @@ body {
   transition: transform 0.2s ease-in-out;
   transform: scale(1); }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 899px) {
   .app-container {
     display: flex;
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 768px;
-    height: 530px; }
+    height: 541px; }
     .app-container .button-specs, .app-container .primary-button, .app-container .primary-button-blue, .app-container .primary-button-green, .app-container .primary-button-orange, .app-container .primary-button-red, .app-container .secondary-button, .app-container .secondary-button-orange, .app-container .secondary-button-gray {
       font-size: 12px;
       font-weight: bold;
@@ -801,7 +801,7 @@ body {
     font-size: 16px !important; }
   .actions-panel p u {
     font-size: 12px !important; } }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
   .app-container .message-thumbnail-selected > div:last-of-type {
     background-color: #E0E0E0 !important; }
   .app-container .controls-section .navigation-button:hover {
