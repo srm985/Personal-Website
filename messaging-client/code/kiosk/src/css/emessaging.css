@@ -1,4 +1,8 @@
+* {
+  cursor: url(/images/touch-pointer.png), auto !important; }
+
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0; }
 

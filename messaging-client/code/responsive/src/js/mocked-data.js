@@ -27,7 +27,8 @@ function mockData_API() {
             uniqueID = Math.floor((Math.random() * 1000000000000) + 1);
             person = Math.floor((Math.random() * personList.length) + 1);
             subject = Math.floor((Math.random() * subjectList.length) + 1);
-            bodyClip = Math.floor((Math.random() * bodyText.length) + 1);
+            //bodyClip = Math.floor((Math.random() * bodyText.length) + 1);
+            bodyClip = Math.floor((Math.random() * 800) + 1);
             date = ('0' + Math.floor((Math.random() * 11) + 1)).slice(-2) + '/' + ('0' + Math.floor((Math.random() * 27) + 1)).slice(-2) + '/' + Math.floor((Math.random() * 7) + 2011);
             time = Math.floor((Math.random() * 12) + 1) + ':' + ('0' + Math.floor(Math.random() * 60)).slice(-2) + ' PM';
             attachment = Math.round(Math.random()) == 1 ? 'img-0034.jpg' : '';

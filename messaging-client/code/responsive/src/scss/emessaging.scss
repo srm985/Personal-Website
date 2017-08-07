@@ -20,6 +20,7 @@ $column1-width: 175px;
 $card-shadow: rgba(161, 161, 161, 0.35) 0 3px 3px 0;
 
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -370,7 +371,7 @@ body {
 }
 
 .column-2b {
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 548px;
     height: calc(100% - #{$header-height} + 1px);
     padding: 20px;
@@ -420,7 +421,7 @@ body {
 }
 
 .column-2c {
-    overflow-y: scroll;
+    overflow-y: auto;
     box-sizing: border-box;
     width: 100%;
     height: calc(100% - #{$header-height} + 2px);
@@ -829,6 +830,9 @@ body {
 }
 
 @media only screen and (max-width: 899px) {
+    * {
+        cursor: url(/images/touch-pointer.png), auto !important;
+    }
     .app-container {
         display: flex;
         width: 100%;

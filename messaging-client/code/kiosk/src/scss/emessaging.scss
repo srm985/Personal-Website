@@ -16,7 +16,12 @@ $header-height: 50px;
 $default-border: solid 1px $primary-light-gray;
 $default-border-radius: 3px;
 
+* {
+    cursor: url(/images/touch-pointer.png), auto !important;
+}
+
 body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }

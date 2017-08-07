@@ -72,10 +72,15 @@
     $(document).ready(function() {
         $('nav').load('header.htm');
         $('footer').load('footer.htm');
-    });
-    $('body').parent().parent().on('click touch', '*', function(e) {
-        console.log($(this));
-        confirm('Your device width will provide a less than satisfactory viewing experience. Devices should be at least 1200px wide. You may still proceed by clicking ok.');
+        $('#resource_button_1').on('click touch', function(e) {
+            console.log($(window).outerWidth());
+            if ($(window).outerWidth() < 1200) {
+                var response = confirm('Your device width will provide a less than satisfactory viewing experience. Devices should be at least 1200px wide. You may still proceed by clicking ok.');
+                if (!response) {
+                    e.preventDefault();
+                }
+            }
+        });
     });
     </script>
 </head>

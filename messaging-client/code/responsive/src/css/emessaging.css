@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0; }
 
@@ -267,7 +268,7 @@ body {
     font-weight: bold; }
 
 .column-2b {
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 548px;
   height: calc(100% - 50px + 1px);
   padding: 20px;
@@ -306,7 +307,7 @@ body {
       color: #E75200; }
 
 .column-2c {
-  overflow-y: scroll;
+  overflow-y: auto;
   box-sizing: border-box;
   width: 100%;
   height: calc(100% - 50px + 2px);
@@ -639,6 +640,9 @@ body {
   transform: scale(1); }
 
 @media only screen and (max-width: 899px) {
+  * {
+    cursor: url(/images/touch-pointer.png), auto !important; }
+
   .app-container {
     display: flex;
     width: 100%;

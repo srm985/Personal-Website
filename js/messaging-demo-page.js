@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setDevice(1);
+    setDevice(2);
 
     $('.device-selector button').on('click', function() {
         setDevice($(this).data('thedevice'));
