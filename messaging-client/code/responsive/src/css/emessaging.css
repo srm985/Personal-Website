@@ -610,7 +610,7 @@ body {
     align-items: center;
     justify-content: space-between; }
   .actions-panel > div > *:first-of-type * {
-    cursor: pointer !important; }
+    cursor: pointer; }
   .actions-panel .message-reply-actions > div {
     display: flex;
     width: 50%;
@@ -641,7 +641,8 @@ body {
 
 @media only screen and (max-width: 899px) {
   * {
-    cursor: url(/images/touch-pointer.png), auto !important; }
+    cursor: url(/images/touch-pointer.cur), pointer !important;
+    outline: none; }
 
   .app-container {
     display: flex;
@@ -730,11 +731,18 @@ body {
             .column-2 .column-2b .message-card .message-card-header .header-actions i {
               margin-left: 15px; }
     .column-2 .column-2c {
+      overflow-x: hidden;
       padding: 0; }
       .column-2 .column-2c > * {
         padding: 10px; }
       .column-2 .column-2c .blank-canvas {
         font-size: 12px; }
+      .column-2 .column-2c .email-reply .reply-info p:nth-of-type(3) span:nth-of-type(2) {
+        display: block;
+        overflow: hidden;
+        max-width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
       .column-2 .column-2c .contact-list-card,
       .column-2 .column-2c .contact-search-results-card {
         border: none !important; }
@@ -816,6 +824,9 @@ body {
   .app-container .column-2a .message-thumbnail:hover > div:first-of-type {
     background-color: #FFFFFF; }
   .app-container .column-2a .message-thumbnail:hover > div:last-of-type {
-    background-color: rgba(224, 224, 224, 0.25); } }
+    background-color: rgba(224, 224, 224, 0.25); }
+
+  .actions-panel .message-reply-actions p {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=emessaging.css.map */
