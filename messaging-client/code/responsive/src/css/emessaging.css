@@ -35,7 +35,8 @@ body {
       justify-content: space-between;
       align-items: center; }
       .app-container .blackout-wrapper .modal-content-wrapper .modal-message-wrapper, .app-container .blackout-wrapper .large-modal .modal-message-wrapper, .app-container .blackout-wrapper .small-modal .modal-message-wrapper {
-        font-size: 14px; }
+        font-size: 14px;
+        width: 100%; }
       .app-container .blackout-wrapper .modal-content-wrapper .modal-image, .app-container .blackout-wrapper .large-modal .modal-image, .app-container .blackout-wrapper .small-modal .modal-image {
         display: block;
         max-width: calc(100% - 40px);
@@ -640,10 +641,6 @@ body {
   transform: scale(1); }
 
 @media only screen and (max-width: 899px) {
-  * {
-    cursor: url(/images/touch-pointer.cur), pointer !important;
-    outline: none; }
-
   .app-container {
     display: flex;
     width: 100%;
@@ -737,10 +734,14 @@ body {
         padding: 10px; }
       .column-2 .column-2c .blank-canvas {
         font-size: 12px; }
+      .column-2 .column-2c .email-reply .reply-info p:nth-of-type(3) span:nth-of-type(1) {
+        display: inline-block;
+        vertical-align: top; }
       .column-2 .column-2c .email-reply .reply-info p:nth-of-type(3) span:nth-of-type(2) {
-        display: block;
+        display: inline-block;
         overflow: hidden;
-        max-width: 150px;
+        max-width: 60px;
+        vertical-align: top;
         white-space: nowrap;
         text-overflow: ellipsis; }
       .column-2 .column-2c .contact-list-card,
