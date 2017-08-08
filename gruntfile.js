@@ -19,6 +19,7 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' },
                     { expand: true, cwd: 'messaging-client/code/responsive/web/', src: '**/*', dest: 'web/messaging-client/code/responsive/web/' },
                     { expand: true, cwd: 'messaging-client/code/kiosk/web/', src: '**/*', dest: 'web/messaging-client/code/kiosk/web/' },
+                    { expand: true, cwd: 'messaging-client/axure/', src: '**/*', dest: 'web/messaging-client/axure/' },
                     { expand: true, cwd: 'poc_website', src: '**/*', dest: 'web/poc_website/' },
                     { expand: true, cwd: 'font-icons/css', src: 'styles.min.css', dest: 'web/font-icons/css/' },
                     { expand: true, cwd: 'font-icons/fonts', src: '**/*', dest: 'web/font-icons/fonts/' }
