@@ -2,6 +2,10 @@
 # suphp_configpath /home/yourusername/path/to/php.ini
 # php_value mbstring.func_overload 4 # Required for PWSB support. Please do not uncomment this line.
 
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^seanmcquay\.com [NC]
+RewriteRule ^(.*)$ http://www.seanmcquay.com/$1 [L,R=301,NC]
+
 <ifModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
