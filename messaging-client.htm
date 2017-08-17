@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    .fouc_blocker {
+        height: 10000px;
+        width: 100%;
+        z-index: 10000;
+        background-color: #3D414D;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Lato:300, 400, 900']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+    window.ga = window.ga || function() {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-86885981-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/project_master_styleguide.css">
+    <link rel="stylesheet" href="css/messaging-client-styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Messaging Client</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="A messaging client allowing inmates to communicate with their loved ones." />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="www.seanmcquay.com/messaging-client.htm" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Messaging Client" />
+    <meta property="og:description" content="A messaging client allowing inmates to communicate with their loved ones." />
+    <meta property="og:image" content="www.seanmcquay.com/images/messaging-client/phone-desktop-mockup.png" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('nav').load('header.htm');
+        $('footer').load('footer.htm');
+        $('#resource_button_1').on('click touch', function(e) {
+            console.log($(window).outerWidth());
+            if ($(window).outerWidth() < 1200) {
+                var response = confirm('Your device width will provide a less than satisfactory viewing experience. Devices should be at least 1200px wide. You may still proceed by clicking ok.');
+                if (!response) {
+                    e.preventDefault();
+                }
+            }
+        });
+    });
+    </script>
+</head>
+
+<body class="portfolio-project">
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div id="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                            <h2>Messaging Client</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <p align="justify" class="left_side_bar_green">This messaging client provides inmates with the opportunity to communicate in near-real time with their loved ones through an email client specifically tailored for use in prison facilities. Loved ones initiate conversations with inmates for a specific "mailing rate". They may then choose to provide "return postage" so that inmates may reply. Loved ones may send text and images, while inmates may only respond with text. Many restrictions are placed on this client due to security concerns. The repository contains the code for the two separate components of this messaging client - a kiosk version intended for use by inmates and a responsive version used by those communicating with said inmates. <br><i>Disclaimer: The demo pages below have been coerced into the device viewports. Your viewing experience may vary from the actual, developed code.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_3">
+            <h3 align="center">Resources</h3>
+            <p align="center">Sublime<span class="separator_color">|</span>BitBucket<span class="separator_color">|</span>jQuery<span class="separator_color">|</span>SASS<span class="separator_color">|</span>AJAX</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="/messaging-demo-page.htm">
+                                <div class="link_button" id="resource_button_1">
+                                    <p>Demo Page</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="https://github.com/srm985/messaging-client">
+                                <div class="link_button" id="resource_button_2">
+                                    <p>GitHub Code</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_4">
+            <div class="container">
+                <div class="row image_height">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12 image_size_inherit">
+                        <img src="/images/messaging-client/phone-desktop-mockup.png" class="full-width-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Messaging Client Overview</h3>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>This messaging client consisted of three parts – which required design and development. It consists of a restricted kiosk application for use by inmates, a responsive webpage to support a broad array of devices, and dedicated mobile applications. The intended goal of this client was to provide inmates with the ability to communicate with their loved ones in near-real time. The client borrows many words from the world of postal mail. Stamps indicate available credits. These credits are sold by each facility and purchased by the inmates loved ones. Currently, a message may only be initiated by a loved one. They may send text and images to the inmate. If they so choose, they may provide “return postage” for the inmate to draft a text-only reply. The client’s limited functionality is related to the security measures required to ensure no illegal communications occur.</p>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>My Process</h3>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>Prior to the implementation of this messaging application, a variant was already in existence. Our organization acquired the business and set about stripping the application down to the backend code and building it back up to suit our needs. My design process began by studying and understanding the current application. Additionally, I was able to learn from the previous owners what things could have been done differently and what improvement opportunities existed. From this, I materialized a set of users flows for both user personas.
+                            <br><img src="/images/messaging-client/ff-user-flow.png" class="full-width-image">
+                            <br>
+                            <br>
+                            <img src="/images/messaging-client/inmate-user-flow.png" class="full-width-image">
+                            <br>
+                            <br>From there, I met with our business analysts and product owners to understand their project goals and to discuss how we might go about implementing them. Once I had a strong understanding of our organization’s goals, I set about revising user flow diagrams and initial wireframes, keeping in mind our user personas, the goals identified by the organization, and the improvement opportunities identified by the previous owners.
+                            <br>Once the initial wireframes had been completed, I again met with our product owner, business analysts, and backend architects to review initial screens and ensure they not only met the business goals, but were also technically feasible based on the current backend framework. Several improvement opportunities were identified around the checkout process and the use of stamps. These improvement opportunities were then wrapped up into an initial set of mockups – stylized wireframes adhering to brand style guides and finalizing content placement and styling. Again, all teams involved in the process met to discuss the flow, the incorporation of all business goals, and the backend feasibility.
+                            <br>
+                            <img src="/images/messaging-client/isometric-wireframes.png" class="full-width-image">
+                            <br>
+                            <br>After finalizing the mockups, I progressed to generating frontend code. To begin, I mocked up all backend services and created simulated API calls so that I could test functionality prior to backend services being available. I focused first on the kiosk application which inmates use to interact with the product. This application is created as one of many modules which are displayed on a kiosk terminal within the prison facility. Inmates have access to these kiosks at certain hours throughout the day and may use the provided services. Once completed, I moved to development of the responsive web application. This application serves the friends and family members of the incarcerated individuals. This application required much more development time as users have additional functionality including purchasing stamps and their actual composition capabilities. Backend developers were then left to remove mocked API calls and replace with correct services.
+                            <br>Throughout my entire design and development process I not only met with our product owner and business analysts but I also reviewed my progress at a weekly meeting with those individuals within our organization involved in UX and UI. Any feedback was incorporated into the final designs, where applicable.</p>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Responsive Web Application</h3>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>The responsive web application was the centerpiece of this project – allowing friends and family members the ability to communicate with their incarcerated loved ones in near-real time. Due to design and backend architecture restrictions, this application was required to be loaded within a webpage already containing a common header and footer along with subsequent site navigation controls. This meant special accommodations were required to provide users with a clear distinction between the application and its control as opposed to the site controls. From this application, users are able to draft messages to their loved ones and include images to be viewed. Message costs are quantified based on the message length, attachments included, and if the member has chosen to provide their loved one the ability to reply to the message. A member’s remaining stamps balance is always prominently displayed and a primary action button is always available to permit members the ability to purchase additional stamps. During design and development, one difficult hurdle was creating a responsive application that worked well on both desktops and mobile devices.</p>
+                        <a class="anchor-formatted" href="/messaging-client/axure/wireframes/start.html#g=1&p=inbox" target="_blank">Axure Wireframes</a><br>
+                        <a class="anchor-formatted" href="/messaging-client/axure/mockups/start.html#g=1&p=inbox" target="_blank">Axure Mockups</a>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <img src="/images/messaging-client/responsive-mobile-inbox.png" class="full-width-image image-shadow">
+                    </div>
+                    <div class="top-padded col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <img src="/images/messaging-client/inbox-responsive-desktop.png" class="full-width-image image-shadow">
+                    </div>
+                    <div class="top-padded col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>Careful planning needs to be considered for any responsive application, ensuring controls and content are skillfully located within the reach of users. Having the ability to own the project from concept to development permitted me to ensure that all subtleties were accurately accounted for and implemented.</p>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Mobile Application</h3>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p>The mobile application was developed for use by friends and family members and provides identical features to that of the responsive web application, but additionally offers users the convenience of a native mobile application. The design and layout of the mobile application was similar to that of the responsive application, however, primary navigation buttons were moved to the bottom to provide users with a more coherent experience – similar to that of many other applications such as Instagram. The feel of the application is intended to offer users the familiarity of Gmail with subtle revisions to accommodate the more-complex messaging client.</p>
+                        <a class="anchor-formatted" href="/messaging-client/axure/android/start.html#g=1&p=inbox" target="_blank">Axure Mockups - Android</a><br>
+                        <a class="anchor-formatted" href="/messaging-client/axure/ios/start.html#g=1&p=inbox" target="_blank">Axure Mockups - iOS</a>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <img src="/images/messaging-client/mobile-inbox.png" class="full-width-image image-shadow">
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Kiosk Application</h3>
+                        <p>The kiosk application served as the interface for inmates, providing them the ability to receive and reply to messaging. They are also able to view those images attached to received messages. Due to specific security requirements, inmates are unable to initiate messages nor are they able to send photos as attachments. This application runs in an iframe on a fixed-dimension kiosk with a poor-response touch screen due to the protective layers over the screens. This required unique design of the application to ensure touch interactions were simple and touch targets were sized accordingly. Beyond this, the controls and flow required simplification to facilitate the use of the application by all user demographics.</p>
+                        <a class="anchor-formatted" href="/messaging-client/axure/wireframes/start.html#g=1&p=inbox__600px_" target="_blank">Axure Wireframes</a><br>
+                        <a class="anchor-formatted" href="/messaging-client/axure/mockups/start.html#g=1&p=inbox__600px_" target="_blank">Axure Mockups</a>
+                    </div>
+                    <div class="top-padded col-sm-10 col-sm-offset-1 col-xs-12">
+                        <img src="/images/messaging-client/kiosk-inbox.png" class="full-width-image image-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

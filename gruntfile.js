@@ -17,6 +17,9 @@ module.exports = function(grunt) {
                     { expand: true, cwd: 'mok-project', src: '**/*', dest: 'web/mok-project/' },
                     { expand: true, cwd: 'axure-redline-tool', src: '**/*', dest: 'web/axure-redline-tool/' },
                     { expand: true, cwd: 'terminal-reskin', src: '**/*', dest: 'web/terminal-reskin/' },
+                    { expand: true, cwd: 'messaging-client/code/responsive/web/', src: '**/*', dest: 'web/messaging-client/code/responsive/web/' },
+                    { expand: true, cwd: 'messaging-client/code/kiosk/web/', src: '**/*', dest: 'web/messaging-client/code/kiosk/web/' },
+                    { expand: true, cwd: 'messaging-client/axure/', src: '**/*', dest: 'web/messaging-client/axure/' },
                     { expand: true, cwd: 'poc_website', src: '**/*', dest: 'web/poc_website/' },
                     { expand: true, cwd: 'font-icons/css', src: 'styles.min.css', dest: 'web/font-icons/css/' },
                     { expand: true, cwd: 'font-icons/fonts', src: '**/*', dest: 'web/font-icons/fonts/' }
@@ -41,6 +44,8 @@ module.exports = function(grunt) {
                     'web/header.htm': 'header.htm',
                     'web/index.htm': 'index.htm',
                     'web/poc_website.htm': 'poc_website.htm',
+                    'web/messaging-client.htm': 'messaging-client.htm',
+                    'web/messaging-demo-page.htm': 'messaging-demo-page.htm',
                     'web/portfolio.htm': 'portfolio.htm',
                     'web/statistical_analysis.htm': 'statistical_analysis.htm',
                     'web/statistical_maintenance.htm': 'statistical_maintenance.htm',

@@ -24,7 +24,7 @@ ul {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 40px;
-    background-image: url(../images/profile.png);
+    background-image: url(../images/profile-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -52,7 +52,7 @@ ul {
     display: table-row;
 }
 
-#section_4 .container .row > div {
+#section_4 .container .row>div {
     display: table-cell;
     padding: 0;
 }
@@ -62,16 +62,16 @@ ul {
     text-align: justify;
 }
 
-
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 479px) {
     #section_2 h2,
     #profile_image {
-        text-align: center;
+        /*text-align: center;*/
         background-position: center;
     }
 }
+
 
 
 /* Extra Small Devices, Phones */
@@ -79,10 +79,11 @@ ul {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     #section_2 h2,
     #profile_image {
-        text-align: center;
+        /*text-align: center;*/
         background-position: center;
     }
 }
+
 
 
 /* Small Devices, Tablets */
@@ -90,10 +91,11 @@ ul {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     #section_2 h2,
     #profile_image {
-        text-align: center;
+        /*text-align: center;*/
         background-position: center;
     }
 }
+
 
 
 /* Medium Devices, Desktops */
@@ -103,11 +105,13 @@ ul {
 }
 
 
+
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     /**/
 }
+
 
 
 /* Very Large Devices, Very Wide Screens */
