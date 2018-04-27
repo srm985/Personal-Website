@@ -3,12 +3,12 @@
 
 <head>
     <style type="text/css">
-    .fouc_blocker {
-        height: 10000px;
-        width: 100%;
-        z-index: 10000;
-        background-color: #3D414D;
-    }
+        .fouc_blocker {
+            height: 10000px;
+            width: 100%;
+            z-index: 10000;
+            background-color: #3D414D;
+        }
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,29 +20,29 @@
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Asynchronously load our fonts.-->
     <script type="text/javascript">
-    WebFontConfig = {
-        google: {
-            families: ['Lato:300, 400, 900']
-        }
-    };
-    (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-    })();
+        WebFontConfig = {
+            google: {
+                families: ['Lato:300, 400, 900']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
     </script>
     <!-- Google Analytics -->
     <script>
-    window.ga = window.ga || function() {
-        (ga.q = ga.q || []).push(arguments)
-    };
-    ga.l = +new Date;
-    ga('create', 'UA-86885981-1', 'auto');
-    ga('send', 'pageview');
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-86885981-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
@@ -68,12 +68,11 @@
     <meta property="og:image" content="www.seanmcquay.com/images/profile.png" />
     <!--Load our dynamic header and footer-->
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('nav').load('header.htm');
-        $('footer').load('footer.htm');
-    });
-    </script>
-</head>
+        $(document).ready(function () {
+            $('nav').load('header.htm');
+            $('footer').load('footer.htm');
+        });
+    </script> </head>
 
 <body>
     <div class="fouc_blocker"></div>
@@ -123,10 +122,7 @@
                     <div class="col-lg-9 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <p class="left_side_bar_green" id="bio_text">I’m passionate about all things data! I love the idea of driving swift and accurate decisions through data. Spend a few hours around me and you’ll hear me overusing my favorite phrase, “quantifiably justifiable” or asking someone to back their hypothesis with data. Letting data speak has become critical in my life – from ensuring intuitive user experiences to bolstering business objectives and conversion goals.
                             <br>
-                            <br> I’m currently delivering value as a UX Developer within a small team of like-minded individuals driving the organization through quantifiable value derived from well-designed and developed applications. My involvement in the design and development of features begins at their conception – working with business analysts and marketing specialists to understand the business needs and ensure user personas are accurately predicted and well catered towards throughout the design process. I generate user flows, wireframes, and mockups in Axure and the Adobe CC suite and in turn, translate approved mockups into functioning prototypes demonstrating page functionality and micro-interactions.
-                            <br> Once approved, I then roll this code into our CMS, Liferay and apply an MVC framework (I work mainly with Spring for legacy applications and have a little experience with Angular 1.5) and proceed to connect middleware services. I use the highly-semantic tag structure of HTML5 to ensure quality page indexing and targeted SEO. I leverage Google Analytics along with internally-logged data to quantify my efforts and drive future design. Styling comes from SCSS precompiled to CSS3 and page control and interactions are driven by JavaScript ES6 transcompiled to ES5 with Babel for legacy support. I typically extend JS with jQuery. Build tasks such as minification, compression, linting and general code testing are automated through Grunt, with some newer products making the switch to Gulp. I work with Bootstrap V2 in legacy applications and deploy new responsive features with the aid of Bootstrap V3. Depending on product, version control is handled via Git or SVN, with Git constituting the majority.
-                        </p>
-                    </div>
+                            <br>I'm currently working as a consultant for Saggezza in Chicago. Working at Saggezza has allowed me to contribute and learn from numerous projects across varying fields from eCommerce to restaurants to banking. Each project requires a slightly different skillset. I have worked as part of large development efforts, coordinating with many other developers. Other times, I have led development efforts for entire applications. Exposure to numerous projects has also allowed me to grow new skills in emerging technologies, while maintaining existing skills when working in legacy code bases. With out client base, I find myself many times working directly with senior leadership or C-suite executives. </div>
                 </div>
             </div>
         </div>
@@ -136,7 +132,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-lg-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                        <h2>Languages</span></h2>
+                        <h2>Languages</span>
+                        </h2>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <h3>Programming / Frameworks</h3>
@@ -160,6 +157,15 @@
                                 <p>Babel</p>
                             </li>
                             <li>
+                                <p>Angular</p>
+                            </li>
+                            <li>
+                                <p>Ionic</p>
+                            </li>
+                            <li>
+                                <p>React (Just Experimenting</p>
+                            </li>
+                            <li>
                                 <p>Bootstrap (V2/V3)</p>
                             </li>
                             <li>
@@ -169,7 +175,7 @@
                                 <p>Git/SVN</p>
                             </li>
                             <li>
-                                <p>Grunt</p>
+                                <p>Gulp/Grunt</p>
                             </li>
                             <li>
                                 <p>D3.js (Just Experimenting)</p>
@@ -217,10 +223,10 @@
                         <h2>Favorite Tools</h2>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                        <h3>Adobe Photoshop 2017</h3>
+                        <h3>Adobe Photoshop CC</h3>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                        <h3>Adobe Illustrator 2017</h3>
+                        <h3>Adobe Illustrator CC</h3>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <h3>GitHub / BitBucket</h3>
@@ -235,22 +241,28 @@
                         <h3>Google Search Console</h3>
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                        <h3>Sublime Text</h3>
+                        <h3>VS Code</h3>
                         <ul class="left_side_bar_red">
                             <li>
-                                <p>Package Control&nbsp;&nbsp;<a target="_blank" href="https://packagecontrol.io/"><span class="glyphicon glyphicon-link"></span></a></p>
+                                <p>CSScomb&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>CSScomb&nbsp;&nbsp;<a target="_blank" href="https://packagecontrol.io/packages/CSScomb"><span class="glyphicon glyphicon-link"></span></a></p>
+                                <p>Autoprefixer&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>Autoprefixer&nbsp;&nbsp;<a target="_blank" href="https://packagecontrol.io/packages/Autoprefixer"><span class="glyphicon glyphicon-link"></span></a></p>
-                            </li>
-                            <li>
-                                <p>Minify&nbsp;&nbsp;<a target="_blank" href="https://packagecontrol.io/packages/Minify"><span class="glyphicon glyphicon-link"></span></a></p>
-                            </li>
-                            <li>
-                                <p>Prettify&nbsp;&nbsp;<a target="_blank" href="https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify"><span class="glyphicon glyphicon-link"></span></a></p>
+                                <p>Minify&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=HookyQR.minify">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -258,22 +270,39 @@
                         <h3>Chrome (Development)</h3>
                         <ul class="left_side_bar_red">
                             <li>
-                                <p>ColorZilla&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp"><span class="glyphicon glyphicon-download-alt"></span></a></p>
+                                <p>ColorZilla&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>PerfectPixel&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi"><span class="glyphicon glyphicon-download-alt"></span></a></p>
+                                <p>PerfectPixel&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>WhatFont&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm"><span class="glyphicon glyphicon-download-alt"></span></a></p>
+                                <p>WhatFont&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>Resolution Test&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/resolution-test/idhfcdbheobinplaamokffboaccidbal"><span class="glyphicon glyphicon-download-alt"></span></a></p>
+                                <p>Resolution Test&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/resolution-test/idhfcdbheobinplaamokffboaccidbal">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
                             </li>
                             <li>
-                                <p>Page Ruler&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn?hl=es-419"><span class="glyphicon glyphicon-download-alt"></span></a></p>
-                            </li>
-                            <li>
-                                <p>Firebug&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/firebug-lite-for-google-c/bmagokdooijbeehmkpknfglimnifench"><span class="glyphicon glyphicon-download-alt"></span></a></p>
+                                <p>Page Ruler&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn?hl=es-419">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
                             </li>
                         </ul>
                     </div>
