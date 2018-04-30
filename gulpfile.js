@@ -67,6 +67,9 @@ gulp.task('copy', () => {
     return merge(phpSource, documents, projects, fontIcons, fonts, siteImages, projectImages);
 });
 
+/** HTML build tasks include linting,
+ * minification, and source maps if enabled.
+ */
 gulp.task('build-html', () => {
     return gulp.src('src/*.htm')
         .pipe(gulpif(arg.sourcemap, sourcemaps.init()))
@@ -107,6 +110,12 @@ gulp.task('build-html', () => {
     .pipe(gulp.dest('reports/ada-compliance')); */
 });
 
+/**
+ * CSS build includes concatenation of SCSS source
+ * files, linting SCSS, precompiling into CSS,
+ * applying vendor prefixes, minification, and providing
+ * source maps if enabled.
+ */
 gulp.task('build-css', () => {
     return gulp.src('src/scss/**/*.scss')
         .pipe(gulpif(arg.sourcemap, sourcemaps.init()))
@@ -121,6 +130,11 @@ gulp.task('build-css', () => {
         .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
+/**
+ * JS build tasks include concatenation of JS source
+ * files, ES6 linting, transcompiling from ES6 to ES5,
+ * minification, and providing source maps if enabled.
+ */
 gulp.task('build-js', () => {
     return gulp.src('src/js/**/*.js')
         .pipe(gulpif(arg.sourcemap, sourcemaps.init()))
@@ -133,6 +147,10 @@ gulp.task('build-js', () => {
         .pipe(gulp.dest('web/js'));
 });
 
+/**
+ * Task handles serving our website
+ * and watching relevant files.
+ */
 gulp.task('serve', () => {
     browserSync.use(htmlInjector, {
         files: 'web/*.htm'
