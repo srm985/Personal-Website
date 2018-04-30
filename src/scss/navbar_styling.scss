@@ -1,0 +1,133 @@
+@charset 'utf-8';
+
+/* CSS Document */
+
+.touch_device_mode {
+    pointer-events: none;
+}
+
+.navbar_open {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(61, 65, 77, 0.7);
+}
+
+.navbar,
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    background-color: #3d414d;
+}
+
+.navbar a:hover {
+    background-color: #3d414d !important;
+}
+
+.navbar li:after {
+    display: block;
+
+    width: 0;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+    -webkit-transition: width 0.15s ease, background-color 0.15s ease;
+    transition: width 0.15s ease, background-color 0.15s ease;
+
+    background-color: transparent;
+}
+
+.navbar li:hover:after {
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.navbar li,
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.active_link {
+    /*PLACEHOLDER*/
+}
+
+.active_link:before {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+
+    background-color: #fff;
+}
+
+.navbar-header {
+    float: left;
+
+    margin: 0 auto;
+}
+
+#hamburger_menu {
+    background-color: #3d414d;
+}
+
+#hamburger_menu span {
+    background-color: #fff;
+}
+
+.navbar .container-fluid {
+    margin: 0;
+    padding: 0 auto 0 0;
+
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    -webkit-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out;
+}
+
+.hidden_nav {
+    top: -60px;
+}
+
+
+/*Used to remove underlining on hamburger menu.*/
+
+@media only screen and (max-width: 767px) {
+    .navbar li:hover:after {
+        width: 0;
+
+        background-color: #111;
+    }
+    .active_link:before {
+        height: 0;
+    }
+    .navbar ul {
+        margin-top: 3px;
+    }
+}

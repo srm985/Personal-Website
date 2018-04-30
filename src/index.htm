@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .fouc_blocker {
+            height: 10000px;
+            width: 100%;
+            z-index: 10000;
+            background-color: #3D414D;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Lato:300, 400, 900']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-86885981-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/index_styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/full_screen_header.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Home</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="Electrical Engineer / Developer" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="www.seanmcquay.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Sean McQuay" />
+    <meta property="og:description" content="Electrical Engineer / Developer" />
+    <meta property="og:image" content="www.seanmcquay.com/images/profile.png" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('nav').load('header.htm');
+            $('footer').load('footer.htm');
+        });
+    </script> </head>
+
+<body>
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div align="center" id="header_content">
+                <h1>Sean McQuay</h1>
+                <h3>UX Developer / Front-End Developer</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                            <div align="center">
+                                <a target="_blank" href="documents/resume.pdf">
+                                    <div class="link_button" id="header_button_1">
+                                        <p>Résumé</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                            <div align="center">
+                                <a href="contact.htm">
+                                    <div class="link_button" id="header_button_2">
+                                        <p>Contact</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base header_arrow"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper base" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h2>Who I Am</h2>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-1 col-xs-12 col-xs-offset-0">
+                        <div id="profile_image"></div>
+                    </div>
+                    <div class="col-lg-9 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <p class="left_side_bar_green" id="bio_text">I’m passionate about all things data! I love the idea of driving swift and accurate decisions through data. Spend a few hours around me and you’ll hear me overusing my favorite phrase, “quantifiably justifiable” or asking someone to back their hypothesis with data. Letting data speak has become critical in my life – from ensuring intuitive user experiences to bolstering business objectives and conversion goals.
+                            <br>
+                            <br>I'm currently working as a consultant for Saggezza in Chicago. Working at Saggezza has allowed me to contribute and learn from numerous projects across varying fields from eCommerce to restaurants to banking. Each project requires a slightly different skillset. I have worked as part of large development efforts, coordinating with many other developers. Other times, I have led development efforts for entire applications. Exposure to numerous projects has also allowed me to grow new skills in emerging technologies, while maintaining existing skills when working in legacy code bases. With out client base, I find myself many times working directly with senior leadership or C-suite executives. </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper base" id="section_3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h2>Languages</span>
+                        </h2>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Programming / Frameworks</h3>
+                        <ul class="left_side_bar_red">
+                            <li>
+                                <p>HTML5</p>
+                            </li>
+                            <li>
+                                <p>CSS3</p>
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                            </li>
+                            <li>
+                                <p>Javascript (ES5/ES6)</p>
+                            </li>
+                            <li>
+                                <p>jQuery</p>
+                            </li>
+                            <li>
+                                <p>Babel</p>
+                            </li>
+                            <li>
+                                <p>Angular</p>
+                            </li>
+                            <li>
+                                <p>Ionic</p>
+                            </li>
+                            <li>
+                                <p>React (Just Experimenting</p>
+                            </li>
+                            <li>
+                                <p>Bootstrap (V2/V3)</p>
+                            </li>
+                            <li>
+                                <p>Flexbox</p>
+                            </li>
+                            <li>
+                                <p>Git/SVN</p>
+                            </li>
+                            <li>
+                                <p>Gulp/Grunt</p>
+                            </li>
+                            <li>
+                                <p>D3.js (Just Experimenting)</p>
+                            </li>
+                            <li>
+                                <p>Ruby</p>
+                            </li>
+                            <li>
+                                <p>VBA</p>
+                            </li>
+                            <li>
+                                <p>C (Embedded Systems)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Spoken</h3>
+                        <ul class="left_side_bar_red">
+                            <li>
+                                <p>English (Native)</p>
+                            </li>
+                            <li>
+                                <p>Spanish (11 Años)</p>
+                            </li>
+                            <li>
+                                <p>Finnish (5 Vuotta)</p>
+                            </li>
+                            <li>
+                                <p>Russian (2 Года)</p>
+                            </li>
+                            <li>
+                                <p>Swedish (Och samma på svenska.)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper base" id="section_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h2>Favorite Tools</h2>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Adobe Photoshop CC</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Adobe Illustrator CC</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>GitHub / BitBucket</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Axure</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Google Analytics</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Google Search Console</h3>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>VS Code</h3>
+                        <ul class="left_side_bar_red">
+                            <li>
+                                <p>CSScomb&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-csscomb">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Autoprefixer&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Minify&nbsp;&nbsp;
+                                    <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=HookyQR.minify">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <h3>Chrome (Development)</h3>
+                        <ul class="left_side_bar_red">
+                            <li>
+                                <p>ColorZilla&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>PerfectPixel&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>WhatFont&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Resolution Test&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/resolution-test/idhfcdbheobinplaamokffboaccidbal">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Page Ruler&nbsp;&nbsp;
+                                    <a target="_blank" href="https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn?hl=es-419">
+                                        <span class="glyphicon glyphicon-download-alt"></span>
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
