@@ -62,7 +62,7 @@ gulp.task('copy', () => {
             .pipe(gulp.dest('web/font-icons/fonts')),
         siteImages = gulp.src('src/assets/images/*.*')
             .pipe(gulp.dest('web/images')),
-        projectImages = gulp.src('src/assets/images/*/*.*')
+        projectImages = gulp.src(['src/assets/images/*/*.*', '!src/assets/images/**/*.psd'])
             .pipe(gulp.dest('web/images'));
     return merge(phpSource, documents, projects, fontIcons, fonts, siteImages, projectImages);
 });
