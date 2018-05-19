@@ -1,7 +1,3 @@
 node_modules/
-.sass-cache/
-css/*.css.map
-messaging-client/code/responsive/src/.sass-cache/
-messaging-client/code/responsive/src/css/emessaging.css.map
-messaging-client/code/kiosk/src/.sass-cache/
-messaging-client/code/kiosk/src/css/*.css.map
+reports/
+web/

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .fouc_blocker {
+            height: 10000px;
+            width: 100%;
+            z-index: 10000;
+            background-color: #3D414D;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Lato:300, 400, 900']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-86885981-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/project_master_styleguide.css">
+    <link rel="stylesheet" href="css/bit_error_styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Bit Error Correction</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission." />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="www.seanmcquay.com/bit_error.htm" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bit Error Correction" />
+    <meta property="og:description" content="By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission." />
+    <meta property="og:image" content="www.seanmcquay.com/bit_error/bit_error.jpg" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('nav').load('header.htm');
+            $('footer').load('footer.htm');
+        });
+    </script> </head>
+
+<body class="portfolio-project">
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div id="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                            <h2>Bit Error Detection &amp; Correction</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <p align="justify" class="left_side_bar_green">By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_3">
+            <h3 align="center">Resources</h3>
+            <p align="center">AVRStudio
+                <span class="separator_color">|</span>Low-Cost TX/RX Pair
+                <span class="separator_color">|</span>ATtiny2313
+                <span class="separator_color">|</span>ATmega164</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="documents/Data%20Encoding%20for%20Wireless%20Transmission.pdf">
+                                <div class="link_button" id="resource_button_1">
+                                    <p>Download Paper</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div align="center">
+                            <a target="_blank" href="https://github.com/srm985/BitErrorDetection/">
+                                <div class="link_button" id="resource_button_2">
+                                    <p>GitHub Code</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_4">
+            <div class="container">
+                <div class="row image_height">
+                    <div class="col-sm-6 col-xs-12 image_size_inherit">
+                        <div class="image_styling" id="image_1"></div>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-0 col-sm-offset-6 col-xs-12 mobile_image_margin image_size_inherit">
+                        <div class="image_styling" id="image_2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p align="justify" class="left_side_bar_tan">The intended overall goal of this project was to develop and implement a reliable and cost-effective wireless transmitter/receiver pair that is available to the public. Wireless transmission costs have dropped significantly over the years but the intentions of this project are to further reduce those costs by utilizing a publicly available wireless transmitter/receiver pair and developing a software layer which will work to aggressively remove bit errors and implement an addressing system so that multiple transmitters may be used with a single receiver. Through the use of inexpensive AVR microcontrollers, this software layer was implemented and the whole transmitter/receiver repackaged on a new board allowing users a serial interface.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_6">
+            <div class="container">
+                <div class="row image_height">
+                    <div class="col-sm-6 col-xs-12 image_size_inherit">
+                        <div class="image_styling" id="image_3"></div>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-0 col-sm-offset-6 col-xs-12 mobile_image_margin image_size_inherit">
+                        <div class="image_styling" id="image_4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p align="justify" class="left_side_bar_tan">The error correcting code was found to be quite effective at resolving transmission errors. Transmission could be even more effective if the raw synchronization byte was able to be encoded as well but it is required to be transmitted raw to initialize the receiver. While transmitting raw data, it is noted that many times the address or data bytes appear to be corrupted while the encoded data is able to recover the data almost every single time. Under continuous transmission, many of these errors are removed. It seems that when the receiver is subjected to a constant stream of data that the output stabilizes significantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
