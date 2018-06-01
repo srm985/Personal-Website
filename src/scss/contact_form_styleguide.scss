@@ -51,9 +51,6 @@
     margin-top: 3em;
     padding: 0;
 
-    -webkit-transition: all 1s ease-in-out;
-    -webkit-transition: background-position 0.75s ease-in-out;
-    transition: all 1s ease-in-out;
     transition: background-position 0.75s ease-in-out;
 
     color: #4edec2;
@@ -67,13 +64,12 @@ input {
 }
 
 .submit_button_hover_attr {
-    -webkit-transition: all 0.1s ease-in-out !important;
-    transition: all 0.1s ease-in-out !important;
-}
+    &:hover {
+        transition: background-color 0.1s ease-in-out;
 
-.submit_button_hover_attr:hover {
-    color: #efece7 !important;
-    background-color: #4edec2 !important;
+        color: #efece7 !important;
+        background-color: #4edec2 !important;
+    }
 }
 
 #submit_button .disabled {
@@ -121,7 +117,6 @@ input {
     height: 1.8em;
     margin-top: 0.35em;
 
-    -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
 
     background-repeat: no-repeat;
