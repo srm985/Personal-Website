@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .fouc_blocker {
+            height: 10000px;
+            width: 100%;
+            z-index: 10000;
+            background-color: #3D414D;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Lato:300, 400, 900']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-86885981-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/portfolio_styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <script defer type="text/javascript" src="js/portfolio_page.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Portfolio</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="https://www.seanmcquay.com/portfolio.htm" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics." />
+    <meta property="og:image" content="https://www.seanmcquay.com/images/header.jpg" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('nav').load('header.htm');
+            $('footer').load('footer.htm');
+        });
+    </script> </head>
+
+<body>
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div id="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                            <h2>Portfolio</h2>
+                            <p align="justify">A brief look at some of the broad-ranging challenges I've tackled over the years - from programming to hardware to graphics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base header_arrow"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base" id="section_2">
+            <a href="axure-redline-tool.htm">
+                <div class="container-fluid project_wrapper_full" id="project_0">
+                    <div class="project_title_full project_title_full_left">
+                        <h3>Axure Redline Plugin</h3>
+                    </div>
+                    <div class="project_content_full_right left_side_bar_green hidden-sm hidden-xs">
+                        <p>An interactive reline plugin which simplifies the transition between design and development - ensuring developers have all the specifications they need to confidently and accurately materialize your designs.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="mok-project.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_1">
+                    <div class="project_title_half">
+                        <h3>MOK Project</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_red">
+                        <p>A jQuery plugin providing multilingual onscreen keyboard for terminals and kiosks.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="terminal-project.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_2">
+                    <div class="project_title_half">
+                        <h3>Video Visitation Kiosk</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_tan">
+                        <p>A fresh take on an outdated video visitation terminal front end helping users more easily communicate with their loved ones.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="messaging-client.htm">
+                <div class="container-fluid project_wrapper_full" id="project_3">
+                    <div class="project_title_full project_title_full_right">
+                        <h3>Messaging Client</h3>
+                    </div>
+                    <div class="project_content_full_left right_side_bar_green hidden-sm hidden-xs">
+                        <p>A cross-platform application providing inmates the ability to communicate with their loved ones in near-real time through a specialized email client. This project is composed of three applications - a kiosk variant, a responsive application, and mobile applications.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="poc_website.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_4">
+                    <div class="project_title_half">
+                        <h3>POC Website Redesign</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_tan">
+                        <p>A completely revised version of Luminant's POC website.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="autonomous_drone.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_5">
+                    <div class="project_title_half">
+                        <h3>Autonomous Drone</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_red">
+                        <p>Drone built and programmed to be capable of autonomous flight, obstacle avoidance, and wireless charging through a purpose-built inductive charger.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="statistical_analysis.htm">
+                <div class="container-fluid project_wrapper_full" id="project_6">
+                    <div class="project_title_full project_title_full_left">
+                        <h3>Statistical Analysis</h3>
+                    </div>
+                    <div class="project_content_full_right left_side_bar_black hidden-sm hidden-xs">
+                        <p>Project dedicated to generating alarm set points for mechanical equipment through the statistical analysis and modeling of historical operational profiles. The realization of this project resulted in a reduction in new client onboarding times from over a month, to less than an hour.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="bearing_wipe.htm">
+                <div class="container-fluid project_wrapper_half split_screen_left" id="project_7">
+                    <div class="project_title_half">
+                        <h3>Bearing Wipe Detection</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_green">
+                        <p>Simple OSIsoft PE Equation script to identify real-time, potential bearing wipes on large machinery - removing the lengthy manual review process.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="graphic_design.htm">
+                <div class="container-fluid project_wrapper_half split_screen_right" id="project_8">
+                    <div class="project_title_half">
+                        <h3>Graphic Design</h3>
+                    </div>
+                    <div class="project_content_half left_side_bar_black">
+                        <p>A small lookbook for some of the graphic content I have generated.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="bit_error.htm">
+                <div class="container-fluid project_wrapper_full" id="project_9">
+                    <div class="project_title_full project_title_full_right">
+                        <h3>Bit Error Correction</h3>
+                    </div>
+                    <div class="project_content_full_left right_side_bar_red hidden-sm hidden-xs">
+                        <p>By providing a simple software/hardware wrapper for low-cost wireless serial TX/RX pairs, I was able to offer a stable platform for accurate wireless data transmission.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

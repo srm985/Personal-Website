@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        .fouc_blocker {
+            height: 10000px;
+            width: 100%;
+            z-index: 10000;
+            background-color: #3D414D;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Initialize webpage sizing.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Grab BS3 and support.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Asynchronously load our fonts.-->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Lato:300, 400, 900']
+            }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-86885981-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <!--Link local CSS sheets.-->
+    <link rel="stylesheet" href="css/theme_styleguide.css">
+    <link rel="stylesheet" href="css/navbar_styleguide.css">
+    <link rel="stylesheet" href="css/project_master_styleguide.css">
+    <link rel="stylesheet" href="css/bearing_wipe_styleguide.css">
+    <!--Link local JS sheets.-->
+    <script defer type="text/javascript" src="js/navbar.js"></script>
+    <script defer type="text/javascript" src="js/half_screen_header.js"></script>
+    <!--Page Description-->
+    <title>Sean McQuay | Bearing Wipe Detection</title>
+    <link rel="icon" href="images/icon.png">
+    <meta name="description" content="Simple OSIsoft PE script to identify real-time, potential bearing wipes during transient events on large machinery - removing the lengthy manual review process." />
+    <meta name="keywords" content="" />
+    <meta http-equiv="author" content="Sean McQuay" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--Open Graph Markup-->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bearing Wipe Detection" />
+    <meta property="og:description" content="Simple OSIsoft PE script to identify real-time, potential bearing wipes during transient events on large machinery - removing the lengthy manual review process." />
+    <meta property="og:image" content="" />
+    <!--Load our dynamic header and footer-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('nav').load('header.htm');
+            $('footer').load('footer.htm');
+        });
+    </script> </head>
+
+<body class="portfolio-project">
+    <div class="fouc_blocker"></div>
+    <nav class="navbar navbar-fixed-top"></nav>
+    <div class="blackout_background"></div>
+    <section>
+        <div class="container-fluid base" id="section_1">
+            <div id="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                            <h2>Bearing Wipe Detection</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <p align="justify" class="left_side_bar_green">Simple OSIsoft PE script to identify real-time, potential bearing wipes during transient events on large machinery - removing the lengthy manual review process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid base section_wrapper" id="section_3">
+            <h3 align="center">Resources</h3>
+            <p align="center">OSIsoft Data Historian</p>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <h3>Performance Equation
+                            <br>
+                            <br> </h3>
+                        <code><pre>if(TagVal('TURBINE_SPEED','*'))&lt;3550 then (if(TagVal('TURBINE_SPEED','*-10s'))&gt;10 then (*A*) else 0) else 0<br><br>*A*: if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))&gt;2 then (*B*) else if(TagVal('TURBINE_SPEED','*-120s')-TagVal('TURBINE_SPEED','*'))&lt;2 then (*C*) else 0<br><br>*B*: if(TagVal('BEARING_TEMPERATURE','*-10s'))&lt;(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0<br><br>*C*: if(TagVal('BEARING_TEMPERATURE','*'))&lt;(TagMax('BEARING_TEMPERATURE','*-10s','*')-0.25) then 1 else 0</pre></code> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid section_wrapper" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                        <p align="justify" class="left_side_bar_tan">Listed above is the Performance Equation, broken into individual portions. As PEs function similar to Excel functions, variables are not available for use and portions of the code must be repeated. The script depicted is design to identify bearing wipes on large turbo-machinery during startup and coastdown but may be applied to any equipment utilizing journal bearings. Built in are permissives to enable the code only during transient events. Hold events are also filtered through the script. This script generates very accurate detection of potential bearing wipes with few false positives. Constants may be adjusted may be adjusted by the end user in tailoring the script for other machinery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

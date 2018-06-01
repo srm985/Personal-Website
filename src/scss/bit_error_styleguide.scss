@@ -1,0 +1,116 @@
+@charset 'utf-8';
+
+/* CSS Document */
+
+#section_1 {
+    color: #ff7878;
+    background-color: #4edec2;
+    background-image: url(../images/bit_error/bit_error.jpg
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section_2 {
+    color: #3d414d;
+    background-color: #efece7;
+}
+
+#section_3 {
+    color: #efece7;
+    background-color: #3d414d;
+}
+
+#section_4 {
+    color: #fff;
+    background-color: #efece7;
+}
+
+#image_1 {
+    height: 100%;
+
+    background-image: url(../images/bit_error/tx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#image_2 {
+    height: 100%;
+
+    background-image: url(../images/bit_error/rx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section_5 {
+    color: #fff;
+    background-color: #4edec2;
+}
+
+#section_6 {
+    color: #fff;
+    background-color: #efece7;
+}
+
+#image_3 {
+    height: 100%;
+
+    background-image: url(../images/bit_error/transmitter_schematic.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#image_4 {
+    height: 100%;
+
+    background-image: url(../images/bit_error/receiver_schematic.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#section_7 {
+    color: #fff;
+    background-color: #4edec2;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 479px) {
+    /**/
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /**/
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /**/
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /**/
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    /**/
+}
+
+
+/* Very Large Devices, Very Wide Screens */
+
+@media only screen and (min-width: 1600px) {
+    /**/
+}
