@@ -84,7 +84,7 @@ input {
 .message_sending {
     border: none !important;
     background-color: #4edec2 !important;
-    background-image: url(../images/contact_form_icons/sending.png);
+    background-image: url('../images/contact_form_icons/sending.png');
     background-repeat: no-repeat;
     background-position: 115% 50%;
     background-size: 40px;
@@ -93,7 +93,7 @@ input {
 .send_confirm {
     border: none !important;
     background-color: #4edec2 !important;
-    background-image: url(../images/contact_form_icons/sent.png);
+    background-image: url('../images/contact_form_icons/sent.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 40px;
@@ -131,19 +131,19 @@ input {
 }
 
 #name_icon {
-    background-image: url(../images/contact_form_icons/name.png);
+    background-image: url('../images/contact_form_icons/name.png');
 }
 
 #company_icon {
-    background-image: url(../images/contact_form_icons/company.png);
+    background-image: url('../images/contact_form_icons/company.png');
 }
 
 #email_icon {
-    background-image: url(../images/contact_form_icons/email.png);
+    background-image: url('../images/contact_form_icons/email.png');
 }
 
 #description_icon {
-    background-image: url(../images/contact_form_icons/description.png);
+    background-image: url('../images/contact_form_icons/description.png');
 }
 
 ::-webkit-input-placeholder {

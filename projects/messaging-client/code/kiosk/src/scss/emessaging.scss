@@ -185,10 +185,10 @@ body {
         background-clip: padding-box;
     }
      ::-webkit-scrollbar-button:vertical:decrement {
-        background-image: url(../media/icons/up-arrow.png);
+        background-image: url('../media/icons/up-arrow.png');
     }
      ::-webkit-scrollbar-button:vertical:increment {
-        background-image: url(../media/icons/down-arrow.png);
+        background-image: url('../media/icons/down-arrow.png');
     }
     .image-link {
         font-weight: normal;

@@ -120,7 +120,6 @@ gulp.task('build-css', () => {
     return gulp.src('src/scss/**/*.scss')
         .pipe(gulpif(arg.sourcemap, sourcemaps.init()))
         .pipe(sassLint())
-        /* .pipe(concat('styles.scss')) */
         .pipe(sassLint.format())
         .pipe(sass())
         .pipe(autoprefixer('last 10 versions'))
@@ -138,10 +137,9 @@ gulp.task('build-css', () => {
 gulp.task('build-js', () => {
     return gulp.src('src/js/**/*.js')
         .pipe(gulpif(arg.sourcemap, sourcemaps.init()))
-        /* .pipe(concat('main.js')) */
         .pipe(eslint({ fix: true }))
         .pipe(eslint.format())
-        .pipe(babel({ presets: ['es2015'] }))
+        .pipe(babel({ presets: ['@babel/env'] }))
         .pipe(uglify())
         .pipe(gulpif(arg.sourcemap, sourcemaps.write()))
         .pipe(gulp.dest('web/js'));
