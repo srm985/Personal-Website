@@ -163,7 +163,7 @@ gulp.task('serve', () => {
     });
     gulp.watch('src/*.htm', ['build-html']);
     gulp.watch('src/scss/**/*.scss', ['build-css']);
-    gulp.watch('src/js/**/*.js', ['build-js']).on('change', (e) => {
+    gulp.watch('src/js/**/*.js', ['build-js']).on('change', () => {
         browserSync.reload();
     });
 });
